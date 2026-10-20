@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/css/items.css">
+<link rel="stylesheet" href="/css/market.css">
+<section class="market-page" aria-labelledby="market-title">
+<h1 id="market-title" class="sr-only">Item Market</h1>
+<p id="item-feedback" role="status" class="item-feedback" hidden></p>
+<%- include('partials/item-browser', { mode: 'market', rows, categories }) %>
+<div class="market-footer">
+  <span>Shared stock refreshes at <time id="market-refresh" data-refresh="<%= restockAt %>"><%= new Date(restockAt*1000).toISOString().slice(11,16) %> UTC</time>.</span>
+  <a href="/inventory">My items</a><a href="/openmarket">Player listings</a><a href="/property#furnishing-store">Property store</a><a href="/airport">Overseas shops</a>
+</div>
+</section>
+<script src="/js/items.js" defer></script>

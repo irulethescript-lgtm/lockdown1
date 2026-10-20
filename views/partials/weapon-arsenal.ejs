@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/css/weapons.css">
+<section class="weapon-arsenal">
+ <div class="page-heading"><div><div class="eyebrow">PERSONAL ARMORY</div><h1>Weapons &amp; fight plan</h1></div><a href="/battles">Go to battles →</a></div>
+ <p>Each weapon has its own saved damage and accuracy roll. Select the exact weapon you want to use. Firearms start empty; buy ammunition and load a magazine. Reloading during battle uses a turn, and an empty reserve falls back to your unarmed attack.</p>
+ <div id="arsenal-message" role="status" aria-live="polite"></div>
+ <form class="economy-form arsenal-form" data-path="/equipment/loadout">
+  <label>Unarmed attack<select name="unarmed"><option value="fists" <%= arsenal.loadout.unarmed==='fists'?'selected':'' %>>Fists · Damage 10 · Accuracy 50</option><option value="kick" <%= arsenal.loadout.unarmed==='kick'?'selected':'' %> <%= arsenal.courses.has('martial_kick')?'':'disabled' %>>Kick · Damage 30 · Accuracy 40.71 (Kick Training)</option></select></label>
+  <label>Opening temporary item<select name="temporary_key"><option value="">None</option><% arsenal.temporary.forEach(t=>{ %><option value="<%= t.item_key %>" <%= arsenal.loadout.temporary_key===t.item_key?'selected':'' %>><%= t.item.name %> ×<%= t.quantity %></option><% }); %></select></label>
+  <button class="action-button" type="submit">Save fight plan</button>
+ </form>
+ <% if(arsenal.selected){ %><form class="arsenal-form" data-path="/equipment/equip"><input type="hidden" name="slot" value="weapon"><input type="hidden" name="action" value="unequip"><button type="submit" class="action-button">Unequip weapon · use unarmed attack</button></form><% } %>
+ <p class="subtle">Your opening item is consumed once per battle, including when defending. A throw or needle uses your first turn. Combat advances six seconds per round. Needles require <a href="/education">BIO3420</a>; SPT2480 increases their bonuses by 10%. Hospitalization clears needle effects.</p>
+ <% if(arsenal.buffs.length){ %><div class="economy-notice">Active effects: <% arsenal.buffs.forEach(b=>{ %><span>+<%= (b.bonus*100).toFixed(0) %>% <%= b.stat %> until <%= new Date(b.expires_at*1000).toISOString().slice(11,19) %> UTC. </span><% }); %></div><% } %>
+ <% if(arsenal.temporary.length){ %><details class="economy-notice"><summary>Opening items and their effects</summary><% arsenal.temporary.forEach(t=>{ %><p><strong><%= t.item.name %></strong>: <%= t.item.desc %></p><% }); %></details><% } %>
+ <div class="weapon-units">
+ <% arsenal.units.forEach(unit=>{ const p=unit.profile; %>
+ <article class="weapon-unit <%= arsenal.selected?.id===unit.id?'is-equipped':'' %>" data-instance="<%= unit.id %>">
+  <div class="weapon-unit-heading"><img src="<%= unit.img %>" alt=""><div><h2><%= unit.name %> <small>#<%= unit.id %></small></h2><span><%= p.category %> · <%= p.type %><%= arsenal.selected?.id===unit.id?' · EQUIPPED':'' %></span></div></div>
+  <dl class="weapon-stats"><div><dt>Damage</dt><dd><%= unit.effectiveDamage==null?'Unknown':unit.effectiveDamage.toFixed(2) %></dd></div><div><dt>Accuracy</dt><dd><%= unit.effectiveAccuracy==null?'Unknown':unit.effectiveAccuracy.toFixed(2) %></dd></div><div><dt>Stealth</dt><dd><%= unit.stealth.toFixed(1) %></dd></div></dl>
+  <p><%= p.caliber? p.caliber+' · '+unit.loaded+'/'+p.clip+' loaded ('+unit.ammo_type+') · '+p.rate.join('–')+' rounds per attack':'No ammunition required' %></p>
+  <form class="arsenal-form" data-path="/equipment/weapon"><input type="hidden" name="instance_id" value="<%= unit.id %>"><button type="submit" class="action-button" <%= unit.damage==null?'disabled':'' %>>Equip this weapon</button></form>
+  <% if(['primary','secondary'].includes(p.category)){ %>
+  <form class="economy-form arsenal-form" data-path="/equipment/attachment"><input type="hidden" name="instance_id" value="<%= unit.id %>"><label>Attachment<select name="attachment"><% Object.entries(attachments).forEach(([key,a])=>{ %><option value="<%= key %>" <%= unit.attachment===key?'selected':'' %>><%= a.name %> · $<%= a.price.toLocaleString() %></option><% }); %></select></label><button type="submit" class="action-button">Install</button></form>
+  <% } %>
+  <% if(p.caliber){ %>
+  <form class="economy-form arsenal-form" data-path="/equipment/ammo"><input type="hidden" name="instance_id" value="<%= unit.id %>"><label>Ammo<select name="kind"><% ['standard',...p.specialAmmo].forEach(k=>{ %><option value="<%= k %>"><%= ammoKinds[k].name %> · $<%= ammoKinds[k].price %>/round · <%= arsenal.ammo.find(a=>a.caliber===p.caliber&&a.kind===k)?.quantity||0 %> reserve</option><% }); %></select></label><label>Rounds<input type="number" name="quantity" value="100" min="1" max="100000" required></label><button type="submit" class="action-button">Buy ammo</button></form>
+  <form class="economy-form arsenal-form" data-path="/equipment/reload"><input type="hidden" name="instance_id" value="<%= unit.id %>"><label>Load magazine<select name="kind"><% ['standard',...p.specialAmmo].forEach(k=>{ %><option value="<%= k %>" <%= unit.ammo_type===k?'selected':'' %>><%= ammoKinds[k].name %></option><% }); %></select></label><button type="submit" class="action-button">Reload / switch ammo</button></form>
+  <% } %>
+  <details><summary>Sell this exact weapon</summary><form class="economy-form arsenal-form" data-path="/inventory/list"><input type="hidden" name="instance_id" value="<%= unit.id %>"><input type="hidden" name="item_key" value="<%= unit.item_key %>"><input type="hidden" name="item_type" value="<%= typeof WEAPONS[unit.item_key]!=='undefined'?'weapon':'item' %>"><input type="hidden" name="quantity" value="1"><label>Total price ($)<input type="number" name="price" min="1" max="1000000000" required></label><button type="submit" class="action-button">List for sale</button></form></details>
+ </article>
+ <% }); %>
+ </div>
+ <% if(!arsenal.units.length){ %><p class="economy-notice">No weapons with supplied stats owned yet. <a href="/market">Buy a weapon</a> to see its individual roll here.</p><% } %>
+ <details class="economy-notice"><summary>Lockdown combat rules</summary><p>Weapon damage multiplies attack power by damage ÷ 10. Accuracy scales the speed-versus-dexterity hit chance; chance stays between 10% and 99.5%. Fire rate controls rounds spent per attack, rather than multiplying damage per projectile. Supplied weapons use damage and accuracy instead of the former generic strength bonus. Armor and gear bonuses still apply.</p><p>HP: +25% damage. TR: +15% accuracy. PI: ignores 25% of defense. IN and Molotov: 10% of the initial hit per round for three following rounds. Attachments: sight +2 accuracy; grip +1 damage/+1 accuracy; suppressor +1 stealth/−1 damage. These prices and modifiers are Lockdown rules.</p><p>Stealth and acquisition sources are reference ratings; citizen battle history still identifies both fighters. Ranked-war bonuses, caches, unique weapon bonuses and interdimensional bosses are not available. Weapons with missing reference ranges retain “Unknown” rather than invented values.</p></details>
+</section>
+<script src="/js/weapons.js" defer></script>

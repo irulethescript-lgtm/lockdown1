@@ -1,0 +1,22 @@
+<section class="bank-page" aria-labelledby="bank-title">
+  <header class="bank-hero">
+    <div class="bank-heading"><span class="bank-icon" aria-hidden="true">🏛</span><div><h1 id="bank-title">CITY BANK</h1><p>Cash on Hand &amp; Banking Services</p></div></div>
+    <div class="bank-intro">Deposit your money to keep it safe or withdraw it whenever you need it.<br>Your balance is always in your control.</div>
+  </header>
+  <div class="bank-balances">
+    <div><span class="balance-icon" aria-hidden="true">▣</span><div><span>CASH ON HAND</span><strong id="bank-cash">$<%= formatCash(user.cash) %></strong></div></div>
+    <div><span class="balance-icon" aria-hidden="true">🏛</span><div><span>IN BANK</span><strong id="bank-balance">$<%= formatCash(user.bank||0) %></strong></div></div>
+  </div>
+  <div id="bankMsg" role="status" aria-live="polite"></div>
+  <div class="bank-actions">
+    <% for (const [op,title,id,description] of [['deposit','DEPOSIT','depAmt','Add money to your bank account for safety.'],['withdraw','WITHDRAW','witAmt','Take money out of your bank account.']]) { %>
+    <form class="bank-action bank-<%= op %>" data-operation="<%= op %>">
+      <h2><span aria-hidden="true">⇥</span><%= title %></h2>
+      <p><%= description %></p>
+      <label class="bank-input"><span aria-hidden="true">$</span><span class="sr-only"><%= title %> amount</span><input type="number" id="<%= id %>" name="amount" placeholder="Amount..." min="1" step="1" required inputmode="numeric"></label>
+      <button class="btn" type="submit"><span aria-hidden="true">⇥</span> <%= title %></button>
+    </form>
+    <% } %>
+  </div>
+</section>
+<script src="/js/bank.js"></script>

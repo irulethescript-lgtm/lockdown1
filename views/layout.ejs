@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lockdown - <%= typeof pageTitle !== 'undefined' ? pageTitle : 'City RPG' %></title>
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/lockdown-theme.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="game-shell">
+
+<!-- TOP NAV BAR -->
+<div id="runnerboard">
+  <div class="nav">
+    <a style="float:right; margin-left:5px; background:#cc0000; color:#fff; font-weight:bold;" href="/logout" onclick="return confirm('Sign out?')"> X </a>
+    <a style="float:right;" href="/api/online" id="onlineLink"><span id="onlineCount">?</span> Online</a>
+    <a href="/how-to">How To</a>
+    <a href="/home">Home</a>
+    <a href="/shoutbox">Shoutbox</a>
+    <a href="/most-wanted">Most Wanted</a>
+    <a href="/citizens">Citizens</a>
+    <a href="/factions">Factions</a>
+  </div>
+</div>
+
+<div id="siteContainer">
+
+  <!-- SITE HEADER -->
+  <div id="siteHeader">
+    <div class="headerContent">
+
+      <!-- Player card left -->
+      <div class="playerCard">
+        <div style="float:left; width:65px;">
+          <a href="/profile/<%= user.username %>">
+            <%
+              const avatarLayers = user.avatar ? avatarImages(user.avatar) : [];
+            %>
+            <div class="avatarBox" style="position:relative;overflow:hidden;background:#222;">
+              <% if (avatarLayers.length > 0) { %>
+                <% avatarLayers.forEach(src => { %>
+                  <img src="<%= src %>" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+                <% }); %>
+              <% } else { %>
+                <span style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-size:22px;font-weight:bold;color:#cc0000;font-family:'Oswald',sans-serif;"><%= user.username.charAt(0).toUpperCase() %></span>
+              <% } %>
+            </div>
+          </a>
+        </div>
+        <div style="float:left; width:110px; margin-left:5px; font-size:10px;">
+          <div style="margin-bottom:2px;"><a href="/profile/<%= user.username %>" class="neongreen important" style="font-size:13px;"><%= user.username %></a></div>
+          <div style="margin-bottom:2px;"><span class="important" style="color:#fff;">Level:</span> <span id="um_level"><%= user.level %></span></div>
+          <div style="margin-bottom:2px;" title="$<%= user.cash %>"><span class="important" style="color:#fff;">Cash:</span> $<span id="um_cash"><%= formatCash(user.cash) %></span></div>
+          <div style="margin-bottom:2px;"><span class="important" style="color:#fff;">Rep:</span> <span id="um_rep"><%= user.rep %></span></div>
+          <div><span class="important" style="color:#fff;">Tokens:</span> <span id="um_favors"><%= user.favors||0 %></span></div>
+        </div>
+        <div class="breaker"></div>
+      </div>
+
+      <!-- Stats panel right -->
+      <div class="statsPanel" style="position:absolute;top:6px;right:6px;padding:4px 6px;width:auto;max-width:280px;">
+        <div style="display:flex; gap:6px; align-items:flex-start;">
+          <!-- Bars column -->
+          <div style="min-width:150px;">
+            <div class="attribute" title="[<%= user.hp %>/<%= user.max_hp %>]">
+              <div class="label">HP:</div>
+              <div class="value">
+                <div class="bar" style="width:<%= hpPct %>%;" id="um_hp_bar">&nbsp;</div>
+                <span class="text" id="um_hp"><%= user.hp %>/<%= user.max_hp %></span>
+              </div>
+              <div class="breaker"></div>
+            </div>
+            <div class="attribute">
+              <div class="label">NRG:</div>
+              <div class="value">
+                <div class="bar" style="width:<%= Math.max(0,Math.min(100,energyPct)) %>%;" id="um_energy_bar">&nbsp;</div>
+                <span class="text" id="um_energy"><%= user.energy %>/<%= user.max_energy %></span>
+              </div>
+              <div class="breaker"></div>
+            </div>
+            <div class="attribute">
+              <div class="label">NRV:</div>
+              <div class="value">
+                <div class="bar" style="width:<%= nervePct %>%;" id="um_nerve_bar">&nbsp;</div>
+                <span class="text" id="um_nerve"><%= user.nerve %>/<%= user.max_nerve %></span>
+              </div>
+              <div class="breaker"></div>
+            </div>
+            <div class="attribute" title="Happiness above 100 improves gym gains">
+              <div class="label">HAP:</div><div class="value"><div class="bar" id="um_happiness_bar" style="width:<%= Math.floor(user.happiness/user.max_happiness*100) %>%;background:#b6a0ce;">&nbsp;</div><span class="text" id="um_happiness"><%= user.happiness %>/<%= user.max_happiness %></span></div><div class="breaker"></div>
+            </div>
+            <div class="attribute">
+              <div class="label">STM:</div>
+              <div class="value">
+                <div class="bar" style="width:<%= user.stamina ?? 100 %>%;" id="um_stamina_bar">&nbsp;</div>
+                <span class="text" id="um_stamina"><%= user.stamina ?? 100 %>%</span>
+              </div>
+              <div class="breaker"></div>
+            </div>
+          </div>
+          <!-- STR/DEF/SPD column -->
+          <div style="border-left:1px dashed #555; padding-left:8px; padding-top:2px;">
+            <div style="font-size:11px; line-height:16px; white-space:nowrap;">
+              <span style="color:#ccaa00; font-weight:bold; display:inline-block; width:30px;">STR:</span>
+              <span style="color:#fff;" id="um_strength"><%= user.strength.toLocaleString() %></span>
+            </div>
+            <div style="font-size:11px; line-height:16px; white-space:nowrap;">
+              <span style="color:#ccaa00; font-weight:bold; display:inline-block; width:30px;">DEF:</span>
+              <span style="color:#fff;" id="um_defense"><%= user.defense.toLocaleString() %></span>
+            </div>
+            <div style="font-size:11px; line-height:16px; white-space:nowrap;">
+              <span style="color:#ccaa00; font-weight:bold; display:inline-block; width:30px;">SPD:</span>
+              <span style="color:#fff;" id="um_speed"><%= user.speed.toLocaleString() %></span>
+              <div title="Dexterity: evade incoming attacks" style="margin-top:0;">DEX: <span style="color:#fff;" id="um_dexterity"><%= user.dexterity.toLocaleString() %></span></div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:right;font-size:10px;padding:3px 0"><a href="/hospital" id="medical-status" title="Medical cooldown; use medicine while below the limit" style="color:#ddd">Medical: <span id="header-medical" data-timer="<%= user.cooldowns?.find(c=>c.category==='medical')?.ready_at||0 %>">Ready</span> / <%= (user.medical?.cap||21600)/3600 %>h</a> · <a href="/inventory" style="color:#ddd">Drug: <span id="header-drug" data-timer="<%= user.cooldowns?.find(c=>c.category==='drug')?.ready_at||0 %>">Ready</span></a></div>
+        <!-- EXP bar full width below -->
+        <div class="attribute" style="margin-top:2px;">
+          <div class="label">EXP:</div>
+          <div class="value" style="width:100%;">
+            <div class="bar" style="width:<%= xpPct %>%;" id="um_exp_bar">&nbsp;</div>
+            <span class="text" id="um_exp"><%= xpPct %>%</span>
+          </div>
+          <div class="breaker"></div>
+        </div>
+      </div>
+
+      <div class="breaker"></div>
+    </div>
+    <a class="brand" href="/city"><img src="/img/theme/logo.jpg" alt="LOCKDOWN — Your city. Your empire." width="239" height="79"></a>
+    <div class="prisonlink"><a href="/city"><%= (PRISONS && PRISONS.find(p=>p.id===user.prison_id)||{short:'Lockdown City'}).short %></a></div>
+  </div>
+
+  <!-- SITE BODY -->
+  <div id="siteBody" class="bricks">
+    <div id="leftColumn">
+
+      <nav class="city-sidebar" aria-label="Main menu">
+        <h2>Missions</h2>
+        <a href="/missions"><i>◎</i> Missions</a>
+        <h2>Account</h2>
+        <a href="/mail"><i>✉</i> Mailbox <span id="um_mail"><%= unreadMail %></span></a>
+        <a href="/events"><i>ϟ</i> Events <span id="um_events"><%= unreadEvents %></span></a>
+        <a href="/awards"><i>♜</i> Awards</a>
+        <a href="/account"><i>⚙</i> Settings</a>
+        <h2>Areas</h2>
+        <a href="/home"><i>⌂</i> Home</a>
+        <a href="/inventory"><i>▣</i> Items</a>
+        <a href="/city"><i>♧</i> City</a>
+        <a href="/jobs"><i>▰</i> Job</a>
+        <a href="/companies"><i>▥</i> Companies</a>
+        <a href="/gym"><i>⚒</i> Gym</a>
+        <a href="/property"><i>▥</i> Properties</a>
+        <a href="/education"><i>▱</i> Education</a>
+        <a href="/crimes"><i>◉</i> Crimes</a>
+        <a href="/newspaper"><i>▤</i> Newspaper</a>
+        <a href="/jail"><i>╫</i> Jail</a>
+        <a href="/hospital"><i>✚</i> Hospital</a>
+        <a href="/casino"><i>♠</i> Casino</a>
+        <a href="/most-wanted"><i>♜</i> Hall of Fame</a>
+        <a href="/factions"><i>⚑</i> Factions</a>
+        <h2>Lists</h2>
+        <a href="/citizens"><i>♙</i> Citizens</a>
+        <a href="/hitlist"><i>⊕</i> Bounties</a>
+        <a href="/my-faction"><i>⚑</i> My Faction</a>
+        <a href="/faction-invites"><i>✉</i> Faction Invites</a>
+        <h2>Specials</h2>
+        <a href="/market"><i>▣</i> Item Market</a>
+        <a href="/bank"><i>$</i> City Bank</a>
+        <a href="/stocks"><i>↗</i> Stock Exchange</a>
+        <a href="/points"><i>◈</i> Points Building</a>
+        <a href="/airport"><i>✈</i> Travel Agency</a>
+        <a href="/equipment"><i>⚔</i> Equipment</a>
+        <a href="/battles"><i>⚔</i> Attack</a>
+        <a href="/surgeon"><i>♙</i> Plastic Surgeon</a>
+        <a href="/broker"><i>▦</i> Broker</a>
+        <a href="/openmarket"><i>▣</i> Player Market</a>
+        <a href="/send-money"><i>$</i> Send Money</a>
+        <a href="/logs"><i>▤</i> Trade Logs</a>
+        <a href="/shoutbox"><i>☏</i> Shoutbox</a>
+        <a href="#" onclick="claimVote();return false;"><i>★</i> Vote for Token</a>
+      </nav>
+
+      <!-- Game Time -->
+      <div style="background:url('/images/tsprite_gray.png'); padding:3px; width:151px; margin:0 auto 10px; color:#fff; border:2px solid #777774; text-align:center; font-size:10px;">
+        Game Time: <span id="gameTime"></span>
+      </div>
+
+    </div>
+
+    <div id="rightColumn">
+      <div id="travelNotice" class="status-warning" <%= user.travel?.phase && user.travel.phase!=='home'?'':'hidden' %>><span id="travelNoticeText">You are away on a city visit.</span> <a href="/airport">View trip and cargo →</a></div>
+      <%- body %>
+    </div>
+
+    <div class="breaker"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="siteFooter">
+    <div class="footerContent">
+      <div class="prisonersOnline">
+        <div class="row"><div class="label">Total Citizens:</div><div class="data"><a href="/citizens" class="gray" id="totalInmates">...</a></div><div class="breaker"></div></div>
+        <div class="row"><div class="label">Online Now:</div><div class="data"><span id="footerOnline">...</span></div><div class="breaker"></div></div>
+        <div class="row"><div class="label">Game Time:</div><div class="data"><span id="footerTime"></span></div><div class="breaker"></div></div>
+      </div>
+    </div>
+    <div class="copyright">LOCKDOWN City RPG &copy; <%= new Date().getFullYear() %></div>
+  </div>
+
+</div>
+
+<!-- FLASH MESSAGE -->
+<div id="flashMsg" class="flash-msg" style="display:none;"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>
+<script>
+  // Init socket with user info
+  const CURRENT_USER = { id: <%= user.id %>, username: '<%= user.username.replace(/'/g,"\\'"  ) %>' };
+  initSocket(CURRENT_USER);
+
+  // Game time clock
+  function updateTime() {
+    const t = new Date().toLocaleTimeString('en-US', {hour:'2-digit', minute:'2-digit'});
+    document.getElementById('gameTime').textContent = t;
+    document.getElementById('footerTime').textContent = t;
+  }
+  updateTime();
+  setInterval(updateTime, 10000);
+
+  // Fetch total inmates count
+  fetch('/citizens').then(() => {}).catch(() => {});
+  fetch('/api/online').then(r=>r.json()).then(d=>{
+    document.getElementById('onlineCount').textContent = d.count;
+    document.getElementById('footerOnline').textContent = d.count;
+  });
+
+function claimVote() {
+  fetch('/tokens/vote', { method:'POST', headers:{'Content-Type':'application/json'}, body:'{}' })
+    .then(r=>r.json()).then(d => {
+      alert(d.msg || d.error);
+      if (d.favors !== undefined) setText('um_favors', d.favors);
+    });
+}
+</script>
+
+</body>
+</html>
+
+<script src="/js/cooldowns.js" defer></script>

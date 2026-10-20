@@ -1,0 +1,3682 @@
+{
+  "source": "Item name and ID list supplied by the user on 2026-10-19",
+  "note": "Names and IDs only. Categories, prices, and effects are Lockdown adaptations, not verified Torn values.",
+  "items": [
+    {
+      "id": 1,
+      "slug": "hammer"
+    },
+    {
+      "id": 2,
+      "slug": "baseball_bat"
+    },
+    {
+      "id": 3,
+      "slug": "crow_bar"
+    },
+    {
+      "id": 4,
+      "slug": "knuckle_dusters"
+    },
+    {
+      "id": 5,
+      "slug": "pen_knife"
+    },
+    {
+      "id": 6,
+      "slug": "kitchen_knife"
+    },
+    {
+      "id": 7,
+      "slug": "dagger"
+    },
+    {
+      "id": 8,
+      "slug": "axe"
+    },
+    {
+      "id": 9,
+      "slug": "scimitar"
+    },
+    {
+      "id": 10,
+      "slug": "chainsaw"
+    },
+    {
+      "id": 11,
+      "slug": "samurai_sword"
+    },
+    {
+      "id": 12,
+      "slug": "glock_17"
+    },
+    {
+      "id": 13,
+      "slug": "raven_mp25"
+    },
+    {
+      "id": 14,
+      "slug": "ruger_22/45"
+    },
+    {
+      "id": 15,
+      "slug": "beretta_m9"
+    },
+    {
+      "id": 16,
+      "slug": "usp"
+    },
+    {
+      "id": 17,
+      "slug": "beretta_92fs"
+    },
+    {
+      "id": 18,
+      "slug": "fiveseven"
+    },
+    {
+      "id": 19,
+      "slug": "magnum"
+    },
+    {
+      "id": 20,
+      "slug": "desert_eagle"
+    },
+    {
+      "id": 21,
+      "slug": "dual_92g_berettas"
+    },
+    {
+      "id": 22,
+      "slug": "sawed-off_shotgun"
+    },
+    {
+      "id": 23,
+      "slug": "benelli_m1_tactical"
+    },
+    {
+      "id": 24,
+      "slug": "mp5_navy"
+    },
+    {
+      "id": 25,
+      "slug": "p90"
+    },
+    {
+      "id": 26,
+      "slug": "ak-47"
+    },
+    {
+      "id": 27,
+      "slug": "m4a1_colt_carbine"
+    },
+    {
+      "id": 28,
+      "slug": "benelli_m4_super"
+    },
+    {
+      "id": 29,
+      "slug": "m16_a2_rifle"
+    },
+    {
+      "id": 30,
+      "slug": "steyr_aug"
+    },
+    {
+      "id": 31,
+      "slug": "m249_para_lmg"
+    },
+    {
+      "id": 32,
+      "slug": "leather_vest"
+    },
+    {
+      "id": 33,
+      "slug": "police_vest"
+    },
+    {
+      "id": 34,
+      "slug": "bulletproof_vest"
+    },
+    {
+      "id": 35,
+      "slug": "box_of_chocolate_bars"
+    },
+    {
+      "id": 36,
+      "slug": "big_box_of_chocolate_bars"
+    },
+    {
+      "id": 37,
+      "slug": "bag_of_bon_bons"
+    },
+    {
+      "id": 38,
+      "slug": "box_of_bon_bons"
+    },
+    {
+      "id": 39,
+      "slug": "box_of_extra_strong_mints"
+    },
+    {
+      "id": 40,
+      "slug": "pack_of_music_cds"
+    },
+    {
+      "id": 41,
+      "slug": "dvd_player"
+    },
+    {
+      "id": 42,
+      "slug": "mp3_player"
+    },
+    {
+      "id": 43,
+      "slug": "cd_player"
+    },
+    {
+      "id": 44,
+      "slug": "pack_of_blank_cds"
+    },
+    {
+      "id": 45,
+      "slug": "hard_drive"
+    },
+    {
+      "id": 46,
+      "slug": "tank_top"
+    },
+    {
+      "id": 47,
+      "slug": "pair_of_trainers"
+    },
+    {
+      "id": 48,
+      "slug": "jacket"
+    },
+    {
+      "id": 49,
+      "slug": "full_body_armor"
+    },
+    {
+      "id": 50,
+      "slug": "outer_tactical_vest"
+    },
+    {
+      "id": 51,
+      "slug": "plain_silver_ring"
+    },
+    {
+      "id": 52,
+      "slug": "sapphire_ring"
+    },
+    {
+      "id": 53,
+      "slug": "gold_ring"
+    },
+    {
+      "id": 54,
+      "slug": "diamond_ring"
+    },
+    {
+      "id": 55,
+      "slug": "pearl_necklace"
+    },
+    {
+      "id": 56,
+      "slug": "silver_necklace"
+    },
+    {
+      "id": 57,
+      "slug": "gold_necklace"
+    },
+    {
+      "id": 58,
+      "slug": "plastic_watch"
+    },
+    {
+      "id": 59,
+      "slug": "stainless_steel_watch"
+    },
+    {
+      "id": 60,
+      "slug": "gold_watch"
+    },
+    {
+      "id": 61,
+      "slug": "personal_computer"
+    },
+    {
+      "id": 62,
+      "slug": "microwave"
+    },
+    {
+      "id": 63,
+      "slug": "minigun"
+    },
+    {
+      "id": 64,
+      "slug": "pack_of_cuban_cigars"
+    },
+    {
+      "id": 65,
+      "slug": "big_tv_screen"
+    },
+    {
+      "id": 66,
+      "slug": "morphine"
+    },
+    {
+      "id": 67,
+      "slug": "first_aid_kit"
+    },
+    {
+      "id": 68,
+      "slug": "small_first_aid_kit"
+    },
+    {
+      "id": 69,
+      "slug": "simple_virus"
+    },
+    {
+      "id": 70,
+      "slug": "polymorphic_virus"
+    },
+    {
+      "id": 71,
+      "slug": "tunnelling_virus"
+    },
+    {
+      "id": 72,
+      "slug": "armored_virus"
+    },
+    {
+      "id": 73,
+      "slug": "stealth_virus"
+    },
+    {
+      "id": 74,
+      "slug": "santa_hat_'04"
+    },
+    {
+      "id": 75,
+      "slug": "christmas_cracker_'04"
+    },
+    {
+      "id": 76,
+      "slug": "snow_cannon"
+    },
+    {
+      "id": 77,
+      "slug": "toyota_mr2"
+    },
+    {
+      "id": 78,
+      "slug": "honda_nsx"
+    },
+    {
+      "id": 79,
+      "slug": "audi_tt_quattro"
+    },
+    {
+      "id": 80,
+      "slug": "bmw_m5"
+    },
+    {
+      "id": 81,
+      "slug": "bmw_z8"
+    },
+    {
+      "id": 82,
+      "slug": "chevrolet_corvette_z06"
+    },
+    {
+      "id": 83,
+      "slug": "dodge_charger"
+    },
+    {
+      "id": 84,
+      "slug": "pontiac_firebird"
+    },
+    {
+      "id": 85,
+      "slug": "ford_gt40"
+    },
+    {
+      "id": 86,
+      "slug": "hummer_h3"
+    },
+    {
+      "id": 87,
+      "slug": "audi_s4"
+    },
+    {
+      "id": 88,
+      "slug": "honda_integra_r"
+    },
+    {
+      "id": 89,
+      "slug": "honda_accord"
+    },
+    {
+      "id": 90,
+      "slug": "honda_civic"
+    },
+    {
+      "id": 91,
+      "slug": "volkswagen_beetle"
+    },
+    {
+      "id": 92,
+      "slug": "chevrolet_cavalier"
+    },
+    {
+      "id": 93,
+      "slug": "ford_mustang"
+    },
+    {
+      "id": 94,
+      "slug": "reliant_robin"
+    },
+    {
+      "id": 95,
+      "slug": "holden_ss"
+    },
+    {
+      "id": 96,
+      "slug": "coat_hanger"
+    },
+    {
+      "id": 97,
+      "slug": "bunch_of_flowers"
+    },
+    {
+      "id": 98,
+      "slug": "neutrilux_2000"
+    },
+    {
+      "id": 99,
+      "slug": "springfield_1911-a1"
+    },
+    {
+      "id": 100,
+      "slug": "egg_propelled_launcher"
+    },
+    {
+      "id": 101,
+      "slug": "bunny_suit"
+    },
+    {
+      "id": 102,
+      "slug": "chocolate_egg_'05"
+    },
+    {
+      "id": 103,
+      "slug": "firewalk_virus"
+    },
+    {
+      "id": 104,
+      "slug": "playstation"
+    },
+    {
+      "id": 105,
+      "slug": "xbox"
+    },
+    {
+      "id": 106,
+      "slug": "parachute"
+    },
+    {
+      "id": 107,
+      "slug": "trench_coat"
+    },
+    {
+      "id": 108,
+      "slug": "9mm_uzi"
+    },
+    {
+      "id": 109,
+      "slug": "rpg_launcher"
+    },
+    {
+      "id": 110,
+      "slug": "leather_bull_whip"
+    },
+    {
+      "id": 111,
+      "slug": "ninja_claws"
+    },
+    {
+      "id": 112,
+      "slug": "test_trophy"
+    },
+    {
+      "id": 113,
+      "slug": "pet_rock"
+    },
+    {
+      "id": 114,
+      "slug": "non-anon_doll"
+    },
+    {
+      "id": 115,
+      "slug": "poker_doll"
+    },
+    {
+      "id": 116,
+      "slug": "yoda_figurine"
+    },
+    {
+      "id": 117,
+      "slug": "trojan_horse"
+    },
+    {
+      "id": 118,
+      "slug": "evil_doll"
+    },
+    {
+      "id": 119,
+      "slug": "rubber_ducky_of_doom"
+    },
+    {
+      "id": 120,
+      "slug": "teppic_bear"
+    },
+    {
+      "id": 121,
+      "slug": "rockerhead_doll"
+    },
+    {
+      "id": 122,
+      "slug": "mouser_doll"
+    },
+    {
+      "id": 123,
+      "slug": "elite_action_man"
+    },
+    {
+      "id": 124,
+      "slug": "toy_reactor"
+    },
+    {
+      "id": 125,
+      "slug": "royal_doll"
+    },
+    {
+      "id": 126,
+      "slug": "blue_dragon"
+    },
+    {
+      "id": 127,
+      "slug": "china_tea_set"
+    },
+    {
+      "id": 128,
+      "slug": "mufasa_toy"
+    },
+    {
+      "id": 129,
+      "slug": "dozen_roses"
+    },
+    {
+      "id": 130,
+      "slug": "skanky_doll"
+    },
+    {
+      "id": 131,
+      "slug": "lego_hurin"
+    },
+    {
+      "id": 132,
+      "slug": "mystical_sphere"
+    },
+    {
+      "id": 133,
+      "slug": "10_ton_pacifier"
+    },
+    {
+      "id": 134,
+      "slug": "horse"
+    },
+    {
+      "id": 135,
+      "slug": "uriel's_speakers"
+    },
+    {
+      "id": 136,
+      "slug": "strife_clown"
+    },
+    {
+      "id": 137,
+      "slug": "locked_teddy"
+    },
+    {
+      "id": 138,
+      "slug": "riddle's_bat"
+    },
+    {
+      "id": 139,
+      "slug": "soup_nazi_doll"
+    },
+    {
+      "id": 140,
+      "slug": "pouncer_doll"
+    },
+    {
+      "id": 141,
+      "slug": "spammer_doll"
+    },
+    {
+      "id": 142,
+      "slug": "cookie_jar"
+    },
+    {
+      "id": 143,
+      "slug": "vanity_mirror"
+    },
+    {
+      "id": 144,
+      "slug": "banana_phone"
+    },
+    {
+      "id": 145,
+      "slug": "xbox_360"
+    },
+    {
+      "id": 146,
+      "slug": "yasukuni_sword"
+    },
+    {
+      "id": 147,
+      "slug": "rusty_sword"
+    },
+    {
+      "id": 148,
+      "slug": "dance_toy"
+    },
+    {
+      "id": 149,
+      "slug": "lucky_dime"
+    },
+    {
+      "id": 150,
+      "slug": "crystal_carousel"
+    },
+    {
+      "id": 151,
+      "slug": "pixie_sticks"
+    },
+    {
+      "id": 152,
+      "slug": "ice_sculpture"
+    },
+    {
+      "id": 153,
+      "slug": "case_of_whiskey"
+    },
+    {
+      "id": 154,
+      "slug": "laptop"
+    },
+    {
+      "id": 155,
+      "slug": "purple_frog_doll"
+    },
+    {
+      "id": 156,
+      "slug": "skeleton_key"
+    },
+    {
+      "id": 157,
+      "slug": "patriot_whip"
+    },
+    {
+      "id": 158,
+      "slug": "statue_of_aeolus"
+    },
+    {
+      "id": 159,
+      "slug": "bolt_cutters"
+    },
+    {
+      "id": 160,
+      "slug": "photographs"
+    },
+    {
+      "id": 161,
+      "slug": "black_unicorn"
+    },
+    {
+      "id": 162,
+      "slug": "warpaint_kit"
+    },
+    {
+      "id": 163,
+      "slug": "official_ninja_kit"
+    },
+    {
+      "id": 164,
+      "slug": "leukaemia_teddybear"
+    },
+    {
+      "id": 165,
+      "slug": "chocobo_flute"
+    },
+    {
+      "id": 166,
+      "slug": "annoying_man"
+    },
+    {
+      "id": 167,
+      "slug": "article_on_crime"
+    },
+    {
+      "id": 168,
+      "slug": "unknown"
+    },
+    {
+      "id": 169,
+      "slug": "barbie_doll"
+    },
+    {
+      "id": 170,
+      "slug": "wand_of_destruction"
+    },
+    {
+      "id": 171,
+      "slug": "jack-o-lantern_'05"
+    },
+    {
+      "id": 172,
+      "slug": "gas_can"
+    },
+    {
+      "id": 173,
+      "slug": "butterfly_knife"
+    },
+    {
+      "id": 174,
+      "slug": "xm8_rifle"
+    },
+    {
+      "id": 175,
+      "slug": "taser"
+    },
+    {
+      "id": 176,
+      "slug": "chain_mail"
+    },
+    {
+      "id": 177,
+      "slug": "cobra_derringer"
+    },
+    {
+      "id": 178,
+      "slug": "flak_jacket"
+    },
+    {
+      "id": 179,
+      "slug": "birthday_cake_'05"
+    },
+    {
+      "id": 180,
+      "slug": "bottle_of_beer"
+    },
+    {
+      "id": 181,
+      "slug": "bottle_of_champagne"
+    },
+    {
+      "id": 182,
+      "slug": "soap_on_a_rope"
+    },
+    {
+      "id": 183,
+      "slug": "single_red_rose"
+    },
+    {
+      "id": 184,
+      "slug": "bunch_of_black_roses"
+    },
+    {
+      "id": 185,
+      "slug": "bunch_of_balloons_'05"
+    },
+    {
+      "id": 186,
+      "slug": "sheep_plushie"
+    },
+    {
+      "id": 187,
+      "slug": "teddy_bear_plushie"
+    },
+    {
+      "id": 188,
+      "slug": "cracked_crystal_ball"
+    },
+    {
+      "id": 189,
+      "slug": "s&w_revolver"
+    },
+    {
+      "id": 190,
+      "slug": "c4_explosive"
+    },
+    {
+      "id": 191,
+      "slug": "memory_locket"
+    },
+    {
+      "id": 192,
+      "slug": "rainbow_stud_earring"
+    },
+    {
+      "id": 193,
+      "slug": "hamster_toy"
+    },
+    {
+      "id": 194,
+      "slug": "snowflake_'05"
+    },
+    {
+      "id": 195,
+      "slug": "christmas_tree_'05"
+    },
+    {
+      "id": 196,
+      "slug": "cannabis"
+    },
+    {
+      "id": 197,
+      "slug": "ecstasy"
+    },
+    {
+      "id": 198,
+      "slug": "ketamine"
+    },
+    {
+      "id": 199,
+      "slug": "lsd"
+    },
+    {
+      "id": 200,
+      "slug": "opium"
+    },
+    {
+      "id": 201,
+      "slug": "pcp"
+    },
+    {
+      "id": 202,
+      "slug": "mr_torn_crown_'07"
+    },
+    {
+      "id": 203,
+      "slug": "shrooms"
+    },
+    {
+      "id": 204,
+      "slug": "speed"
+    },
+    {
+      "id": 205,
+      "slug": "vicodin"
+    },
+    {
+      "id": 206,
+      "slug": "xanax"
+    },
+    {
+      "id": 207,
+      "slug": "ms_torn_crown_'07"
+    },
+    {
+      "id": 208,
+      "slug": "unknown"
+    },
+    {
+      "id": 209,
+      "slug": "box_of_sweet_hearts"
+    },
+    {
+      "id": 210,
+      "slug": "bag_of_chocolate_kisses"
+    },
+    {
+      "id": 211,
+      "slug": "crazy_cow"
+    },
+    {
+      "id": 212,
+      "slug": "legend's_urn"
+    },
+    {
+      "id": 213,
+      "slug": "dreamcatcher"
+    },
+    {
+      "id": 214,
+      "slug": "brutus_keychain"
+    },
+    {
+      "id": 215,
+      "slug": "kitten_plushie"
+    },
+    {
+      "id": 216,
+      "slug": "single_white_rose"
+    },
+    {
+      "id": 217,
+      "slug": "claymore_sword"
+    },
+    {
+      "id": 218,
+      "slug": "crossbow"
+    },
+    {
+      "id": 219,
+      "slug": "enfield_sa-80"
+    },
+    {
+      "id": 220,
+      "slug": "grenade"
+    },
+    {
+      "id": 221,
+      "slug": "stick_grenade"
+    },
+    {
+      "id": 222,
+      "slug": "flash_grenade"
+    },
+    {
+      "id": 223,
+      "slug": "jackhammer"
+    },
+    {
+      "id": 224,
+      "slug": "swiss_army_knife"
+    },
+    {
+      "id": 225,
+      "slug": "mag_7"
+    },
+    {
+      "id": 226,
+      "slug": "smoke_grenade"
+    },
+    {
+      "id": 227,
+      "slug": "spear"
+    },
+    {
+      "id": 228,
+      "slug": "vektor_cr-21"
+    },
+    {
+      "id": 229,
+      "slug": "claymore_mine"
+    },
+    {
+      "id": 230,
+      "slug": "flare_gun"
+    },
+    {
+      "id": 231,
+      "slug": "heckler_&_koch_sl8"
+    },
+    {
+      "id": 232,
+      "slug": "sig_550"
+    },
+    {
+      "id": 233,
+      "slug": "bt_mp9"
+    },
+    {
+      "id": 234,
+      "slug": "chain_whip"
+    },
+    {
+      "id": 235,
+      "slug": "wooden_nunchakus"
+    },
+    {
+      "id": 236,
+      "slug": "kama"
+    },
+    {
+      "id": 237,
+      "slug": "kodachi_swords"
+    },
+    {
+      "id": 238,
+      "slug": "sai"
+    },
+    {
+      "id": 239,
+      "slug": "ninja_stars"
+    },
+    {
+      "id": 240,
+      "slug": "anti_tank"
+    },
+    {
+      "id": 241,
+      "slug": "bushmaster_carbon_15_type_21s"
+    },
+    {
+      "id": 242,
+      "slug": "heg"
+    },
+    {
+      "id": 243,
+      "slug": "taurus"
+    },
+    {
+      "id": 244,
+      "slug": "blowgun"
+    },
+    {
+      "id": 245,
+      "slug": "bo_staff"
+    },
+    {
+      "id": 246,
+      "slug": "fireworks"
+    },
+    {
+      "id": 247,
+      "slug": "katana"
+    },
+    {
+      "id": 248,
+      "slug": "qsz-92"
+    },
+    {
+      "id": 249,
+      "slug": "sks_carbine"
+    },
+    {
+      "id": 250,
+      "slug": "twin_tiger_hooks"
+    },
+    {
+      "id": 251,
+      "slug": "wushu_double_axes"
+    },
+    {
+      "id": 252,
+      "slug": "ithaca_37"
+    },
+    {
+      "id": 253,
+      "slug": "lorcin_380"
+    },
+    {
+      "id": 254,
+      "slug": "s&w_m29"
+    },
+    {
+      "id": 255,
+      "slug": "flamethrower"
+    },
+    {
+      "id": 256,
+      "slug": "tear_gas"
+    },
+    {
+      "id": 257,
+      "slug": "throwing_knife"
+    },
+    {
+      "id": 258,
+      "slug": "jaguar_plushie"
+    },
+    {
+      "id": 259,
+      "slug": "mayan_statue"
+    },
+    {
+      "id": 260,
+      "slug": "dahlia"
+    },
+    {
+      "id": 261,
+      "slug": "wolverine_plushie"
+    },
+    {
+      "id": 262,
+      "slug": "hockey_stick"
+    },
+    {
+      "id": 263,
+      "slug": "crocus"
+    },
+    {
+      "id": 264,
+      "slug": "orchid"
+    },
+    {
+      "id": 265,
+      "slug": "pele_charm"
+    },
+    {
+      "id": 266,
+      "slug": "nessie_plushie"
+    },
+    {
+      "id": 267,
+      "slug": "heather"
+    },
+    {
+      "id": 268,
+      "slug": "red_fox_plushie"
+    },
+    {
+      "id": 269,
+      "slug": "monkey_plushie"
+    },
+    {
+      "id": 270,
+      "slug": "soccer_ball"
+    },
+    {
+      "id": 271,
+      "slug": "ceibo_flower"
+    },
+    {
+      "id": 272,
+      "slug": "edelweiss"
+    },
+    {
+      "id": 273,
+      "slug": "chamois_plushie"
+    },
+    {
+      "id": 274,
+      "slug": "panda_plushie"
+    },
+    {
+      "id": 275,
+      "slug": "jade_buddha"
+    },
+    {
+      "id": 276,
+      "slug": "peony"
+    },
+    {
+      "id": 277,
+      "slug": "cherry_blossom"
+    },
+    {
+      "id": 278,
+      "slug": "kabuki_mask"
+    },
+    {
+      "id": 279,
+      "slug": "maneki_neko"
+    },
+    {
+      "id": 280,
+      "slug": "elephant_statue"
+    },
+    {
+      "id": 281,
+      "slug": "lion_plushie"
+    },
+    {
+      "id": 282,
+      "slug": "african_violet"
+    },
+    {
+      "id": 283,
+      "slug": "donator_pack"
+    },
+    {
+      "id": 284,
+      "slug": "bronze_paint_brush"
+    },
+    {
+      "id": 285,
+      "slug": "silver_paint_brush"
+    },
+    {
+      "id": 286,
+      "slug": "gold_paint_brush"
+    },
+    {
+      "id": 287,
+      "slug": "pand0ra's_box"
+    },
+    {
+      "id": 288,
+      "slug": "mr_brownstone_doll"
+    },
+    {
+      "id": 289,
+      "slug": "dual_axes"
+    },
+    {
+      "id": 290,
+      "slug": "dual_hammers"
+    },
+    {
+      "id": 291,
+      "slug": "dual_scimitars"
+    },
+    {
+      "id": 292,
+      "slug": "dual_samurai_swords"
+    },
+    {
+      "id": 293,
+      "slug": "japanese/english_dictionary"
+    },
+    {
+      "id": 294,
+      "slug": "bottle_of_sake"
+    },
+    {
+      "id": 295,
+      "slug": "oriental_log"
+    },
+    {
+      "id": 296,
+      "slug": "oriental_log_translation"
+    },
+    {
+      "id": 297,
+      "slug": "youyou_yo_yo"
+    },
+    {
+      "id": 298,
+      "slug": "monkey_cuffs"
+    },
+    {
+      "id": 299,
+      "slug": "jester's_cap"
+    },
+    {
+      "id": 300,
+      "slug": "gibal's_dragonfly"
+    },
+    {
+      "id": 301,
+      "slug": "green_ornament"
+    },
+    {
+      "id": 302,
+      "slug": "purple_ornament"
+    },
+    {
+      "id": 303,
+      "slug": "blue_ornament"
+    },
+    {
+      "id": 304,
+      "slug": "purple_bell"
+    },
+    {
+      "id": 305,
+      "slug": "mistletoe"
+    },
+    {
+      "id": 306,
+      "slug": "mini_sleigh"
+    },
+    {
+      "id": 307,
+      "slug": "snowman"
+    },
+    {
+      "id": 308,
+      "slug": "christmas_gnome"
+    },
+    {
+      "id": 309,
+      "slug": "gingerbread_house"
+    },
+    {
+      "id": 310,
+      "slug": "lollipop"
+    },
+    {
+      "id": 311,
+      "slug": "mardi_gras_beads"
+    },
+    {
+      "id": 312,
+      "slug": "devil_toy"
+    },
+    {
+      "id": 313,
+      "slug": "cookie_launcher"
+    },
+    {
+      "id": 314,
+      "slug": "cursed_moon_pendant"
+    },
+    {
+      "id": 315,
+      "slug": "apartment_blueprint"
+    },
+    {
+      "id": 316,
+      "slug": "semi-detached_house_blueprint"
+    },
+    {
+      "id": 317,
+      "slug": "detached_house_blueprint"
+    },
+    {
+      "id": 318,
+      "slug": "beach_house_blueprint"
+    },
+    {
+      "id": 319,
+      "slug": "chalet_blueprint"
+    },
+    {
+      "id": 320,
+      "slug": "villa_blueprint"
+    },
+    {
+      "id": 321,
+      "slug": "penthouse_blueprint"
+    },
+    {
+      "id": 322,
+      "slug": "mansion_blueprint"
+    },
+    {
+      "id": 323,
+      "slug": "ranch_blueprint"
+    },
+    {
+      "id": 324,
+      "slug": "palace_blueprint"
+    },
+    {
+      "id": 325,
+      "slug": "castle_blueprint"
+    },
+    {
+      "id": 326,
+      "slug": "printing_paper"
+    },
+    {
+      "id": 327,
+      "slug": "blank_tokens"
+    },
+    {
+      "id": 328,
+      "slug": "blank_credit_cards"
+    },
+    {
+      "id": 329,
+      "slug": "skateboard"
+    },
+    {
+      "id": 330,
+      "slug": "boxing_gloves"
+    },
+    {
+      "id": 331,
+      "slug": "dumbbells"
+    },
+    {
+      "id": 332,
+      "slug": "combat_vest"
+    },
+    {
+      "id": 333,
+      "slug": "liquid_body_armor"
+    },
+    {
+      "id": 334,
+      "slug": "flexible_body_armor"
+    },
+    {
+      "id": 335,
+      "slug": "stick_of_dynamite"
+    },
+    {
+      "id": 336,
+      "slug": "cesium-137"
+    },
+    {
+      "id": 337,
+      "slug": "dirty_bomb"
+    },
+    {
+      "id": 338,
+      "slug": "sh0rty's_surfboard"
+    },
+    {
+      "id": 339,
+      "slug": "puzzle_piece"
+    },
+    {
+      "id": 340,
+      "slug": "hunny_pot"
+    },
+    {
+      "id": 341,
+      "slug": "seductive_stethoscope"
+    },
+    {
+      "id": 342,
+      "slug": "dollar_bill_collectible"
+    },
+    {
+      "id": 343,
+      "slug": "backstage_pass"
+    },
+    {
+      "id": 344,
+      "slug": "chemi's_magic_potion"
+    },
+    {
+      "id": 345,
+      "slug": "pack_of_trojans"
+    },
+    {
+      "id": 346,
+      "slug": "pair_of_high_heels"
+    },
+    {
+      "id": 347,
+      "slug": "thong"
+    },
+    {
+      "id": 348,
+      "slug": "hazmat_suit"
+    },
+    {
+      "id": 349,
+      "slug": "flea_collar"
+    },
+    {
+      "id": 350,
+      "slug": "dunkin's_donut"
+    },
+    {
+      "id": 351,
+      "slug": "amazon_doll"
+    },
+    {
+      "id": 352,
+      "slug": "bbq_smoker"
+    },
+    {
+      "id": 353,
+      "slug": "bag_of_cheetos"
+    },
+    {
+      "id": 354,
+      "slug": "motorbike"
+    },
+    {
+      "id": 355,
+      "slug": "citrus_squeezer"
+    },
+    {
+      "id": 356,
+      "slug": "superman_shades"
+    },
+    {
+      "id": 357,
+      "slug": "kevlar_helmet"
+    },
+    {
+      "id": 358,
+      "slug": "raw_ivory"
+    },
+    {
+      "id": 359,
+      "slug": "fine_chisel"
+    },
+    {
+      "id": 360,
+      "slug": "ivory_walking_cane"
+    },
+    {
+      "id": 361,
+      "slug": "neumune_tablet"
+    },
+    {
+      "id": 362,
+      "slug": "mr_torn_crown_'08"
+    },
+    {
+      "id": 363,
+      "slug": "ms_torn_crown_'08"
+    },
+    {
+      "id": 364,
+      "slug": "box_of_grenades"
+    },
+    {
+      "id": 365,
+      "slug": "box_of_medical_supplies"
+    },
+    {
+      "id": 366,
+      "slug": "erotic_dvd"
+    },
+    {
+      "id": 367,
+      "slug": "feathery_hotel_coupon"
+    },
+    {
+      "id": 368,
+      "slug": "lawyer_business_card"
+    },
+    {
+      "id": 369,
+      "slug": "lottery_voucher"
+    },
+    {
+      "id": 370,
+      "slug": "drug_pack"
+    },
+    {
+      "id": 371,
+      "slug": "dark_doll"
+    },
+    {
+      "id": 372,
+      "slug": "empty_box"
+    },
+    {
+      "id": 373,
+      "slug": "parcel"
+    },
+    {
+      "id": 374,
+      "slug": "birthday_present"
+    },
+    {
+      "id": 375,
+      "slug": "present"
+    },
+    {
+      "id": 376,
+      "slug": "christmas_present"
+    },
+    {
+      "id": 377,
+      "slug": "birthday_wrapping_paper"
+    },
+    {
+      "id": 378,
+      "slug": "generic_wrapping_paper"
+    },
+    {
+      "id": 379,
+      "slug": "christmas_wrapping_paper"
+    },
+    {
+      "id": 380,
+      "slug": "small_explosive_device"
+    },
+    {
+      "id": 381,
+      "slug": "gold_laptop"
+    },
+    {
+      "id": 382,
+      "slug": "gold_plated_ak-47"
+    },
+    {
+      "id": 383,
+      "slug": "platinum_pda"
+    },
+    {
+      "id": 384,
+      "slug": "camel_plushie"
+    },
+    {
+      "id": 385,
+      "slug": "tribulus_omanense"
+    },
+    {
+      "id": 386,
+      "slug": "sports_sneakers"
+    },
+    {
+      "id": 387,
+      "slug": "handbag"
+    },
+    {
+      "id": 388,
+      "slug": "pink_mac-10"
+    },
+    {
+      "id": 389,
+      "slug": "mr_torn_crown_'09"
+    },
+    {
+      "id": 390,
+      "slug": "ms_torn_crown_'09"
+    },
+    {
+      "id": 391,
+      "slug": "macana"
+    },
+    {
+      "id": 392,
+      "slug": "pepper_spray"
+    },
+    {
+      "id": 393,
+      "slug": "slingshot"
+    },
+    {
+      "id": 394,
+      "slug": "brick"
+    },
+    {
+      "id": 395,
+      "slug": "metal_nunchakus"
+    },
+    {
+      "id": 396,
+      "slug": "business_class_ticket"
+    },
+    {
+      "id": 397,
+      "slug": "mace"
+    },
+    {
+      "id": 398,
+      "slug": "swiss_army_sg_550"
+    },
+    {
+      "id": 399,
+      "slug": "armalite_m-15a4_rifle"
+    },
+    {
+      "id": 400,
+      "slug": "guandao"
+    },
+    {
+      "id": 401,
+      "slug": "lead_pipe"
+    },
+    {
+      "id": 402,
+      "slug": "ice_pick"
+    },
+    {
+      "id": 403,
+      "slug": "box_of_tissues"
+    },
+    {
+      "id": 404,
+      "slug": "bandana"
+    },
+    {
+      "id": 405,
+      "slug": "loaf_of_bread"
+    },
+    {
+      "id": 406,
+      "slug": "afro_comb"
+    },
+    {
+      "id": 407,
+      "slug": "compass"
+    },
+    {
+      "id": 408,
+      "slug": "sextant"
+    },
+    {
+      "id": 409,
+      "slug": "yucca_plant"
+    },
+    {
+      "id": 410,
+      "slug": "fire_hydrant"
+    },
+    {
+      "id": 411,
+      "slug": "model_space_ship"
+    },
+    {
+      "id": 412,
+      "slug": "sports_shades"
+    },
+    {
+      "id": 413,
+      "slug": "mountie_hat"
+    },
+    {
+      "id": 414,
+      "slug": "proda_sunglasses"
+    },
+    {
+      "id": 415,
+      "slug": "ship_in_a_bottle"
+    },
+    {
+      "id": 416,
+      "slug": "paper_weight"
+    },
+    {
+      "id": 417,
+      "slug": "rs232_cable"
+    },
+    {
+      "id": 418,
+      "slug": "tailors_dummy"
+    },
+    {
+      "id": 419,
+      "slug": "small_suitcase"
+    },
+    {
+      "id": 420,
+      "slug": "medium_suitcase"
+    },
+    {
+      "id": 421,
+      "slug": "large_suitcase"
+    },
+    {
+      "id": 422,
+      "slug": "vanity_hand_mirror"
+    },
+    {
+      "id": 423,
+      "slug": "poker_chip"
+    },
+    {
+      "id": 424,
+      "slug": "rabbit_foot"
+    },
+    {
+      "id": 425,
+      "slug": "voodoo_doll"
+    },
+    {
+      "id": 426,
+      "slug": "bottle_of_tequila"
+    },
+    {
+      "id": 427,
+      "slug": "sumo_doll"
+    },
+    {
+      "id": 428,
+      "slug": "casino_pass"
+    },
+    {
+      "id": 429,
+      "slug": "chopsticks"
+    },
+    {
+      "id": 430,
+      "slug": "coconut_bra"
+    },
+    {
+      "id": 431,
+      "slug": "dart_board"
+    },
+    {
+      "id": 432,
+      "slug": "crazy_straw"
+    },
+    {
+      "id": 433,
+      "slug": "sensu"
+    },
+    {
+      "id": 434,
+      "slug": "yakitori_lantern"
+    },
+    {
+      "id": 435,
+      "slug": "dozen_white_roses"
+    },
+    {
+      "id": 436,
+      "slug": "snowboard"
+    },
+    {
+      "id": 437,
+      "slug": "glow_stick"
+    },
+    {
+      "id": 438,
+      "slug": "cricket_bat"
+    },
+    {
+      "id": 439,
+      "slug": "frying_pan"
+    },
+    {
+      "id": 440,
+      "slug": "pillow"
+    },
+    {
+      "id": 441,
+      "slug": "khinkeh_p0rnstar_doll"
+    },
+    {
+      "id": 442,
+      "slug": "blow-up_doll"
+    },
+    {
+      "id": 443,
+      "slug": "strawberry_milkshake"
+    },
+    {
+      "id": 444,
+      "slug": "breadfan_doll"
+    },
+    {
+      "id": 445,
+      "slug": "chaos_man"
+    },
+    {
+      "id": 446,
+      "slug": "karate_man"
+    },
+    {
+      "id": 447,
+      "slug": "burmese_flag"
+    },
+    {
+      "id": 448,
+      "slug": "bl0ndie's_dictionary"
+    },
+    {
+      "id": 449,
+      "slug": "hydroponic_grow_tent"
+    },
+    {
+      "id": 450,
+      "slug": "leopard_coin"
+    },
+    {
+      "id": 451,
+      "slug": "florin_coin"
+    },
+    {
+      "id": 452,
+      "slug": "gold_noble_coin"
+    },
+    {
+      "id": 453,
+      "slug": "ganesha_sculpture"
+    },
+    {
+      "id": 454,
+      "slug": "vairocana_buddha_sculpture"
+    },
+    {
+      "id": 455,
+      "slug": "script_from_the_quran:_ibn_masud"
+    },
+    {
+      "id": 456,
+      "slug": "script_from_the_quran:_ubay_ibn_kab"
+    },
+    {
+      "id": 457,
+      "slug": "script_from_the_quran:_ali"
+    },
+    {
+      "id": 458,
+      "slug": "shabti_sculpture"
+    },
+    {
+      "id": 459,
+      "slug": "egyptian_amulet"
+    },
+    {
+      "id": 460,
+      "slug": "white_senet_pawn"
+    },
+    {
+      "id": 461,
+      "slug": "black_senet_pawn"
+    },
+    {
+      "id": 462,
+      "slug": "senet_board"
+    },
+    {
+      "id": 463,
+      "slug": "epinephrine"
+    },
+    {
+      "id": 464,
+      "slug": "melatonin"
+    },
+    {
+      "id": 465,
+      "slug": "serotonin"
+    },
+    {
+      "id": 466,
+      "slug": "snow_globe_'09"
+    },
+    {
+      "id": 467,
+      "slug": "dancing_santa_claus_'09"
+    },
+    {
+      "id": 468,
+      "slug": "christmas_stocking_'09"
+    },
+    {
+      "id": 469,
+      "slug": "santa's_elf_'09"
+    },
+    {
+      "id": 470,
+      "slug": "christmas_card_'09"
+    },
+    {
+      "id": 471,
+      "slug": "admin_portrait_'09"
+    },
+    {
+      "id": 472,
+      "slug": "blue_easter_egg"
+    },
+    {
+      "id": 473,
+      "slug": "green_easter_egg"
+    },
+    {
+      "id": 474,
+      "slug": "red_easter_egg"
+    },
+    {
+      "id": 475,
+      "slug": "yellow_easter_egg"
+    },
+    {
+      "id": 476,
+      "slug": "white_easter_egg"
+    },
+    {
+      "id": 477,
+      "slug": "black_easter_egg"
+    },
+    {
+      "id": 478,
+      "slug": "gold_easter_egg"
+    },
+    {
+      "id": 479,
+      "slug": "metal_dog_tag"
+    },
+    {
+      "id": 480,
+      "slug": "bronze_dog_tag"
+    },
+    {
+      "id": 481,
+      "slug": "silver_dog_tag"
+    },
+    {
+      "id": 482,
+      "slug": "gold_dog_tag"
+    },
+    {
+      "id": 483,
+      "slug": "mp5k"
+    },
+    {
+      "id": 484,
+      "slug": "ak74u"
+    },
+    {
+      "id": 485,
+      "slug": "skorpion"
+    },
+    {
+      "id": 486,
+      "slug": "tmp"
+    },
+    {
+      "id": 487,
+      "slug": "thompson"
+    },
+    {
+      "id": 488,
+      "slug": "mp_40"
+    },
+    {
+      "id": 489,
+      "slug": "luger"
+    },
+    {
+      "id": 490,
+      "slug": "blunderbuss"
+    },
+    {
+      "id": 491,
+      "slug": "zombie_brain"
+    },
+    {
+      "id": 492,
+      "slug": "human_head"
+    },
+    {
+      "id": 493,
+      "slug": "medal_of_honor"
+    },
+    {
+      "id": 494,
+      "slug": "citroen_saxo"
+    },
+    {
+      "id": 495,
+      "slug": "classic_mini"
+    },
+    {
+      "id": 496,
+      "slug": "fiat_punto"
+    },
+    {
+      "id": 497,
+      "slug": "nissan_micra"
+    },
+    {
+      "id": 498,
+      "slug": "peugeot_106"
+    },
+    {
+      "id": 499,
+      "slug": "renault_clio"
+    },
+    {
+      "id": 500,
+      "slug": "vauxhall_corsa"
+    },
+    {
+      "id": 501,
+      "slug": "volvo_850"
+    },
+    {
+      "id": 502,
+      "slug": "alfa_romeo_156"
+    },
+    {
+      "id": 503,
+      "slug": "bmw_x5"
+    },
+    {
+      "id": 504,
+      "slug": "seat_leon_cupra"
+    },
+    {
+      "id": 505,
+      "slug": "vauxhall_astra_gsi"
+    },
+    {
+      "id": 506,
+      "slug": "volkswagen_golf_gti"
+    },
+    {
+      "id": 507,
+      "slug": "audi_s3"
+    },
+    {
+      "id": 508,
+      "slug": "ford_focus_rs"
+    },
+    {
+      "id": 509,
+      "slug": "honda_s2000"
+    },
+    {
+      "id": 510,
+      "slug": "mini_cooper_s"
+    },
+    {
+      "id": 511,
+      "slug": "sierra_cosworth"
+    },
+    {
+      "id": 512,
+      "slug": "lotus_exige"
+    },
+    {
+      "id": 513,
+      "slug": "mitsubishi_evo_x"
+    },
+    {
+      "id": 514,
+      "slug": "porsche_911_gt3"
+    },
+    {
+      "id": 515,
+      "slug": "subaru_impreza_sti"
+    },
+    {
+      "id": 516,
+      "slug": "tvr_sagaris"
+    },
+    {
+      "id": 517,
+      "slug": "aston_martin_one-77"
+    },
+    {
+      "id": 518,
+      "slug": "audi_r8"
+    },
+    {
+      "id": 519,
+      "slug": "bugatti_veyron"
+    },
+    {
+      "id": 520,
+      "slug": "ferrari_458"
+    },
+    {
+      "id": 521,
+      "slug": "lamborghini_gallardo"
+    },
+    {
+      "id": 522,
+      "slug": "lexus_lfa"
+    },
+    {
+      "id": 523,
+      "slug": "mercedes_slr"
+    },
+    {
+      "id": 524,
+      "slug": "nissan_gt-r"
+    },
+    {
+      "id": 525,
+      "slug": "mr_torn_crown_'10"
+    },
+    {
+      "id": 526,
+      "slug": "ms_torn_crown_'10"
+    },
+    {
+      "id": 527,
+      "slug": "bag_of_candy_kisses"
+    },
+    {
+      "id": 528,
+      "slug": "bag_of_tootsie_rolls"
+    },
+    {
+      "id": 529,
+      "slug": "bag_of_chocolate_truffles"
+    },
+    {
+      "id": 530,
+      "slug": "can_of_munster"
+    },
+    {
+      "id": 531,
+      "slug": "bottle_of_pumpkin_brew"
+    },
+    {
+      "id": 532,
+      "slug": "can_of_red_cow"
+    },
+    {
+      "id": 533,
+      "slug": "can_of_tourine_elite"
+    },
+    {
+      "id": 534,
+      "slug": "witch's_cauldron"
+    },
+    {
+      "id": 535,
+      "slug": "electronic_pumpkin"
+    },
+    {
+      "id": 536,
+      "slug": "jack_o_lantern_lamp"
+    },
+    {
+      "id": 537,
+      "slug": "spooky_paper_weight"
+    },
+    {
+      "id": 538,
+      "slug": "medieval_helmet"
+    },
+    {
+      "id": 539,
+      "slug": "blood_spattered_sickle"
+    },
+    {
+      "id": 540,
+      "slug": "cauldron"
+    },
+    {
+      "id": 541,
+      "slug": "bottle_of_stinky_swamp_punch"
+    },
+    {
+      "id": 542,
+      "slug": "bottle_of_wicked_witch"
+    },
+    {
+      "id": 543,
+      "slug": "deputy_star"
+    },
+    {
+      "id": 544,
+      "slug": "wind_proof_lighter"
+    },
+    {
+      "id": 545,
+      "slug": "dual_tmps"
+    },
+    {
+      "id": 546,
+      "slug": "dual_bushmasters"
+    },
+    {
+      "id": 547,
+      "slug": "dual_mp5s"
+    },
+    {
+      "id": 548,
+      "slug": "dual_p90s"
+    },
+    {
+      "id": 549,
+      "slug": "dual_uzis"
+    },
+    {
+      "id": 550,
+      "slug": "bottle_of_kandy_kane"
+    },
+    {
+      "id": 551,
+      "slug": "bottle_of_minty_mayhem"
+    },
+    {
+      "id": 552,
+      "slug": "bottle_of_mistletoe_madness"
+    },
+    {
+      "id": 553,
+      "slug": "can_of_santa_shooters"
+    },
+    {
+      "id": 554,
+      "slug": "can_of_rockstar_rudolph"
+    },
+    {
+      "id": 555,
+      "slug": "can_of_x-mass"
+    },
+    {
+      "id": 556,
+      "slug": "bag_of_reindeer_droppings"
+    },
+    {
+      "id": 557,
+      "slug": "advent_calendar"
+    },
+    {
+      "id": 558,
+      "slug": "santa's_snot"
+    },
+    {
+      "id": 559,
+      "slug": "polar_bear_toy"
+    },
+    {
+      "id": 560,
+      "slug": "fruitcake"
+    },
+    {
+      "id": 561,
+      "slug": "book_of_carols"
+    },
+    {
+      "id": 562,
+      "slug": "sweater"
+    },
+    {
+      "id": 563,
+      "slug": "gift_card"
+    },
+    {
+      "id": 564,
+      "slug": "pair_of_glasses"
+    },
+    {
+      "id": 565,
+      "slug": "high-speed_dvd_drive"
+    },
+    {
+      "id": 566,
+      "slug": "mountain_bike"
+    },
+    {
+      "id": 567,
+      "slug": "cut-throat_razor"
+    },
+    {
+      "id": 568,
+      "slug": "slim_crowbar"
+    },
+    {
+      "id": 569,
+      "slug": "balaclava"
+    },
+    {
+      "id": 570,
+      "slug": "advanced_driving_tactics_manual"
+    },
+    {
+      "id": 571,
+      "slug": "ergonomic_keyboard"
+    },
+    {
+      "id": 572,
+      "slug": "tracking_device"
+    },
+    {
+      "id": 573,
+      "slug": "screwdriver"
+    },
+    {
+      "id": 574,
+      "slug": "fanny_pack"
+    },
+    {
+      "id": 575,
+      "slug": "tumble_dryer"
+    },
+    {
+      "id": 576,
+      "slug": "chloroform"
+    },
+    {
+      "id": 577,
+      "slug": "heavy_duty_padlock"
+    },
+    {
+      "id": 578,
+      "slug": "duct_tape"
+    },
+    {
+      "id": 579,
+      "slug": "wireless_dongle"
+    },
+    {
+      "id": 580,
+      "slug": "horse's_head"
+    },
+    {
+      "id": 581,
+      "slug": "book"
+    },
+    {
+      "id": 582,
+      "slug": "tin_foil_hat"
+    },
+    {
+      "id": 583,
+      "slug": "brown_easter_egg"
+    },
+    {
+      "id": 584,
+      "slug": "orange_easter_egg"
+    },
+    {
+      "id": 585,
+      "slug": "pink_easter_egg"
+    },
+    {
+      "id": 586,
+      "slug": "jawbreaker"
+    },
+    {
+      "id": 587,
+      "slug": "bag_of_sherbet"
+    },
+    {
+      "id": 588,
+      "slug": "goodie_bag"
+    },
+    {
+      "id": 589,
+      "slug": "undefined"
+    },
+    {
+      "id": 590,
+      "slug": "undefined_2"
+    },
+    {
+      "id": 591,
+      "slug": "undefined_3"
+    },
+    {
+      "id": 592,
+      "slug": "undefined_4"
+    },
+    {
+      "id": 593,
+      "slug": "mr_torn_crown_'11"
+    },
+    {
+      "id": 594,
+      "slug": "ms_torn_crown_'11"
+    },
+    {
+      "id": 595,
+      "slug": "pile_of_vomit"
+    },
+    {
+      "id": 596,
+      "slug": "rusty_dog_tag"
+    },
+    {
+      "id": 597,
+      "slug": "gold_nugget"
+    },
+    {
+      "id": 598,
+      "slug": "witch's_hat"
+    },
+    {
+      "id": 599,
+      "slug": "golden_broomstick"
+    },
+    {
+      "id": 600,
+      "slug": "devil's_pitchfork"
+    },
+    {
+      "id": 601,
+      "slug": "christmas_lights"
+    },
+    {
+      "id": 602,
+      "slug": "gingerbread_man"
+    },
+    {
+      "id": 603,
+      "slug": "golden_wreath"
+    },
+    {
+      "id": 604,
+      "slug": "pair_of_ice_skates"
+    },
+    {
+      "id": 605,
+      "slug": "diamond_icicle"
+    },
+    {
+      "id": 606,
+      "slug": "santa_boots"
+    },
+    {
+      "id": 607,
+      "slug": "santa_gloves"
+    },
+    {
+      "id": 608,
+      "slug": "santa_hat"
+    },
+    {
+      "id": 609,
+      "slug": "santa_jacket"
+    },
+    {
+      "id": 610,
+      "slug": "santa_trousers"
+    },
+    {
+      "id": 611,
+      "slug": "snowball"
+    },
+    {
+      "id": 612,
+      "slug": "tavor_tar-21"
+    },
+    {
+      "id": 613,
+      "slug": "harpoon"
+    },
+    {
+      "id": 614,
+      "slug": "diamond_bladed_knife"
+    },
+    {
+      "id": 615,
+      "slug": "naval_cutlass_sword"
+    },
+    {
+      "id": 616,
+      "slug": "trout"
+    },
+    {
+      "id": 617,
+      "slug": "banana_orchid"
+    },
+    {
+      "id": 618,
+      "slug": "stingray_plushie"
+    },
+    {
+      "id": 619,
+      "slug": "steel_drum"
+    },
+    {
+      "id": 620,
+      "slug": "nodding_turtle"
+    },
+    {
+      "id": 621,
+      "slug": "snorkel"
+    },
+    {
+      "id": 622,
+      "slug": "flippers"
+    },
+    {
+      "id": 623,
+      "slug": "speedo"
+    },
+    {
+      "id": 624,
+      "slug": "bikini"
+    },
+    {
+      "id": 625,
+      "slug": "wetsuit"
+    },
+    {
+      "id": 626,
+      "slug": "diving_gloves"
+    },
+    {
+      "id": 627,
+      "slug": "dog_poop"
+    },
+    {
+      "id": 628,
+      "slug": "stink_bombs"
+    },
+    {
+      "id": 629,
+      "slug": "toilet_paper"
+    },
+    {
+      "id": 630,
+      "slug": "mr_torn_crown_'12"
+    },
+    {
+      "id": 631,
+      "slug": "ms_torn_crown_'12"
+    },
+    {
+      "id": 632,
+      "slug": "petrified_humerus"
+    },
+    {
+      "id": 633,
+      "slug": "latex_gloves"
+    },
+    {
+      "id": 634,
+      "slug": "bag_of_bloody_eyeballs"
+    },
+    {
+      "id": 635,
+      "slug": "straitjacket"
+    },
+    {
+      "id": 636,
+      "slug": "cinnamon_ornament"
+    },
+    {
+      "id": 637,
+      "slug": "christmas_express"
+    },
+    {
+      "id": 638,
+      "slug": "bottle_of_christmas_cocktail"
+    },
+    {
+      "id": 639,
+      "slug": "golden_candy_cane"
+    },
+    {
+      "id": 640,
+      "slug": "kevlar_gloves"
+    },
+    {
+      "id": 641,
+      "slug": "wwii_helmet"
+    },
+    {
+      "id": 642,
+      "slug": "motorcycle_helmet"
+    },
+    {
+      "id": 643,
+      "slug": "construction_helmet"
+    },
+    {
+      "id": 644,
+      "slug": "welding_helmet"
+    },
+    {
+      "id": 645,
+      "slug": "safety_boots"
+    },
+    {
+      "id": 646,
+      "slug": "hiking_boots"
+    },
+    {
+      "id": 647,
+      "slug": "leather_helmet"
+    },
+    {
+      "id": 648,
+      "slug": "leather_pants"
+    },
+    {
+      "id": 649,
+      "slug": "leather_boots"
+    },
+    {
+      "id": 650,
+      "slug": "leather_gloves"
+    },
+    {
+      "id": 651,
+      "slug": "combat_helmet"
+    },
+    {
+      "id": 652,
+      "slug": "combat_pants"
+    },
+    {
+      "id": 653,
+      "slug": "combat_boots"
+    },
+    {
+      "id": 654,
+      "slug": "combat_gloves"
+    },
+    {
+      "id": 655,
+      "slug": "riot_helmet"
+    },
+    {
+      "id": 656,
+      "slug": "riot_body"
+    },
+    {
+      "id": 657,
+      "slug": "riot_pants"
+    },
+    {
+      "id": 658,
+      "slug": "riot_boots"
+    },
+    {
+      "id": 659,
+      "slug": "riot_gloves"
+    },
+    {
+      "id": 660,
+      "slug": "dune_helmet"
+    },
+    {
+      "id": 661,
+      "slug": "dune_body"
+    },
+    {
+      "id": 662,
+      "slug": "dune_pants"
+    },
+    {
+      "id": 663,
+      "slug": "dune_boots"
+    },
+    {
+      "id": 664,
+      "slug": "dune_gloves"
+    },
+    {
+      "id": 665,
+      "slug": "assault_helmet"
+    },
+    {
+      "id": 666,
+      "slug": "assault_body"
+    },
+    {
+      "id": 667,
+      "slug": "assault_pants"
+    },
+    {
+      "id": 668,
+      "slug": "assault_boots"
+    },
+    {
+      "id": 669,
+      "slug": "assault_gloves"
+    },
+    {
+      "id": 670,
+      "slug": "delta_gas_mask"
+    },
+    {
+      "id": 671,
+      "slug": "delta_body"
+    },
+    {
+      "id": 672,
+      "slug": "delta_pants"
+    },
+    {
+      "id": 673,
+      "slug": "delta_boots"
+    },
+    {
+      "id": 674,
+      "slug": "delta_gloves"
+    },
+    {
+      "id": 675,
+      "slug": "marauder_face_mask"
+    },
+    {
+      "id": 676,
+      "slug": "marauder_body"
+    },
+    {
+      "id": 677,
+      "slug": "marauder_pants"
+    },
+    {
+      "id": 678,
+      "slug": "marauder_boots"
+    },
+    {
+      "id": 679,
+      "slug": "marauder_gloves"
+    },
+    {
+      "id": 680,
+      "slug": "eod_helmet"
+    },
+    {
+      "id": 681,
+      "slug": "eod_apron"
+    },
+    {
+      "id": 682,
+      "slug": "eod_pants"
+    },
+    {
+      "id": 683,
+      "slug": "eod_boots"
+    },
+    {
+      "id": 684,
+      "slug": "eod_gloves"
+    },
+    {
+      "id": 685,
+      "slug": "torn_bible"
+    },
+    {
+      "id": 686,
+      "slug": "friendly_bot_guide"
+    },
+    {
+      "id": 687,
+      "slug": "egotistical_bear"
+    },
+    {
+      "id": 688,
+      "slug": "brewery_key"
+    },
+    {
+      "id": 689,
+      "slug": "signed_jersey"
+    },
+    {
+      "id": 690,
+      "slug": "mafia_kit"
+    },
+    {
+      "id": 691,
+      "slug": "octopus_toy"
+    },
+    {
+      "id": 692,
+      "slug": "bear_skin_rug"
+    },
+    {
+      "id": 693,
+      "slug": "tractor_toy"
+    },
+    {
+      "id": 694,
+      "slug": "mr_torn_crown_'13"
+    },
+    {
+      "id": 695,
+      "slug": "ms_torn_crown_'13"
+    },
+    {
+      "id": 696,
+      "slug": "piece_of_cake"
+    },
+    {
+      "id": 697,
+      "slug": "rotten_eggs"
+    },
+    {
+      "id": 698,
+      "slug": "peg_leg"
+    },
+    {
+      "id": 699,
+      "slug": "antidote"
+    },
+    {
+      "id": 700,
+      "slug": "christmas_angel"
+    },
+    {
+      "id": 701,
+      "slug": "eggnog"
+    },
+    {
+      "id": 702,
+      "slug": "sprig_of_holly"
+    },
+    {
+      "id": 703,
+      "slug": "festive_socks"
+    },
+    {
+      "id": 704,
+      "slug": "respo_hoodie"
+    },
+    {
+      "id": 705,
+      "slug": "staff_haxx_button"
+    },
+    {
+      "id": 706,
+      "slug": "birthday_cake_'14"
+    },
+    {
+      "id": 707,
+      "slug": "lump_of_coal"
+    },
+    {
+      "id": 708,
+      "slug": "gold_ribbon"
+    },
+    {
+      "id": 709,
+      "slug": "silver_ribbon"
+    },
+    {
+      "id": 710,
+      "slug": "bronze_ribbon"
+    },
+    {
+      "id": 711,
+      "slug": "coin_:_factions"
+    },
+    {
+      "id": 712,
+      "slug": "coin_:_casino"
+    },
+    {
+      "id": 713,
+      "slug": "coin_:_education"
+    },
+    {
+      "id": 714,
+      "slug": "coin_:_hospital"
+    },
+    {
+      "id": 715,
+      "slug": "coin_:_jail"
+    },
+    {
+      "id": 716,
+      "slug": "coin_:_travel_agency"
+    },
+    {
+      "id": 717,
+      "slug": "coin_:_companies"
+    },
+    {
+      "id": 718,
+      "slug": "coin_:_stock_exchange"
+    },
+    {
+      "id": 719,
+      "slug": "coin_:_church"
+    },
+    {
+      "id": 720,
+      "slug": "coin_:_auction_house"
+    },
+    {
+      "id": 721,
+      "slug": "coin_:_race_track"
+    },
+    {
+      "id": 722,
+      "slug": "coin_:_museum"
+    },
+    {
+      "id": 723,
+      "slug": "coin_:_drugs"
+    },
+    {
+      "id": 724,
+      "slug": "coin_:_dump"
+    },
+    {
+      "id": 725,
+      "slug": "coin_:_estate_agents"
+    },
+    {
+      "id": 726,
+      "slug": "scrooge's_top_hat"
+    },
+    {
+      "id": 727,
+      "slug": "scrooge's_topcoat"
+    },
+    {
+      "id": 728,
+      "slug": "scrooge's_trousers"
+    },
+    {
+      "id": 729,
+      "slug": "scrooge's_boots"
+    },
+    {
+      "id": 730,
+      "slug": "scrooge's_gloves"
+    },
+    {
+      "id": 731,
+      "slug": "empty_blood_bag"
+    },
+    {
+      "id": 732,
+      "slug": "blood_bag_:_a+"
+    },
+    {
+      "id": 733,
+      "slug": "blood_bag_:_a-"
+    },
+    {
+      "id": 734,
+      "slug": "blood_bag_:_b+"
+    },
+    {
+      "id": 735,
+      "slug": "blood_bag_:_b-"
+    },
+    {
+      "id": 736,
+      "slug": "blood_bag_:_ab+"
+    },
+    {
+      "id": 737,
+      "slug": "blood_bag_:_ab-"
+    },
+    {
+      "id": 738,
+      "slug": "blood_bag_:_o+"
+    },
+    {
+      "id": 739,
+      "slug": "blood_bag_:_o-"
+    },
+    {
+      "id": 740,
+      "slug": "mr_torn_crown"
+    },
+    {
+      "id": 741,
+      "slug": "ms_torn_crown"
+    },
+    {
+      "id": 742,
+      "slug": "molotov_cocktail"
+    },
+    {
+      "id": 743,
+      "slug": "christmas_sweater_'15"
+    },
+    {
+      "id": 744,
+      "slug": "book_:_brawn_over_brains"
+    },
+    {
+      "id": 745,
+      "slug": "book_:_time_is_in_the_mind"
+    },
+    {
+      "id": 746,
+      "slug": "book_:_keeping_your_face_handsome"
+    },
+    {
+      "id": 747,
+      "slug": "book_:_a_job_for_your_hands"
+    },
+    {
+      "id": 748,
+      "slug": "book_:_working_9_til_5"
+    },
+    {
+      "id": 749,
+      "slug": "book_:_making_friends,_enemies,_and_cakes"
+    },
+    {
+      "id": 750,
+      "slug": "book_:_high_school_for_adults"
+    },
+    {
+      "id": 751,
+      "slug": "book_:_milk_yourself_sober"
+    },
+    {
+      "id": 752,
+      "slug": "book_:_fight_like_an_*******"
+    },
+    {
+      "id": 753,
+      "slug": "book_:_mind_over_matter"
+    },
+    {
+      "id": 754,
+      "slug": "book_:_no_shame_no_pain"
+    },
+    {
+      "id": 755,
+      "slug": "book_:_run_like_the_wind"
+    },
+    {
+      "id": 756,
+      "slug": "book_:_weaseling_out_of_trouble"
+    },
+    {
+      "id": 757,
+      "slug": "book_:_get_hard_or_go_home"
+    },
+    {
+      "id": 758,
+      "slug": "book_:_gym_grunting_-_shouting_to_success"
+    },
+    {
+      "id": 759,
+      "slug": "book_:_self_defense_in_the_workplace"
+    },
+    {
+      "id": 760,
+      "slug": "book_:_speed_3_-_the_rejected_script"
+    },
+    {
+      "id": 761,
+      "slug": "book_:_limbo_lovers_101"
+    },
+    {
+      "id": 762,
+      "slug": "book_:_the_hamburglar's_guide_to_crime"
+    },
+    {
+      "id": 763,
+      "slug": "book_:_what_are_old_folk_good_for_anyway?"
+    },
+    {
+      "id": 764,
+      "slug": "book_:_medical_degree_schmedical_degree"
+    },
+    {
+      "id": 765,
+      "slug": "book_:_no_more_soap_on_a_rope"
+    },
+    {
+      "id": 766,
+      "slug": "book_:_mailing_yourself_abroad"
+    },
+    {
+      "id": 767,
+      "slug": "book_:_smuggling_for_beginners"
+    },
+    {
+      "id": 768,
+      "slug": "book_:_stealthy_stealing_of_underwear"
+    },
+    {
+      "id": 769,
+      "slug": "book_:_shawshank_sure_ain't_for_me!"
+    },
+    {
+      "id": 770,
+      "slug": "book_:_ignorance_is_bliss"
+    },
+    {
+      "id": 771,
+      "slug": "book_:_winking_to_win"
+    },
+    {
+      "id": 772,
+      "slug": "book_:_finders_keepers"
+    },
+    {
+      "id": 773,
+      "slug": "book_:_hot_turkey"
+    },
+    {
+      "id": 774,
+      "slug": "book_:_higher_daddy,_higher!"
+    },
+    {
+      "id": 775,
+      "slug": "book_:_the_real_dutch_courage"
+    },
+    {
+      "id": 776,
+      "slug": "book_:_because_i'm_happy_-_the_pharrell_story"
+    },
+    {
+      "id": 777,
+      "slug": "book_:_no_more_sick_days"
+    },
+    {
+      "id": 778,
+      "slug": "book_:_duke_-_my_story"
+    },
+    {
+      "id": 779,
+      "slug": "book_:_self_control_is_for_losers"
+    },
+    {
+      "id": 780,
+      "slug": "book_:_going_back_for_more"
+    },
+    {
+      "id": 781,
+      "slug": "book_:_get_drunk_and_lose_dignity"
+    },
+    {
+      "id": 782,
+      "slug": "book_:_fuelling_your_way_to_failure"
+    },
+    {
+      "id": 783,
+      "slug": "book_:_yes_please_diabetes"
+    },
+    {
+      "id": 784,
+      "slug": "book_:_ugly_energy"
+    },
+    {
+      "id": 785,
+      "slug": "book_:_memories_and_mammaries"
+    },
+    {
+      "id": 786,
+      "slug": "book_:_brown-nosing_the_boss"
+    },
+    {
+      "id": 787,
+      "slug": "book_:_running_away_from_trouble"
+    },
+    {
+      "id": 788,
+      "slug": "certificate_of_awesome"
+    },
+    {
+      "id": 789,
+      "slug": "certificate_of_lame"
+    },
+    {
+      "id": 790,
+      "slug": "plastic_sword"
+    },
+    {
+      "id": 791,
+      "slug": "mediocre_t-shirt"
+    },
+    {
+      "id": 792,
+      "slug": "penelope"
+    },
+    {
+      "id": 793,
+      "slug": "cake_frosting"
+    },
+    {
+      "id": 794,
+      "slug": "lock_picking_kit"
+    },
+    {
+      "id": 795,
+      "slug": "special_fruitcake"
+    },
+    {
+      "id": 796,
+      "slug": "felovax"
+    },
+    {
+      "id": 797,
+      "slug": "zylkene"
+    },
+    {
+      "id": 798,
+      "slug": "duke's_safe"
+    },
+    {
+      "id": 799,
+      "slug": "duke's_selfies"
+    },
+    {
+      "id": 800,
+      "slug": "duke's_poetry"
+    },
+    {
+      "id": 801,
+      "slug": "duke's_dog's_ashes"
+    },
+    {
+      "id": 802,
+      "slug": "duke's_will"
+    },
+    {
+      "id": 803,
+      "slug": "duke's_gimp_mask"
+    },
+    {
+      "id": 804,
+      "slug": "duke's_herpes_medication"
+    },
+    {
+      "id": 805,
+      "slug": "duke's_hammer"
+    },
+    {
+      "id": 806,
+      "slug": "old_lady_mask"
+    },
+    {
+      "id": 807,
+      "slug": "exotic_gentleman_mask"
+    },
+    {
+      "id": 808,
+      "slug": "ginger_kid_mask"
+    },
+    {
+      "id": 809,
+      "slug": "young_lady_mask"
+    },
+    {
+      "id": 810,
+      "slug": "moustache_man_mask"
+    },
+    {
+      "id": 811,
+      "slug": "scarred_man_mask"
+    },
+    {
+      "id": 812,
+      "slug": "psycho_clown_mask"
+    },
+    {
+      "id": 813,
+      "slug": "nun_mask"
+    },
+    {
+      "id": 814,
+      "slug": "tyrosine"
+    },
+    {
+      "id": 815,
+      "slug": "keg_of_beer"
+    },
+    {
+      "id": 816,
+      "slug": "glass_of_beer"
+    },
+    {
+      "id": 817,
+      "slug": "six_pack_of_alcohol"
+    },
+    {
+      "id": 818,
+      "slug": "six_pack_of_energy_drink"
+    },
+    {
+      "id": 819,
+      "slug": "rosary_beads"
+    },
+    {
+      "id": 820,
+      "slug": "piggy_bank"
+    },
+    {
+      "id": 821,
+      "slug": "empty_vial"
+    },
+    {
+      "id": 822,
+      "slug": "vial_of_blood"
+    },
+    {
+      "id": 823,
+      "slug": "vial_of_urine"
+    },
+    {
+      "id": 824,
+      "slug": "vial_of_saliva"
+    },
+    {
+      "id": 825,
+      "slug": "questionnaire_"
+    },
+    {
+      "id": 826,
+      "slug": "agreement"
+    },
+    {
+      "id": 827,
+      "slug": "perceptron_:_calibrator"
+    },
+    {
+      "id": 828,
+      "slug": "donald_trump_mask_'16"
+    },
+    {
+      "id": 829,
+      "slug": "yellow_snowman_'16"
+    },
+    {
+      "id": 830,
+      "slug": "nock_gun"
+    },
+    {
+      "id": 831,
+      "slug": "beretta_pico"
+    },
+    {
+      "id": 832,
+      "slug": "riding_crop"
+    },
+    {
+      "id": 833,
+      "slug": "sand"
+    },
+    {
+      "id": 834,
+      "slug": "sweatpants"
+    },
+    {
+      "id": 835,
+      "slug": "string_vest"
+    },
+    {
+      "id": 836,
+      "slug": "black_oxfords"
+    },
+    {
+      "id": 837,
+      "slug": "rheinmetall_mg_3"
+    },
+    {
+      "id": 838,
+      "slug": "homemade_pocket_shotgun"
+    },
+    {
+      "id": 839,
+      "slug": "madball"
+    },
+    {
+      "id": 840,
+      "slug": "nail_bomb"
+    },
+    {
+      "id": 841,
+      "slug": "classic_fedora"
+    },
+    {
+      "id": 842,
+      "slug": "pinstripe_suit_trousers"
+    },
+    {
+      "id": 843,
+      "slug": "duster"
+    },
+    {
+      "id": 844,
+      "slug": "tranquilizer_gun_"
+    },
+    {
+      "id": 845,
+      "slug": "bolt_gun"
+    },
+    {
+      "id": 846,
+      "slug": "scalpel"
+    },
+    {
+      "id": 847,
+      "slug": "nerve_gas"
+    },
+    {
+      "id": 848,
+      "slug": "kevlar_lab_coat"
+    },
+    {
+      "id": 849,
+      "slug": "loupes"
+    },
+    {
+      "id": 850,
+      "slug": "sledgehammer"
+    },
+    {
+      "id": 851,
+      "slug": "wifebeater"
+    },
+    {
+      "id": 852,
+      "slug": "metal_detector"
+    },
+    {
+      "id": 853,
+      "slug": "graveyard_key"
+    },
+    {
+      "id": 854,
+      "slug": "questionnaire_:_completed"
+    },
+    {
+      "id": 855,
+      "slug": "agreement_:_signed"
+    },
+    {
+      "id": 856,
+      "slug": "spray_can_:_black"
+    },
+    {
+      "id": 857,
+      "slug": "spray_can_:_red"
+    },
+    {
+      "id": 858,
+      "slug": "spray_can_:_pink"
+    },
+    {
+      "id": 859,
+      "slug": "spray_can_:_purple"
+    },
+    {
+      "id": 860,
+      "slug": "spray_can_:_blue"
+    },
+    {
+      "id": 861,
+      "slug": "spray_can_:_green"
+    },
+    {
+      "id": 862,
+      "slug": "spray_can_:_yellow"
+    },
+    {
+      "id": 863,
+      "slug": "spray_can_:_orange"
+    },
+    {
+      "id": 864,
+      "slug": "salt_shaker"
+    },
+    {
+      "id": 865,
+      "slug": "poison_mistletoe"
+    },
+    {
+      "id": 866,
+      "slug": "santa's_list_'17"
+    },
+    {
+      "id": 867,
+      "slug": "soapbox"
+    },
+    {
+      "id": 868,
+      "slug": "turkey_baster"
+    },
+    {
+      "id": 869,
+      "slug": "elon_musk_mask_'17"
+    },
+    {
+      "id": 870,
+      "slug": "love_juice"
+    },
+    {
+      "id": 871,
+      "slug": "bug_swatter"
+    },
+    {
+      "id": 872,
+      "slug": "nothing"
+    },
+    {
+      "id": 873,
+      "slug": "bottle_of_green_stout"
+    },
+    {
+      "id": 874,
+      "slug": "prototype"
+    },
+    {
+      "id": 875,
+      "slug": "rotten_apple"
+    },
+    {
+      "id": 876,
+      "slug": "festering_chicken"
+    },
+    {
+      "id": 877,
+      "slug": "mouldy_pizza"
+    },
+    {
+      "id": 878,
+      "slug": "smelly_cheese"
+    },
+    {
+      "id": 879,
+      "slug": "sour_milk"
+    },
+    {
+      "id": 880,
+      "slug": "stale_bread"
+    },
+    {
+      "id": 881,
+      "slug": "spoiled_fish"
+    },
+    {
+      "id": 882,
+      "slug": "insurance_policy_"
+    },
+    {
+      "id": 883,
+      "slug": "bank_statement"
+    },
+    {
+      "id": 884,
+      "slug": "car_battery"
+    },
+    {
+      "id": 885,
+      "slug": "scrap_metal"
+    },
+    {
+      "id": 886,
+      "slug": "torn_city_times"
+    },
+    {
+      "id": 887,
+      "slug": "karma!_magazine"
+    },
+    {
+      "id": 888,
+      "slug": "umbrella"
+    },
+    {
+      "id": 889,
+      "slug": "travel_mug"
+    },
+    {
+      "id": 890,
+      "slug": "headphones"
+    },
+    {
+      "id": 891,
+      "slug": "travel_socks"
+    },
+    {
+      "id": 892,
+      "slug": "mix_cd"
+    },
+    {
+      "id": 893,
+      "slug": "lost_and_found_office_key"
+    },
+    {
+      "id": 894,
+      "slug": "cosmetics_case"
+    },
+    {
+      "id": 895,
+      "slug": "phone_card"
+    },
+    {
+      "id": 896,
+      "slug": "subway_season_ticket"
+    },
+    {
+      "id": 897,
+      "slug": "bottle_cap"
+    },
+    {
+      "id": 898,
+      "slug": "silver_coin"
+    },
+    {
+      "id": 899,
+      "slug": "silver_bead"
+    },
+    {
+      "id": 900,
+      "slug": "lucky_quarter"
+    },
+    {
+      "id": 901,
+      "slug": "daffodil"
+    },
+    {
+      "id": 902,
+      "slug": "bunch_of_carnations"
+    },
+    {
+      "id": 903,
+      "slug": "white_lily"
+    },
+    {
+      "id": 904,
+      "slug": "funeral_wreath"
+    },
+    {
+      "id": 905,
+      "slug": "car_keys"
+    },
+    {
+      "id": 906,
+      "slug": "handkerchief"
+    },
+    {
+      "id": 907,
+      "slug": "candle"
+    },
+    {
+      "id": 908,
+      "slug": "paper_bag"
+    },
+    {
+      "id": 909,
+      "slug": "tin_can"
+    },
+    {
+      "id": 910,
+      "slug": "betting_slip"
+    },
+    {
+      "id": 911,
+      "slug": "fidget_spinner"
+    },
+    {
+      "id": 912,
+      "slug": "majestic_moose"
+    },
+    {
+      "id": 913,
+      "slug": "lego_wonder_woman"
+    },
+    {
+      "id": 914,
+      "slug": "cr7_doll"
+    },
+    {
+      "id": 915,
+      "slug": "stretch_armstrong_doll"
+    },
+    {
+      "id": 916,
+      "slug": "beef_femur"
+    },
+    {
+      "id": 917,
+      "slug": "snake's_fang"
+    },
+    {
+      "id": 918,
+      "slug": "icey_igloo"
+    },
+    {
+      "id": 919,
+      "slug": "federal_jail_key"
+    }
+  ]
+}

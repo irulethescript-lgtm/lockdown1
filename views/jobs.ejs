@@ -1,0 +1,95 @@
+<% const currentJob = prisonJobs.find(j => j.key === user.job_key && user.job_prison_id === user.prison_id); %>
+<% const now = Math.floor(Date.now()/1000); %>
+<% const nextPaySecs = user.last_daily_pay ? Math.max(0, (user.last_daily_pay + 86400) - now) : 0; %>
+<% const nextPayHrs  = Math.floor(nextPaySecs/3600); %>
+<% const nextPayMins = Math.floor((nextPaySecs%3600)/60); %>
+
+<div class="page-box">
+  <h2 style="font-family:'Oswald',Arial;letter-spacing:1px;color:#ccc;margin:0 0 4px;">📋 Job Listings</h2>
+  <p style="color:#666;font-size:12px;margin:0 0 16px;">
+    City: <b style="color:#aaa;"><%= PRISONS.find(p=>p.id===user.prison_id)?.name %></b>
+    &nbsp;·&nbsp; Pay is deposited automatically every 24 hours. No manual claiming needed.
+  </p>
+
+  <% if (currentJob) { %>
+  <div style="background:#0d1f0d;border:1px solid #2a4a2a;padding:12px 16px;margin-bottom:20px;border-radius:2px;">
+    <div style="font-family:'Oswald',Arial;font-size:15px;color:#88ee88;margin-bottom:4px;">✅ Current Job: <%= currentJob.name %></div>
+    <div style="font-size:12px;color:#aaa;margin-bottom:6px;">
+      Base pay: <b style="color:#ffcc44;">$<%= currentJob.base_pay %></b>/day &nbsp;·&nbsp; Req DEF: <%= currentJob.req_def %> &nbsp;·&nbsp; +<%= currentJob.xp_per_day %> XP/day
+    </div>
+    <% if (nextPaySecs > 0) { %>
+    <div style="font-size:11px;color:#666;">
+      ⏳ Next auto-pay in <b style="color:#aaa;"><%= nextPayHrs %>h <%= nextPayMins %>m</b>
+    </div>
+    <% } else { %>
+    <div style="font-size:11px;color:#88ee88;">✅ Pay ready — will be deposited automatically soon.</div>
+    <% } %>
+    <button onclick="quitJob()" class="btn-danger" style="margin-top:10px;font-size:11px;padding:4px 12px;">Quit Job</button>
+  </div>
+  <% } else if (user.job_key && user.job_prison_id !== user.prison_id) { %>
+  <div style="background:#1f0d0d;border:1px solid #4a2a2a;padding:10px 16px;margin-bottom:20px;color:#cc8888;font-size:12px;">
+    ⚠️ You had a job at your previous city. Take a new job here.
+  </div>
+  <% } %>
+
+  <table style="width:100%;border-collapse:collapse;">
+    <thead>
+      <tr style="background:#1a1a1a;font-size:11px;color:#666;text-transform:uppercase;letter-spacing:1px;">
+        <th style="padding:8px 10px;text-align:left;">Position</th>
+        <th style="padding:8px 10px;text-align:center;">Req DEF</th>
+        <th style="padding:8px 10px;text-align:center;">Pay/day</th>
+        <th style="padding:8px 10px;text-align:center;">XP/day</th>
+        <th style="padding:8px 10px;text-align:center;"></th>
+      </tr>
+    </thead>
+    <tbody>
+    <% prisonJobs.forEach(function(j) { %>
+    <% const eligible = user.defense >= j.req_def && (j.key!=='brain_surgeon' || user.perks?.brainSurgery); %>
+    <% const isMine   = user.job_key === j.key && user.job_prison_id === user.prison_id; %>
+    <tr style="border-bottom:1px solid #1a1a1a;<%= isMine?'background:#0a1a0a;':'' %>">
+      <td style="padding:10px;font-size:13px;color:<%= eligible?'#ddd':'#555' %>;"><%= j.name %><% if(j.key==='brain_surgeon'){ %><small style="display:block">Requires Brain Surgery education · permanently unlocks revives</small><% } %></td>
+      <td style="padding:10px;text-align:center;font-size:12px;color:<%= eligible?'#88aa88':'#aa4444' %>;">
+        <%= j.req_def %><% if (user.defense < j.req_def) { %> <span style="font-size:10px;">(need <%= j.req_def - user.defense %> more)</span><% } %>
+      </td>
+      <td style="padding:10px;text-align:center;font-size:12px;color:#ffcc44;">$<%= j.base_pay %>+</td>
+      <td style="padding:10px;text-align:center;font-size:12px;color:#8888aa;">+<%= j.xp_per_day %></td>
+      <td style="padding:10px;text-align:center;">
+        <% if (isMine) { %>
+          <span style="color:#88ee88;font-size:11px;">✅ Employed</span>
+        <% } else if (eligible) { %>
+          <button onclick="takeJob('<%= j.key %>')" class="btn-small">Take Job</button>
+        <% } else { %>
+          <span style="color:#333;font-size:11px;">Locked</span>
+        <% } %>
+      </td>
+    </tr>
+    <% }); %>
+    </tbody>
+  </table>
+
+  <div style="margin-top:14px;font-size:11px;color:#444;line-height:1.7;border-top:1px solid #111;padding-top:10px;">
+    💡 Pay is sent automatically every 24 hours directly to your cash. You will get an event notification when it arrives.<br>
+    Your stat bonus (DEF + STR ÷ 20 × $10) is added on top of the base pay. Transferring cities will lose your job.
+  </div>
+
+  <div id="jobMsg" style="display:none;margin-top:10px;padding:8px 12px;font-size:12px;border-radius:2px;"></div>
+</div>
+
+<script>
+function takeJob(key) {
+  fetch('/jobs/take',{ method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({job_key:key}) })
+    .then(r=>r.json()).then(d => { showMsg(d.msg||d.error, !!d.error); if (!d.error) setTimeout(()=>location.reload(),1400); });
+}
+function quitJob() {
+  if (!confirm('Quit your job?')) return;
+  fetch('/jobs/quit',{ method:'POST', headers:{'Content-Type':'application/json'}, body:'{}' })
+    .then(r=>r.json()).then(d => { showMsg(d.msg||d.error, !!d.error); setTimeout(()=>location.reload(),1200); });
+}
+function showMsg(msg, err) {
+  const el = document.getElementById('jobMsg');
+  el.textContent = msg; el.style.display='block';
+  el.style.background = err?'#2a0000':'#002a00';
+  el.style.color       = err?'#ff8888':'#88ff88';
+  el.style.border      = '1px solid '+(err?'#660000':'#006600');
+}
+</script>

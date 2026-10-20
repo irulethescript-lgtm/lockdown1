@@ -1,0 +1,102 @@
+/* Lockdown's waterfront night palette, shared by every game screen. */
+.game-shell{background:radial-gradient(ellipse at top,#12233b 0,#050d16 60%);color:#c6d2e5}
+.game-shell #siteContainer{background:#08111e;box-shadow:0 0 70px #0009;max-width:1280px}
+.game-shell #siteHeader{background:#060e17 url('/img/lockdown-skyline.jpg') center bottom/auto 100% no-repeat;border-color:#20405b}
+.game-shell #siteBody.bricks,.game-shell #rightColumn{background:linear-gradient(125deg,#091522,#060e19)!important}
+.game-shell #leftColumn{background:#07101b;border-color:#25405b;padding:12px 7px;min-width:165px;width:165px}
+.game-shell #rightColumn{padding:20px;min-width:0}
+.game-shell .brand{color:#f0f4ff;text-shadow:0 2px 12px #000}
+.game-shell .brand span{color:#ff9b51}.game-shell .brand small{color:#9dc7ea;letter-spacing:4px}
+.game-shell .playerCard,.game-shell .statsPanel{background:#050c16c9;border:1px solid #405a92;border-radius:5px;padding:10px}
+.game-shell .dashboard-panel,.game-shell .city-intro{background:linear-gradient(120deg,#0b1827,#09101d);border-color:#28496b}
+.game-shell .city-sidebar h2{background:linear-gradient(#27394b,#0b1420)}
+.game-shell .city-sidebar a{background:#dce6f1;border-color:#b0bdcd;color:#223347}.game-shell .city-sidebar a:nth-of-type(even){background:#e9eff7}.game-shell .city-sidebar a:hover{background:#bcd8f6}
+.game-shell .action-button{border:1px solid #a3b7d6;background:linear-gradient(#f2f5ff,#bdcde3);color:#111f34;border-radius:4px;font-weight:bold;padding:9px 14px;cursor:pointer}
+.game-shell .action-button:disabled{opacity:.45;cursor:not-allowed}.game-shell a.text-link{color:#ffcf6e}
+.game-shell h1,.game-shell h2,.game-shell h3{color:#e5eaff}.game-shell .eyebrow{color:#9eb4cf;font-size:10px;letter-spacing:2px}
+.game-shell #runnerboard,.game-shell #siteFooter{background:#060f1d;border-color:#274361}
+.game-shell .page-heading{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
+.economy-tabs{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0}.economy-tabs a{padding:8px 12px;border:1px solid #31567a;border-radius:4px;background:#102239;color:#bddcff}
+.economy-form{display:flex;flex-wrap:wrap;gap:9px;align-items:end;margin:12px 0}.economy-form label{display:flex;flex-direction:column;gap:5px;font-size:12px;color:#a6bbd5}
+.economy-form input,.economy-form select,.economy-form textarea{max-width:100%;box-sizing:border-box;background:#06101d;color:#e8effa;border:1px solid #365674;padding:9px;border-radius:4px}.economy-form input[type=number]{width:145px}
+.economy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.economy-card{background:linear-gradient(135deg,#0b192a,#090f1c);border:1px solid #294a70;border-radius:6px;padding:18px;margin:14px 0}.economy-card p{line-height:1.6}
+.economy-table-wrap{overflow:auto}.economy-table{width:100%;border-collapse:collapse;font-size:12px}.economy-table th,.economy-table td{text-align:left;padding:10px;border-bottom:1px solid #263b55}.economy-table th{color:#9ab6d7;background:#101e31}
+.economy-metrics{display:flex;gap:25px;flex-wrap:wrap;padding:15px 0}.economy-metrics strong{display:block;font-size:23px;color:#c7a3ff}.economy-metrics small{color:#8aa5c5}.economy-notice{padding:12px;background:#172238;border-left:3px solid #ab70fa;line-height:1.6}.economy-status{padding:12px;border:1px solid #a579ef;color:#e5d4ff;white-space:pre-wrap}
+@media(max-width:760px){.game-shell #leftColumn{width:auto;min-width:0}.game-shell #rightColumn{padding:12px}.game-shell .playerCard{padding:4px}.economy-grid{grid-template-columns:1fr}}
+
+/* Reference theme: electric blue frames, violet accents and waterfront artwork. */
+.game-shell{background:#010914;color:#bdd7f4}
+.game-shell #siteContainer{max-width:1280px;background:#010d1d}
+.game-shell #runnerboard{background:linear-gradient(#021124,#000815);border-bottom:1px solid #0078b9;box-shadow:0 1px 12px #0099ff35}
+.game-shell #runnerboard a{color:#79caff}
+.game-shell #siteHeader{min-height:140px;padding:18px 20px;background:#001024 url('/img/theme/skyline.jpg') center bottom/auto 100% repeat-x;border-bottom:1px solid #0094d3}
+.game-shell .brand{top:17px;line-height:0}
+.game-shell .brand img{width:239px;height:79px;max-width:100%;object-fit:contain}
+.game-shell .prisonlink{bottom:12px}.game-shell .prisonlink a{color:#cc5bff;text-shadow:0 0 8px #7b00fa}
+.game-shell .prisonlink a:before{content:'♦ ';color:#cf5aff}
+.game-shell .playerCard{background:#000b1ee8;border:1px solid #a841f5;border-radius:5px;box-shadow:inset 0 0 12px #6837b133,0 0 8px #883fff30}
+.game-shell .playerCard .neongreen{color:#00e9ff}
+.game-shell .statsPanel{background:#001026ed;border:1px solid #00baff;border-radius:10px 3px;box-shadow:inset 0 0 0 4px #00182c,0 0 10px #0088ff55;top:16px!important}
+.game-shell .attribute .value{background:#000b18;border:1px solid #07517b;border-radius:2px}
+.game-shell #um_hp_bar{background:linear-gradient(90deg,#007b69,#00edb6)}
+.game-shell #um_energy_bar{background:linear-gradient(90deg,#0056a1,#00d3ff)}
+.game-shell #um_nerve_bar{background:linear-gradient(90deg,#123acd,#785dff)}
+.game-shell #um_happiness_bar{background:linear-gradient(90deg,#6435ca,#d15bff)!important}
+.game-shell #um_stamina_bar{background:linear-gradient(90deg,#3320c1,#685aff)}
+.game-shell #siteBody.bricks,.game-shell #rightColumn{background:radial-gradient(ellipse at top,#001a36,#000c1d 65%)!important}
+.game-shell #leftColumn{width:200px;min-width:200px;padding:8px;background:#000b19;border-right:1px solid #064870}
+.game-shell #leftColumn .city-sidebar{padding:0 5px 12px}
+.game-shell .city-sidebar h2{color:#a5dfff;font-weight:400;letter-spacing:1px;background:linear-gradient(120deg,#00243a,#000918);border:1px solid #0088c9;border-bottom:0;border-radius:9px 2px 0 0;box-shadow:0 -2px 8px #008bff25}
+.game-shell .city-sidebar a,.game-shell .city-sidebar a:nth-of-type(even){background:linear-gradient(90deg,#001c36,#001025);color:#cce3ff;border:0;border-left:1px solid #0079b5;border-right:1px solid #0079b5;border-bottom:1px solid #00101e;border-radius:0;padding:3px 8px}
+.game-shell .city-sidebar a:has(+h2),.game-shell .city-sidebar a:last-child{border-bottom:1px solid #00baff;border-radius:0 0 8px 3px;padding-bottom:8px}
+.game-shell .city-sidebar a:hover,.game-shell .city-sidebar a:focus-visible,.game-shell .city-sidebar a[href="/missions"]{background:linear-gradient(90deg,#0646cc,#6635c9);color:#fff;box-shadow:inset 0 0 8px #2dbaff}
+.game-shell .city-sidebar i,.game-shell .city-sidebar a span{color:#b0d5ff;text-shadow:0 0 5px #0489ff}
+.game-shell #rightColumn{padding:20px 14px}
+.game-shell .contentBlock,.game-shell .dashboard-panel,.game-shell .economy-card,.game-shell .city-intro,.game-shell .city-legend{background:linear-gradient(125deg,#001b36,#000b1b);border:1px solid #008dc7;border-radius:10px 3px;box-shadow:inset 0 0 14px #0077dd12,0 0 9px #0085ff18;overflow:hidden}
+.game-shell .blockTitle,.game-shell .city-intro h2,.game-shell .city-legend h2,.game-shell .city-sidebar h2{background:linear-gradient(110deg,#002a4b,#000d21);color:#d4eaff}
+.game-shell .btn,.game-shell .action-button{background:linear-gradient(#003c82,#001126);border:1px solid #00b8ff;color:#49c8ff;border-radius:8px;box-shadow:inset 0 0 10px #006eff66,0 0 7px #007bff35}
+.game-shell .btn:hover,.game-shell .action-button:hover{background:linear-gradient(#0754a6,#03254b);color:#fff}
+.game-shell input:not([type=checkbox]):not([type=radio]),.game-shell select,.game-shell textarea{background:#001026;color:#d7eaff;border:1px solid #086b9f;border-radius:7px}
+.game-shell input:focus,.game-shell select:focus,.game-shell textarea:focus{outline:2px solid #37b7ff;outline-offset:2px}
+.game-shell .data-table th,.game-shell .economy-table th{background:#00213b;color:#9cdbff}
+.game-shell .data-table td,.game-shell .economy-table td{border-color:#12304c}
+.game-shell .economy-tabs a{background:#001b36;border-color:#007eb6;color:#93d6ff}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.bank-page{border:1px solid #009de0;border-radius:12px 5px 0 0;min-height:550px;background:linear-gradient(120deg,#001329,#000b1b);box-shadow:inset 0 2px 1px #078dff,0 0 16px #0068b522;padding:0 15px 24px}
+.bank-hero{margin:0 -15px 14px;padding:17px 24px 18px;min-height:151px;box-sizing:border-box;border-bottom:1px solid #009dd7;background:linear-gradient(90deg,#001125 40%,transparent 75%),url('/img/theme/bank.jpg') right center/auto 100% no-repeat}
+.bank-heading{display:flex;gap:18px;align-items:center}
+.bank-heading h1{font:600 25px 'Oswald',sans-serif;margin:0;color:#f1f3ff;text-shadow:0 0 9px #657aff}
+.bank-heading p{color:#6bc6ff;font-size:14px;margin:0}
+.bank-icon{font-size:43px;color:#55bfff;filter:drop-shadow(0 0 6px #008dff)}
+.bank-intro{max-width:430px;border-top:1px solid #0088c5;padding-top:12px;margin-top:10px;font-size:12px;line-height:1.7;color:#a8cbed}
+.bank-balances{display:grid;grid-template-columns:1fr 1fr;border:1px solid #00baff;border-radius:12px 3px;padding:14px 20px;box-shadow:inset 0 0 13px #0065bc35;background:linear-gradient(#001a35,#000c1e)}
+.bank-balances>div{display:flex;gap:18px;align-items:center}.bank-balances>div+div{border-left:1px solid #075783;padding-left:20px}
+.bank-balances span:not(.balance-icon){font:14px 'Oswald',sans-serif;color:#acd7f7}
+.bank-balances strong{display:block;font-size:22px;color:#0bbdff;text-shadow:0 0 6px #008cff66}
+.bank-balances #bank-balance{color:#00e5ae}
+.balance-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:linear-gradient(#07355f,#001326);font-size:32px;color:#62baff;text-shadow:0 0 7px #0095ff}
+.bank-actions{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:15px}
+.bank-action{--accent:#00b6ff;border:2px solid #309ee9;border-radius:12px 3px;padding:15px 18px 18px;background:linear-gradient(110deg,#00152c 40%,#00132bbf),url('/img/theme/cash.jpg') right top/auto 85px no-repeat;box-shadow:inset 0 0 10px #037cff55,0 0 6px #0080ff33}
+.bank-action h2{display:flex;align-items:center;gap:18px;font:500 20px 'Oswald',sans-serif;margin:0}
+.bank-action h2 span{font: bold 38px Arial;color:var(--accent);text-shadow:0 0 8px var(--accent)}
+.bank-action p{margin:5px 0 18px 52px;font-size:11px;color:#a7caed}
+.bank-input{display:flex;align-items:center;border:1px solid var(--accent);border-radius:10px;padding:5px 12px;background:#000e20;gap:12px}
+.bank-input>span:first-child{color:#b4d3ff;background:#103a71;border-radius:50%;padding:2px 6px;font-size:20px}
+.game-shell .bank-input input{border:0!important;outline:0;background:transparent;width:100%;min-width:0;padding:5px 0;font-size:14px}
+.bank-input:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.bank-action .btn{display:block;width:54%;min-width:155px;margin:18px auto 0;padding:9px;font-size:14px;font-weight:bold}
+.bank-withdraw{--accent:#bf42ff;border-color:#b93bff;background:linear-gradient(110deg,#140c32 40%,#100a27bd),url('/img/theme/cash.jpg') right top/auto 85px no-repeat;box-shadow:inset 0 0 12px #9f16ef66,0 0 7px #8900fa44}
+.game-shell .bank-withdraw .btn{background:linear-gradient(#3e0878,#16072c);border-color:#bd45ff;color:#c97aff;box-shadow:inset 0 0 10px #861dca77}
+#bankMsg:empty{display:none}#bankMsg{margin:12px 0}
+@media(max-width:900px){.game-shell #leftColumn{width:165px;min-width:165px}.bank-action{padding:12px}.bank-action p{margin-left:0}.game-shell .brand img{width:210px}}
+@media(max-width:760px){.game-shell #leftColumn{width:100%;min-width:0}.game-shell .brand{top:5px;left:15px;transform:none}.game-shell .brand img{width:165px;height:55px}.game-shell #siteHeader{min-height:166px}.game-shell #rightColumn{padding:12px}.bank-actions{grid-template-columns:1fr}.bank-hero{background:linear-gradient(90deg,#001125dc,#001125a8),url('/img/theme/bank.jpg') right center/auto 100% no-repeat}.bank-intro{font-size:11px}.bank-page{padding:0 10px 18px}.bank-hero{margin:0 -10px 12px;padding:15px}.bank-balances{padding:12px;gap:10px}.bank-balances>div{gap:8px}.bank-balances>div+div{padding-left:10px}.balance-icon{display:none}.bank-balances strong{font-size:19px}.bank-balances span:not(.balance-icon){font-size:12px}}
+.game-shell .brand img{mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.game-shell .bank-heading h1{font-family:Arial,sans-serif;font-weight:700}
+.game-shell .bank-action h2{font-family:Arial,sans-serif;font-weight:600;font-size:18px}
+.game-shell .bank-action .btn{font-family:Arial,sans-serif;color:var(--accent)}
+.game-shell.auth-screen{background:linear-gradient(#000b1f99,#000817f5),url('/img/theme/skyline.jpg') center/auto 100% fixed}
+.auth-screen .auth-wrap{border:1px solid #00adff;border-radius:12px 3px;background:#000d20ed;box-shadow:0 0 30px #0088ff44;max-width:calc(100vw - 30px)}
+.auth-screen .auth-title{background:linear-gradient(90deg,#003d70,#2e0961);border-bottom:1px solid #00aaff}
+.auth-screen .auth-logo{text-align:center;line-height:1}.auth-screen .auth-logo img{max-width:100%;height:auto}
+.auth-screen .auth-body a{color:#4ccaff!important}
+.battle-confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1000}.battle-confetti span{position:absolute;left:var(--x);top:-40px;font-size:28px;text-shadow:0 0 7px currentColor;animation:festive-fall 2.5s var(--delay) ease-in forwards}@keyframes festive-fall{to{transform:translateY(110vh) rotate(360deg)}}@media(prefers-reduced-motion:reduce){.battle-confetti span{animation:none;top:45%;opacity:.7}}

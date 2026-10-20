@@ -1,0 +1,16 @@
+<div class="contentBlock">
+  <div class="blockTitle">Events & Notifications</div>
+  <div class="blockBody" style="padding:0;">
+    <% events.forEach(e => { %>
+    <div class="shout-entry" style="<%= e.read ? '' : 'background:rgba(200,0,0,0.06);' %>">
+      <span class="shout-time"><%= timeAgo(e.created_at) %></span>
+      <span style="color:<%= e.type==='attacked'?'#cc0000':e.type==='mail'?'#0099cc':e.type==='mission'?'#ccaa00':'#aaa' %>">
+        <%= e.message %>
+      </span>
+    </div>
+    <% }); %>
+    <% if (!events.length) { %>
+    <div style="color:#666; text-align:center; padding:20px; font-size:11px;">No events yet.</div>
+    <% } %>
+  </div>
+</div>

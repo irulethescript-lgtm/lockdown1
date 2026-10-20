@@ -1,0 +1,46 @@
+<div class="contentBlock">
+  <div class="blockTitle">The Hitlist</div>
+  <div class="blockBody" style="padding:0;">
+    <table class="data-table">
+      <thead><tr><th>Target</th><th>Reward</th><th>Reason</th><th>Posted By</th><th>Action</th></tr></thead>
+      <tbody>
+        <% hits.forEach(h => { %>
+        <tr>
+          <td><a href="/profile/<%= h.target_name %>" style="color:#cc0000;font-weight:bold;"><%= h.target_name %></a></td>
+          <td style="color:#ccaa00; font-weight:bold;">$<%= formatCash(h.reward) %></td>
+          <td style="color:#888;"><%= h.reason || '—' %></td>
+          <td><a href="/profile/<%= h.poster_name %>"><%= h.poster_name %></a></td>
+          <td><a href="/battles" class="btn" style="padding:2px 8px; font-size:10px;">ATTACK</a></td>
+        </tr>
+        <% }); %>
+        <% if (!hits.length) { %>
+        <tr><td colspan="5" style="color:#666; text-align:center; padding:16px;">No active hits.</td></tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="contentBlock">
+  <div class="blockTitle">Place a Hit</div>
+  <div class="blockBody">
+    <p style="color:#888; margin-bottom:10px; font-size:11px;">Minimum reward: $100</p>
+    <div id="hitMsg"></div>
+    <div class="form-row"><label>Target (username)</label><input type="text" id="hitTarget" placeholder="Citizen to hit"></div>
+    <div class="form-row"><label>Reward ($)</label><input type="number" id="hitReward" min="100" placeholder="Min $100"></div>
+    <div class="form-row"><label>Reason (optional)</label><input type="text" id="hitReason" maxlength="100"></div>
+    <button class="btn" onclick="placeHit()">PLACE HIT</button>
+  </div>
+</div>
+<script>
+function placeHit() {
+  doAction('/hitlist/add', {
+    target_name: document.getElementById('hitTarget').value,
+    reward: document.getElementById('hitReward').value,
+    reason: document.getElementById('hitReason').value,
+  }, (d) => {
+    document.getElementById('hitMsg').innerHTML = `<div class="success-msg">${esc(d.msg)}</div>`;
+    setTimeout(() => location.reload(), 1500);
+  });
+}
+</script>

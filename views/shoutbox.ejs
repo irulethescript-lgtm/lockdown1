@@ -1,0 +1,41 @@
+<div class="map">
+  <div class="mapTitle">Shoutbox — Global Chat</div>
+  <div class="mapDescription">Talk to other citizens. Keep it clean or don't.</div>
+</div>
+
+<div class="contentBlock">
+  <div class="blockTitle">Send a Message</div>
+  <div class="blockBody">
+    <div class="form-row-inline">
+      <input type="text" id="shoutInput" placeholder="Say something..." maxlength="200" style="flex:1;" onkeydown="if(event.key==='Enter')sendShout()">
+      <button class="btn" onclick="sendShout()">SHOUT</button>
+    </div>
+  </div>
+</div>
+
+<div class="contentBlock">
+  <div class="blockTitle">Messages <span style="color:#888; font-size:10px; font-weight:normal; font-family:Arial;">(live)</span></div>
+  <div id="shoutMessages" style="max-height:500px; overflow-y:auto;">
+    <% messages.forEach(m => { %>
+    <div class="shout-entry">
+      <span class="shout-time"><%= new Date(m.created_at * 1000).toLocaleTimeString('en-US', {hour:'2-digit', minute:'2-digit'}) %></span>
+      <a href="/profile/<%= m.username %>" class="shout-name"><%= m.username %></a>
+      <span class="shout-level">[<%= m.level %>]</span>:
+      <span class="shout-msg"><%= m.message %></span>
+    </div>
+    <% }); %>
+    <% if (!messages.length) { %>
+    <div style="color:#666; text-align:center; padding:20px; font-size:11px;">No messages yet. Be the first.</div>
+    <% } %>
+  </div>
+</div>
+
+<script>
+function sendShout() {
+  const input = document.getElementById('shoutInput');
+  const msg = input.value.trim();
+  if (!msg || !socket) return;
+  socket.emit('shout', { message: msg });
+  input.value = '';
+}
+</script>

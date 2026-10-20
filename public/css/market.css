@@ -1,0 +1,59 @@
+/* Compact exchange workspace matching the market reference. */
+.game-shell:has(.market-page) #siteHeader{display:none}
+.game-shell:has(.market-page) #runnerboard{background:linear-gradient(90deg,#001021 25%,#00102133 60%,#001021 90%),url('/img/theme/skyline.jpg') center 45%/auto 150px;border-bottom:1px solid #0869a0}
+.game-shell:has(.market-page) #siteContainer{max-width:1440px}
+.game-shell:has(.market-page) #siteBody{min-height:calc(100vh - 40px)}
+.game-shell:has(.market-page) #leftColumn{width:190px;min-width:190px;padding:10px 8px;border:0;background:#000c18}
+.game-shell:has(.market-page) #rightColumn{padding:10px 10px 10px 4px}
+.game-shell:has(.market-page) .city-sidebar h2:nth-of-type(-n+2),.game-shell:has(.market-page) .city-sidebar a:nth-of-type(-n+5){display:none}
+.game-shell:has(.market-page) .city-sidebar{border:1px solid #064468;border-radius:10px;padding:0 5px 10px!important}
+.game-shell:has(.market-page) .city-sidebar h2{margin-top:10px;font-size:11px;padding:5px 8px}
+.game-shell:has(.market-page) .city-sidebar a{font-size:11px;padding:2px 8px}
+.game-shell:has(.market-page) .city-sidebar a[href="/market"]{background:linear-gradient(90deg,#063e83,#4920cc);color:#fff;box-shadow:inset 0 0 6px #517bff}
+.game-shell:has(.market-page) #leftColumn>div,.game-shell:has(.market-page) #siteFooter{display:none}
+.market-page .item-browser{grid-template-columns:240px minmax(0,1fr);gap:10px;align-items:stretch}
+.market-page .item-categories{background:linear-gradient(120deg,#001323,#000b16);border:1px solid #07527c;border-radius:10px 3px;padding:9px;min-width:0}
+.market-page .item-categories h2{font:600 14px Arial,sans-serif;color:#92c7ef;margin:0 0 7px;padding:8px;border:1px solid #08446c;background:linear-gradient(90deg,#00233d,#000e1d)}
+.market-page .item-categories h2 span{font-size:23px;margin-right:10px;color:#aadfff;text-shadow:0 0 6px #0b94ff;vertical-align:middle}
+.market-page .item-categories button{padding:5px 8px;min-height:28px;color:#89b8dd;border-bottom:1px solid #0a2135;border-radius:3px;font:11px Arial,sans-serif}
+.market-page .item-categories button>span{display:flex;align-items:center;gap:11px}
+.category-icon{font-style:normal;display:inline-block;width:18px;text-align:center;color:#aad8ff;text-shadow:0 0 6px #1387ce}
+.market-page .item-categories button[aria-pressed=true]{background:linear-gradient(90deg,#1435a4,#061525 70%,#342397);color:#d0eaff;border:1px solid #663eff;box-shadow:inset 0 0 9px #293fee,0 0 8px #602bf744}
+.market-page .item-categories button:hover{background:#072947;color:#fff}
+.market-page .item-categories b{color:#a8d4ff;background:#071a2f;border:1px solid #103557;border-radius:4px;padding:2px 5px;min-width:20px;text-align:center}
+.market-page .item-categories button[aria-pressed=true] b{background:#4025ed;border-color:#775dff;color:white}
+.category-help{font:10px/1.6 Arial,sans-serif;color:#85b4dd;border:1px solid #105177;border-radius:8px 2px;margin:12px 0 0;padding:14px 10px;background:#000b18}
+.market-page .item-results{border:1px solid #084f7d;border-radius:10px 3px;background:linear-gradient(120deg,#001324,#000914);padding:9px;min-width:0}
+.market-page .item-tools{gap:20px}
+.market-page .item-tools label:first-child{font-size:0}
+.market-page .item-tools label{color:#86b5df;font-size:10px}
+.market-page .item-tools label:last-child{flex-basis:185px}
+.market-page .item-tools input,.market-page .item-tools select{margin-top:3px;background:#000d1b;border:1px solid #0d517a;border-radius:7px 2px;padding:8px 10px;font-size:11px;color:#b8d7ee}
+.market-page .item-tools input{padding-left:32px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2385caff' stroke-width='1.8'%3E%3Ccircle cx='10' cy='10' r='6'/%3E%3Cpath d='m15 15 5 5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:9px center}
+.market-page .item-result-count{margin:14px 0 12px;color:#86b3db;font-size:10px}
+.market-page .item-list{display:flex;flex-direction:column;gap:9px}
+.market-page .item-row{display:flex;flex-wrap:nowrap;gap:18px;padding:9px;min-height:94px;box-sizing:border-box;background:linear-gradient(110deg,#001222,#000b15);border:1px solid #154865;border-radius:10px 2px;box-shadow:inset 0 0 12px #0a375222}
+.market-page .item-row[hidden]{display:none}
+.market-page .item-art{width:75px;height:76px;flex-basis:75px;box-sizing:border-box;padding:8px;border:1px solid #175074;border-radius:10px 2px;background:radial-gradient(#09223a,#000e1b);object-fit:contain}
+.market-page .item-copy h3{font:600 13px Arial,sans-serif;color:#b9e2ff;margin-bottom:5px}
+.market-page .item-copy p{font:10px/1.5 Arial,sans-serif;color:#8caeca}
+.market-page .item-copy small{font-size:9px;color:#638eb0}
+.market-page .item-copy details{font-size:10px;line-height:1.5;color:#86bde8}
+.market-page .item-copy summary{cursor:pointer;margin:3px 0}
+.market-page .item-value{flex:0 0 94px}.market-page .item-value b{color:#8ed6ff;font-size:12px}
+.market-page .item-actions{flex:0 0 95px;gap:5px}
+.market-page .market-stock{color:#7faccc;font-size:10px;width:100%;text-align:right}
+.market-page .item-buy-quantity{width:40px;font-size:9px}
+.market-page .item-buy-quantity input{padding:5px;font-size:11px}
+.market-page .item-actions .action-button{font:11px Arial,sans-serif;padding:7px 10px;border-radius:5px 2px;color:#8ad2ff;background:linear-gradient(#032643,#001125);border-color:#126293;box-shadow:none}
+.market-page .item-empty{background:#001324;border-color:#154865}
+.market-page .item-feedback{position:sticky;top:5px;z-index:5}
+.market-footer{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0;color:#7596b0;font-size:10px}
+.market-footer a{color:#89c3ee}
+@media(min-width:1001px){.market-page .item-list{max-height:calc(100vh - 170px);min-height:400px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#18517a #000b18;padding-right:2px}.market-page .item-categories{max-height:calc(100vh - 105px);overflow-y:auto;scrollbar-width:thin;scrollbar-color:#18517a #000b18}}
+@media(max-width:1150px){.market-page .item-browser{grid-template-columns:195px minmax(0,1fr)}.market-page .item-row{gap:9px}.market-page .item-art{width:58px;height:64px;flex-basis:58px}.market-page .item-value{flex-basis:77px}.market-page .item-actions{flex-basis:80px}}
+@media(max-width:1000px){.market-page .item-row{flex-wrap:wrap}.market-page .item-actions{flex-basis:100%}.market-page .market-stock{width:auto}.market-page .item-browser{grid-template-columns:180px minmax(0,1fr)}}
+@media(max-width:760px){.game-shell:has(.market-page) #leftColumn{width:100%;min-width:0}.game-shell:has(.market-page) #rightColumn{padding:8px}.market-page .item-browser{grid-template-columns:minmax(0,1fr)}.market-page .item-categories{display:flex;flex-wrap:wrap;gap:4px}.market-page .item-categories h2{width:100%;box-sizing:border-box}.market-page .item-categories button{width:auto;min-height:34px}.category-help{width:100%;margin:3px 0;padding:8px}.market-page .item-tools{gap:10px}.market-page .item-tools label:last-child{flex-basis:125px}}
+.game-shell .market-page .item-actions .action-button{color:#8ad2ff!important}
+.game-shell .market-page .item-tools input{background-color:#000d1b;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2385caff' stroke-width='1.8'%3E%3Ccircle cx='10' cy='10' r='6'/%3E%3Cpath d='m15 15 5 5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:9px center}
+@media(max-width:760px){.market-page .item-categories{max-height:280px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#18517a #000b18}.market-page .item-categories h2{position:sticky;top:-9px;z-index:1;background:#00182b}}

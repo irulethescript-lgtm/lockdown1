@@ -1,0 +1,29 @@
+<div class="contentBlock">
+  <div class="blockTitle">Faction Invites</div>
+  <div class="blockBody">
+    <% if (!invites.length) { %>
+      <div style="color:#888;">No pending invites. Invites expire after 7 days.</div>
+    <% } else { %>
+    <table class="data-table">
+      <thead><tr><th>Faction</th><th>Members</th><th>Invited By</th><th>Sent</th><th></th></tr></thead>
+      <tbody>
+        <% invites.forEach(i => { %>
+        <tr>
+          <td>
+            <span style="color:#fff;font-weight:bold;"><%= i.name %></span> <span class="gang-tag"><%= i.tag %></span>
+            <% if (i.description) { %><div style="color:#888;font-size:11px;"><%= i.description %></div><% } %>
+          </td>
+          <td><%= i.member_count %> / <%= maxMembers %></td>
+          <td><a href="/profile/<%= i.inviter %>"><%= i.inviter %></a></td>
+          <td style="color:#888;"><%= timeAgo(i.created_at) %></td>
+          <td style="white-space:nowrap;text-align:right;">
+            <button class="btn" onclick="doAction('/gang/join', {invite_id:<%= i.id %>}, d => location.href = d.redirect || '/my-faction')">ACCEPT</button>
+            <button class="btn gray" onclick="doAction('/gang/decline', {invite_id:<%= i.id %>}, () => location.reload())">DECLINE</button>
+          </td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <% } %>
+  </div>
+</div>

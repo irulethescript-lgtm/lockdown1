@@ -1,0 +1,186 @@
+<%# INFIRMARY - ICU Style like PrisonBlock %>
+<%
+const now2 = Math.floor(Date.now()/1000);
+const inHosp = user.in_hospital && (user.hospital_until > now2);
+const timeLeft2 = inHosp ? Math.max(0, user.hospital_until - now2) : 0;
+const healCost = Math.ceil((user.max_hp - user.hp) * 2);
+%>
+
+<div id="infirmMsg" style="display:none;padding:6px 10px;margin-bottom:8px;border:1px solid #00cc00;font-size:11px;"></div>
+
+<section class="dashboard-panel" style="padding:16px;margin-bottom:16px">
+  <h2>Medical supplies &amp; cooldowns</h2>
+  <p>Life: <strong><%= user.hp %> / <%= user.max_hp %></strong> · Blood type: <strong><%= medicalState.blood_type %></strong> · Effectiveness: +<%= medicalState.effectiveness %>%</p>
+  <p>Medical: <strong data-med-timer="<%= cooldowns.find(c=>c.category==='medical')?.ready_at||0 %>"></strong> / <%= medicalState.cap/3600 %>h limit · Drug: <strong data-med-timer="<%= cooldowns.find(c=>c.category==='drug')?.ready_at||0 %>"></strong></p>
+  <p>Medical time stacks after each use. You can take medicine while the timer is below the limit. Normal medicine cannot shorten radiation hospitalization.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;margin:12px 0">
+  <% supplies.forEach(item=> {const available=item.group.key==='medical'?Math.max(0,item.readyAt-medicalState.cap+1):item.readyAt; %>
+    <button class="action-button" data-med-ready="<%= available %>" data-med-use="<%= item.item_key %>" data-med-type="<%= item.item_type %>"><%= item.name %> ×<%= item.quantity %></button>
+  <% }); %>
+  </div>
+  <a class="text-link" href="/inventory">All items →</a> · <a class="text-link" href="/market">Buy supplies →</a> · <a class="text-link" href="/education">Medical education →</a>
+  <hr>
+  <label><input id="accept-revives" type="checkbox" <%= medicalState.accepts_revives?'checked':'' %>> Accept revives from other players</label>
+  <p><% if(medicalState.revive_unlocked){ %>Revive skill: <%= medicalState.revive_skill %> / 100 · Success: <%= Math.min(100,50+medicalState.revive_skill/2) %>% · Cost: <%= medicalState.reviveCost %> energy. Select a patient in I.C.U. Successful revives restore your skill percentage of life.<% } else { %>Complete Intravenous Therapy and Brain Surgery, then take the Brain Surgeon job to unlock reviving.<% } %></p>
+  <% if(factionLeader){ %>
+  <details><summary>Faction medical upgrades</summary><p>Paid from the faction bank. Each next level costs $250,000 × its level.</p>
+    <% [{key:'capacity',name:'Medical cooldown capacity',max:3,detail:'+1h per level, maximum 9h'}, {key:'effectiveness',name:'Medical effectiveness',max:3,detail:'+10% per level'}, {key:'reviver',name:'Reviver',max:10,detail:'−5 energy per level, minimum 25'}].forEach(u=>{const level=medicalState.faction[u.key]; %>
+    <p><%= u.name %>: <%= level %>/<%= u.max %> · <%= u.detail %> <% if(level<u.max){ %><button class="action-button" data-med-upgrade="<%= u.key %>">Upgrade · $<%= ((level+1)*250000).toLocaleString() %></button><% } %></p>
+    <% }); %>
+  </details>
+  <% } %>
+</section>
+
+<!-- Tabs -->
+<div style="display:flex;gap:2px;margin-bottom:0;">
+  <div class="icuTab active" id="tab_isolation" onclick="switchTab('isolation')">Treatment</div>
+  <div class="icuTab" id="tab_icu" onclick="switchTab('icu')">I.C.U.</div>
+</div>
+
+<!-- ── PRIORITY CARE PANEL (shown if in hospital) ── -->
+<% if (inHosp) { %>
+<div id="panel_isolation" style="background:#c8c0a8;border:2px solid #888;padding:0;">
+  <div style="background:#1a1a1a;padding:5px 10px;border-bottom:1px solid #555;">
+    <span style="font-family:'Oswald',sans-serif;font-size:13px;color:#fff;letter-spacing:1px;">Priority Care</span>
+  </div>
+  <div style="padding:20px;text-align:center;background:#c8c0a8;">
+    <p style="font-size:15px;font-weight:bold;color:#1a1a1a;margin-bottom:16px;" id="hospTimer">
+      You are in the hospital for another <span id="timerDisplay"></span>.
+    </p>
+    <button onclick="bribeOut()" style="background:#cc0000;border:2px solid #880000;color:#fff;font-family:'Oswald',sans-serif;font-size:14px;letter-spacing:1px;padding:10px 30px;cursor:pointer;text-transform:uppercase;margin-bottom:12px;" id="bribeBtn">
+      Pay $<%= bribeCost.toLocaleString() %> for Priority Care
+    </button>
+    <p style="font-size:11px;color:#555;">...or, <a href="/shoutbox" style="background:#eee;padding:2px 5px;border:1px solid #aaa;color:#333;text-decoration:none;">click here</a> to chat while you wait.</p>
+  </div>
+</div>
+<% } else { %>
+<div id="panel_isolation" style="background:#c8c0a8;border:2px solid #888;padding:0;">
+  <div style="background:#1a1a1a;padding:5px 10px;border-bottom:1px solid #555;">
+    <span style="font-family:'Oswald',sans-serif;font-size:13px;color:#fff;letter-spacing:1px;">Hospital</span>
+  </div>
+  <div style="padding:16px;background:#c8c0a8;">
+    <% const cost = Math.ceil((user.max_hp - user.hp) * 2); %>
+    <table style="width:100%;font-size:12px;color:#1a1a1a;margin-bottom:12px;">
+      <tr><td style="padding:3px 0;font-weight:bold;">Current HP:</td><td style="color:<%= user.hp < user.max_hp*0.3 ? '#880000' : '#005500' %>;font-weight:bold;"><%= user.hp %> / <%= user.max_hp %></td></tr>
+      <tr><td style="padding:3px 0;font-weight:bold;">Heal Cost:</td><td style="color:#884400;font-weight:bold;"><%= cost > 0 ? '$'+cost : 'Already at full health' %></td></tr>
+      <tr><td style="padding:3px 0;font-weight:bold;">Your Cash:</td><td>$<%= user.cash.toLocaleString() %></td></tr>
+    </table>
+    <% if (cost > 0) { %>
+    <button onclick="healUp()" style="background:#336633;border:1px solid #224422;color:#fff;font-family:'Oswald',sans-serif;font-size:12px;padding:7px 20px;cursor:pointer;width:100%;">
+      HEAL TO FULL — $<%= cost.toLocaleString() %>
+    </button>
+    <% } else { %>
+    <div style="text-align:center;color:#005500;font-weight:bold;font-size:12px;padding:8px;">✓ You are at full health</div>
+    <% } %>
+  </div>
+</div>
+<% } %>
+
+<!-- ── ICU LIST PANEL ── -->
+<div id="panel_icu" style="display:none;background:#c8c0a8;border:2px solid #888;padding:0;">
+  <div style="background:#1a1a1a;padding:5px 10px;border-bottom:1px solid #555;display:flex;justify-content:space-between;align-items:center;">
+    <span style="font-family:'Oswald',sans-serif;font-size:13px;color:#fff;letter-spacing:1px;">Intensive Care Unit</span>
+    <div style="width:16px;height:16px;background:#336699;border-radius:50%;text-align:center;line-height:16px;font-size:10px;color:white;cursor:pointer;">?</div>
+  </div>
+  <div style="padding:10px;background:#c8c0a8;">
+    <p style="font-size:11px;color:#2a2a2a;margin-bottom:10px;font-style:italic;">Here is a list of the prisoners currently in the I.C.U.</p>
+
+    <% if (!icuList || icuList.length === 0) { %>
+    <div style="text-align:center;padding:20px;color:#666;font-size:12px;">The I.C.U. is empty. Nobody's been beaten up yet!</div>
+    <% } else { %>
+    <% icuList.forEach(p => {
+      const pTime = Math.max(0, (p.hospital_until||0) - now2);
+      const pMins = Math.floor(pTime/60);
+      const pSecs = pTime % 60;
+      const initial = p.username.charAt(0).toUpperCase();
+    %>
+    <div style="display:flex;align-items:center;padding:7px 4px;border-bottom:1px solid #aaa8;">
+      <!-- Avatar -->
+      <div style="width:40px;height:40px;background:#444;border:2px solid #888;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:bold;color:#cc0000;font-family:'Oswald',sans-serif;flex-shrink:0;margin-right:8px;">
+        <%= initial %>
+      </div>
+      <% if(p.id!==user.id && medicalState.revive_unlocked){ %><button class="action-button" style="margin-right:10px" data-med-revive="<%= p.id %>" <%= p.accepts_revives?'':'disabled' %>><%= p.accepts_revives?'Revive · '+medicalState.reviveCost+' E':'Revives off' %></button><% } %>
+      <!-- Info -->
+      <div>
+        <div style="font-weight:bold;font-size:12px;color:#1a1a1a;">
+          <a href="/profile/<%= p.username %>" style="color:#1a1a1a;text-decoration:none;"><%= p.username %></a>
+          <% if (p.gang_id) { %><span style="color:#555;font-size:10px;"> [Faction]</span><% } %>
+        </div>
+        <div style="font-size:11px;color:#cc4400;font-weight:bold;">
+          <%= pMins %> minute<%= pMins!==1?'s':'' %>, <%= pSecs %> second<%= pSecs!==1?'s':'' %>
+        </div>
+        <div style="font-size:10px;color:#555;font-style:italic;">
+          <%= p.hospital_reason || 'Injuries sustained in combat' %>
+        </div>
+      </div>
+    </div>
+    <% }); %>
+    <% } %>
+  </div>
+  <div style="background:#c8c0a8;padding:6px 10px;text-align:right;border-top:1px solid #aaa;">
+    <a href="/hospital" style="background:#333;color:#fff;padding:3px 10px;font-size:10px;text-decoration:none;border:1px solid #555;">back to hospital</a>
+  </div>
+</div>
+
+<style>
+.icuTab {
+  background:#888;border:1px solid #666;border-bottom:none;
+  padding:4px 12px;font-size:11px;color:#fff;cursor:pointer;
+  font-family:'Oswald',sans-serif;letter-spacing:0.5px;
+}
+.icuTab.active { background:#c8c0a8;color:#1a1a1a;border-color:#888; }
+.icuTab:hover { background:#aaa; }
+</style>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.icuTab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab_'+tab).classList.add('active');
+  document.getElementById('panel_isolation').style.display = tab==='isolation' ? '' : 'none';
+  document.getElementById('panel_icu').style.display = tab==='icu' ? '' : 'none';
+}
+
+<% if (inHosp) { %>
+// Countdown timer
+let hospSeconds = <%= timeLeft2 %>;
+function updateTimer() {
+  if (hospSeconds <= 0) { document.getElementById('timerDisplay').textContent = '0 seconds'; return; }
+  const m = Math.floor(hospSeconds/60), s = hospSeconds%60;
+  document.getElementById('timerDisplay').textContent = (m>0?m+' minute'+(m!==1?'s ':' '):'') + s + ' second'+(s!==1?'s':'');
+  hospSeconds--;
+  setTimeout(updateTimer, 1000);
+}
+updateTimer();
+<% } %>
+
+function bribeOut() {
+  if (!confirm('Pay to bribe your way out of the hospital?')) return;
+  const btn = document.getElementById('bribeBtn');
+  btn.disabled = true; btn.textContent = 'Bribing...';
+  fetch('/infirmary/bribe', { method:'POST', headers:{'Content-Type':'application/json'}, body:'{}' })
+    .then(r=>r.json()).then(d=>{
+      if (d.error) { showMsg(d.error,true); btn.disabled=false; }
+      else { showMsg(d.msg,false); if(d.user) updateStats(d.user); setTimeout(()=>location.reload(),1500); }
+    });
+}
+
+function healUp() {
+  fetch('/infirmary/heal', { method:'POST', headers:{'Content-Type':'application/json'}, body:'{}' })
+    .then(r=>r.json()).then(d=>{
+      if (d.error) showMsg(d.error,true);
+      else { showMsg(d.msg,false); if(d.user) updateStats(d.user); setTimeout(()=>location.reload(),1200); }
+    });
+}
+
+function showMsg(msg, isError) {
+  const el = document.getElementById('infirmMsg');
+  el.style.display='block';
+  el.style.color=isError?'#ff6666':'#00cc00';
+  el.style.borderColor=isError?'#cc0000':'#00cc00';
+  el.style.background=isError?'rgba(80,0,0,0.2)':'rgba(0,80,0,0.2)';
+  el.textContent=msg;
+  clearTimeout(el._t); el._t=setTimeout(()=>el.style.display='none',4000);
+}
+</script>
+
+<script src="/js/medical.js" defer></script>

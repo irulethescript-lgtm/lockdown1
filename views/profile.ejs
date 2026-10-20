@@ -1,0 +1,207 @@
+<style>
+.rapsheet {
+  background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+  border: 2px solid #555;
+}
+.rapsheet-header {
+  background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+  border-bottom: 2px solid #444;
+  padding: 8px 12px;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.rap-avatar {
+  width: 110px; height: 130px;
+  background: #111;
+  border: 2px solid #666;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.rap-stat { display:flex; justify-content:space-between; padding:4px 0; border-bottom:1px solid #1a1a1a; font-size:12px; }
+.rap-stat .sn { color: #888; }
+.rap-stat .sv { color: #ddd; font-weight: bold; }
+.rap-stat .sv.good { color: #00cc00; }
+.rap-stat .sv.bad  { color: #cc0000; }
+.rap-action {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  cursor: pointer; text-decoration: none;
+  background: #1a1a1a; border: 1px solid #333; padding: 8px 10px;
+  transition: border-color 0.1s, background 0.1s;
+  min-width: 60px;
+}
+.rap-action:hover { background: #2a2a2a; border-color: #cc4400; }
+.rap-action img { width: 32px; height: 32px; }
+.rap-action span { font-size: 9px; color: #888; font-family: 'Oswald', Arial; letter-spacing: 0.5px; }
+.hp-bar { height: 8px; background: #cc0000; border-radius: 2px; }
+.hp-bar-bg { height: 8px; background: #2a0000; border-radius: 2px; margin-bottom: 4px; }
+.tab-btn {
+  background: #1a1a1a; border: 1px solid #333; color: #888;
+  font-family: 'Oswald', Arial; font-size: 12px; letter-spacing: 0.5px;
+  padding: 6px 16px; cursor: pointer; transition: all 0.1s;
+}
+.tab-btn.active, .tab-btn:hover { background: #2a2a2a; border-color: #cc4400; color: #fff; }
+</style>
+
+<div class="rapsheet">
+  <div class="rapsheet-header" style="display:flex;justify-content:space-between;align-items:center;gap:12px"><span><%= profile.username %>'s Rap Sheet</span><% if(profile.id!==user.id&&profile.prison_id===user.prison_id){ %>      <form action="/battles/start" method="post" style="margin:0" onsubmit="return confirmAttackStart(this)"><input type="hidden" name="target_id" value="<%= profile.id %>"><button class="rap-action" type="submit" data-risk="<%= profile.level>user.level+5 %>" aria-label="Attack <%= profile.username %>">
+        <span style="font-size:24px;">🎯</span><span>ATTACK</span>
+      </button></form><% } %></div>
+  <div style="padding:14px;">
+
+    <!-- Top card -->
+    <div style="display:flex;gap:14px;margin-bottom:16px;">
+
+      <!-- Avatar -->
+      <div class="rap-avatar">
+        <%
+          const rapLayers = avatarImages(profile.avatar);
+%>
+        <% if (rapLayers.length > 0) { %>
+          <% rapLayers.forEach(src => { %>
+            <img src="<%= src %>" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">
+          <% }); %>
+        <% } else { %>
+          <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-size:44px;font-weight:bold;color:#cc0000;font-family:'Oswald',sans-serif;">
+            <%= profile.username.charAt(0).toUpperCase() %>
+          </div>
+        <% } %>
+      </div>
+
+      <!-- Info -->
+      <div style="flex:1;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+          <span style="font-family:'Oswald',Arial;font-size:18px;color:#fff;"><%= profile.username %></span>
+          <% if (profileGang) { %>
+            <span style="background:#333;border:1px solid #555;font-size:11px;color:#ccaa00;padding:1px 6px;">[<%= profileGang.tag %>]</span>
+          <% } %>
+          <span style="margin-left:auto;">
+            <% if (profile.id !== user.id) { %>
+              <a href="/mail" style="font-size:10px;color:#888;border:1px solid #333;padding:2px 8px;text-decoration:none;" title="Send Mail">✉</a>
+            <% } %>
+          </span>
+        </div>
+        <div style="font-size:11px;color:#888;margin-bottom:8px;"><%= profileTitle || '' %></div>
+
+        <!-- HP bar -->
+        <div style="margin-bottom:8px;">
+          <div style="font-size:10px;color:#888;margin-bottom:2px;">Health:
+            <strong style="color:<%= profile.hp/profile.max_hp > 0.5 ? '#00cc00' : '#cc0000' %>">
+              <%= profile.hp.toLocaleString() %>/<%= profile.max_hp.toLocaleString() %>
+            </strong>
+          </div>
+          <div class="hp-bar-bg"><div class="hp-bar" style="width:<%= Math.min(100,Math.round(profile.hp/profile.max_hp*100)) %>%;"></div></div>
+        </div>
+
+        <!-- Stats grid -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 12px;">
+          <div class="rap-stat"><span class="sn">Level</span><span class="sv"><%= profile.level %></span></div>
+          <div class="rap-stat"><span class="sn">City</span><span class="sv" style="color:#ccaa00;"><%= (PRISONS && PRISONS.find(p=>p.id===profile.prison_id)||{short:'Unknown'}).short %></span></div>
+          <div class="rap-stat"><span class="sn">Cash</span><span class="sv good">$<%= formatCash(profile.cash) %></span></div>
+          <div class="rap-stat"><span class="sn">Reputation</span><span class="sv"><%= profile.rep %></span></div>
+          <div class="rap-stat"><span class="sn">Wins</span><span class="sv good"><%= profile.wins %></span></div>
+          <div class="rap-stat"><span class="sn">Losses</span><span class="sv bad"><%= profile.losses %></span></div>
+          <% if (profileGang) { %>
+          <div class="rap-stat" style="grid-column:1/-1"><span class="sn">Faction</span><span class="sv"><a href="/factions" style="color:#ccaa00;"><%= profileGang.name %> [<%= profileGang.tag %>]</a></span></div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action buttons (only on other players' profiles) -->
+    <% if (profile.id !== user.id) { %>
+    <% const samePrison = profile.prison_id === user.prison_id; %>
+    <div style="display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;">
+      <% if (samePrison) { %>
+
+
+      <a class="rap-action" href="/spy/<%= profile.username %>">
+        <span style="font-size:24px;">🔍</span><span>SPY</span>
+      </a>
+      <% } else { %>
+      <span class="rap-action" style="opacity:0.35;cursor:not-allowed;" title="Different city">⚔️ ATTACK</span>
+
+      <% } %>
+      <a class="rap-action" href="/send-money?to=<%= profile.id %>">
+        <span style="font-size:24px;">💸</span><span>SEND $</span>
+      </a>
+      <a class="rap-action" href="/mail">
+        <span style="font-size:24px;">✉️</span><span>MAIL</span>
+      </a>
+      <a class="rap-action" href="/hitlist?add=<%= profile.username %>">
+        <span style="font-size:24px;">🎯</span><span>HITLIST</span>
+      </a>
+    </div>
+    <div id="profileActionMsg" style="display:none;padding:8px 12px;font-size:12px;margin-bottom:10px;border-radius:2px;"></div>
+    <% } %>
+
+
+    <!-- Inmate blurb -->
+    <% if (profile.blurb) { %>
+    <div style="background:#111;border:1px solid #2a2a2a;padding:8px 12px;margin-bottom:12px;font-size:11px;color:#888;font-style:italic;">
+      "<%= profile.blurb %>"
+    </div>
+    <% } %>
+
+    <!-- My profile edit blurb -->
+    <% if (profile.id === user.id) { %>
+    <div style="margin-bottom:12px;">
+      <div style="font-size:10px;color:#666;margin-bottom:4px;">Your blurb:</div>
+      <div style="display:flex;gap:6px;">
+        <input type="text" id="blurbInput" value="<%= profile.blurb||'' %>" placeholder="Enter your citizen blurb..."
+          style="flex:1;background:#111;border:1px solid #333;color:#ccc;padding:5px 8px;font-size:11px;" maxlength="100">
+        <button onclick="saveBlurb()" style="background:#333;border:1px solid #444;color:#aaa;font-size:10px;padding:5px 10px;cursor:pointer;font-family:'Oswald',Arial;">SAVE</button>
+      </div>
+      <div id="blurbMsg" style="display:none;font-size:10px;margin-top:4px;color:#888;"></div>
+    </div>
+    <% } %>
+
+  </div>
+</div>
+
+<!-- Recent fights -->
+<% if (recentFights && recentFights.length) { %>
+<div style="margin-top:8px;background:#1a1a1a;border:2px solid #333;">
+  <div style="background:#222;border-bottom:1px solid #333;padding:6px 12px;font-family:'Oswald',Arial;font-size:13px;color:#fff;letter-spacing:0.5px;">Recent Fight History</div>
+  <table style="width:100%;border-collapse:collapse;font-size:11px;">
+    <thead><tr style="background:#111;">
+      <th style="padding:5px 10px;color:#888;text-align:left;">Opponent</th>
+      <th style="padding:5px 10px;color:#888;text-align:center;">Result</th>
+      <th style="padding:5px 10px;color:#888;text-align:right;">When</th>
+    </tr></thead>
+    <tbody>
+      <% recentFights.forEach(f => {
+        const won = f.attacker_id === profile.id ? f.attacker_won : !f.attacker_won;
+      %>
+      <tr style="border-bottom:1px solid #1a1a1a;">
+        <td style="padding:5px 10px;"><a href="/profile/<%= f.opp_name %>" style="color:#ccaa00;"><%= f.opp_name %></a></td>
+        <td style="padding:5px 10px;text-align:center;color:<%= won?'#00cc00':'#cc0000' %>;font-weight:bold;font-family:'Oswald',Arial;"><%= f.result==='draw' ? 'DRAW' : won ? 'WIN' : 'LOSS' %></td>
+        <td style="padding:5px 10px;text-align:right;color:#555;"><%= timeAgo(f.created_at) %></td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>
+<% } %>
+
+<script>
+function saveBlurb() {
+  const blurb = document.getElementById('blurbInput').value;
+  fetch('/profile/update-blurb', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ blurb })
+  }).then(r=>r.json()).then(d => {
+    const msg = document.getElementById('blurbMsg');
+    msg.style.display='block';
+    msg.style.color = d.error ? '#ff6666' : '#00cc00';
+    msg.textContent = d.error || d.msg;
+  });
+}
+
+</script>
+
+<script>
+function confirmAttackStart(form){const button=form.querySelector('button');if(button.disabled)return false;if(button.dataset.risk==='true'&&!confirm('This player is much higher level. Attack anyway?'))return false;button.disabled=true;return true;}
+</script>

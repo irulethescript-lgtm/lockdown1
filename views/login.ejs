@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lockdown City RPG — Sign In</title>
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/lockdown-theme.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+</style>
+</head>
+<body class="game-shell auth-screen">
+<div class="auth-wrap">
+  <div class="auth-title">Sign In</div>
+  <div class="auth-body">
+    <div class="auth-logo"><img src="/img/theme/logo.jpg" alt="LOCKDOWN — Your city. Your empire." width="239" height="79"></div>
+    <p style="color:#888; text-align:center; margin-bottom:16px; font-size:11px;">The city runs on money, influence and ambition.<br>Show them you're no small fish.</p>
+    <% if (error) { %><div class="error-msg"><%= error %></div><% } %>
+    <form method="POST" action="/login">
+      <div class="form-row">
+        <label>Username</label>
+        <input type="text" name="username" autocomplete="username" required>
+      </div>
+      <div class="form-row">
+        <label>Password</label>
+        <input type="password" name="password" autocomplete="current-password" required>
+      </div>
+      <button type="submit" class="btn" style="width:100%; margin-top:8px;">SIGN IN</button>
+    </form>
+    <p style="color:#888; text-align:center; margin-top:12px; font-size:11px;">
+      No account? <a href="/register" style="color:#cc0000;">Register for free</a>
+    </p>
+  </div>
+</div>
+</body>
+</html>

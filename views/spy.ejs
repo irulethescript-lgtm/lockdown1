@@ -1,0 +1,136 @@
+<div class="page-box">
+  <h2 style="font-family:'Oswald',Arial;letter-spacing:1px;color:#ccc;margin:0 0 4px;">🔍 Spy on <%= target.username %></h2>
+  <p style="color:#666;font-size:12px;margin:0 0 16px;">
+    Level <%= target.level %> citizen &nbsp;·&nbsp; Cost: <b style="color:#ffcc44;">$<%= spyCost.toLocaleString() %></b>
+    &nbsp;·&nbsp; Each section has an independent chance of being intercepted.
+  </p>
+
+  <% if (user.cash < spyCost) { %>
+  <div style="background:#1f0d0d;border:1px solid #4a2a2a;padding:12px;color:#cc8888;font-size:13px;">
+    ⚠️ You need $<%= (spyCost - user.cash).toLocaleString() %> more cash to run this op.
+  </div>
+  <% } else { %>
+  <button onclick="runSpy()" class="btn-action" style="margin-bottom:16px;">🔍 Run Spy — $<%= spyCost.toLocaleString() %></button>
+  <% } %>
+
+  <div id="spyReport" style="display:none;">
+    <h3 style="font-family:'Oswald',Arial;color:#888;font-size:12px;letter-spacing:2px;border-bottom:1px solid #222;padding-bottom:6px;margin-bottom:14px;text-transform:uppercase;">Intelligence Report — <span id="rptName"></span></h3>
+
+    <!-- Stats row -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;" id="statsGrid"></div>
+
+    <!-- Items sections -->
+    <div id="itemSections"></div>
+
+    <!-- Cell -->
+    <div id="cellSection"></div>
+  </div>
+</div>
+
+<style>
+.spy-stat { background:#111;border:1px solid #222;padding:8px 10px;text-align:center; }
+.spy-stat .sl { font-size:10px;color:#555;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px; }
+.spy-stat .sv { font-size:14px;color:#ddd;font-family:'Oswald',Arial; }
+.spy-stat.miss .sv { color:#333; font-size:11px; font-style:italic; }
+.spy-section { margin-bottom:14px; }
+.spy-section h4 { font:600 11px 'Oswald',Arial;color:#666;letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid #1a1a1a;padding-bottom:4px;margin-bottom:8px; }
+.spy-item-grid { display:flex;flex-wrap:wrap;gap:6px; }
+.spy-item { background:#111;border:1px solid #222;padding:5px 10px;font-size:11px;color:#aaa;border-radius:2px; }
+.spy-item .qty { color:#ffcc44;margin-left:4px; }
+.spy-miss { color:#333;font-style:italic;font-size:11px; }
+.spy-cell-grid { display:flex;flex-wrap:wrap;gap:5px; }
+.spy-cell-item { background:#0d1a0d;border:1px solid #1a3a1a;padding:4px 10px;font-size:11px;color:#88cc88; }
+</style>
+
+<script>
+const ITEM_ICONS = {
+  shiv:'🔪',blade:'⚔️',sock_rock:'🧦',weed:'🌿',cigarettes:'🚬',painkillers:'💊',
+  bandages:'🩹',knife:'🔪',bat:'🏏',default:'📦',
+  body_armor:'🛡️',leather_vest:'🦺',helmet:'⛑️',
+};
+function icon(k) { return ITEM_ICONS[k]||ITEM_ICONS.default; }
+
+function runSpy() {
+  fetch('/spy',{ method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({target_id:<%= target.id %>}) })
+  .then(r=>r.json()).then(d => {
+    if (d.error) { alert(d.error); return; }
+    if (d.user) updateStats(d.user);
+    renderReport(d.result, d.target?.username || '<%= target.username %>');
+    document.getElementById('spyReport').style.display='block';
+    document.querySelector('.btn-action')?.remove();
+  });
+}
+
+function renderReport(r, name) {
+  document.getElementById('rptName').textContent = name;
+
+  // Stats
+  const stats = [
+    ['Bank',     r.bank     !== null ? '$'+Number(r.bank).toLocaleString() : null],
+    ['Tokens',   r.favors   !== null ? r.favors : null],
+    ['XP %',     r.xp_pct   !== null ? r.xp_pct+'%' : null],
+    ['Speed',    r.speed     !== null ? r.speed : null],
+    ['Strength', r.strength  !== null ? r.strength : null],
+    ['Defense',  r.defense   !== null ? r.defense : null],
+    ['Dexterity', r.dexterity != null ? Number(r.dexterity) : null],
+    ['Stamina',  r.stamina   !== null ? r.stamina+'%' : null],
+  ];
+  document.getElementById('statsGrid').innerHTML = stats.map(([l,v]) =>
+    v !== null
+      ? `<div class="spy-stat"><div class="sl">${l}</div><div class="sv">${v}</div></div>`
+      : `<div class="spy-stat miss"><div class="sl">${l}</div><div class="sv">Intercepted</div></div>`
+  ).join('');
+
+  // Items sections
+  const sections = [
+    ['🎒 Items',   r.items],
+    ['⚔️ Weapons', r.weapons],
+    ['🛡️ Armor',   r.armor],
+    ['💊 Drugs',   r.drugs],
+  ];
+  let html = '';
+  sections.forEach(([label, arr]) => {
+    html += `<div class="spy-section"><h4>${label}</h4>`;
+    if (arr === null) {
+      html += `<span class="spy-miss">Signal intercepted — couldn't retrieve data.</span>`;
+    } else if (!arr.length) {
+      html += `<span class="spy-miss">None found.</span>`;
+    } else {
+      html += `<div class="spy-item-grid">`;
+      arr.forEach(item => {
+        html += `<div class="spy-item">${icon(item.item_key)} ${item.item_key.replace(/_/g,' ')}<span class="qty">×${item.quantity||1}</span></div>`;
+      });
+      html += `</div>`;
+    }
+    html += `</div>`;
+  });
+  document.getElementById('itemSections').innerHTML = html;
+
+  // Property
+  let cellHtml = '<div class="spy-section"><h4>🏚️ Cell Contents</h4>';
+  const placed   = r.cell_placed;
+  const unplaced = r.cell_unplaced;
+  if (placed === null && unplaced === null) {
+    cellHtml += `<span class="spy-miss">Property scan blocked.</span>`;
+  } else {
+    if (placed !== null) {
+      cellHtml += `<div style="font-size:10px;color:#555;margin-bottom:4px;">PLACED IN PROPERTY</div>`;
+      if (!placed.length) {
+        cellHtml += `<span class="spy-miss">Property is empty.</span>`;
+      } else {
+        cellHtml += `<div class="spy-property-grid">`;
+        placed.forEach(k => { cellHtml += `<div class="spy-property-item">${k.replace(/_/g,' ')}</div>`; });
+        cellHtml += `</div>`;
+      }
+    }
+    if (unplaced !== null && unplaced.length > 0) {
+      cellHtml += `<div style="font-size:10px;color:#555;margin:8px 0 4px;">UNPLACED (in possession)</div>`;
+      cellHtml += `<div class="spy-property-grid">`;
+      unplaced.forEach(k => { cellHtml += `<div class="spy-property-item" style="opacity:0.6;">${k.replace(/_/g,' ')}</div>`; });
+      cellHtml += `</div>`;
+    }
+  }
+  cellHtml += '</div>';
+  document.getElementById('cellSection').innerHTML = cellHtml;
+}
+</script>

@@ -1,0 +1,158 @@
+<style>
+.stealCard {
+  background: url('/img/city-skyline.svg') center/cover no-repeat;
+  position: relative;
+}
+.stealCard::before {
+  content:''; position:absolute; inset:0;
+  background: rgba(0,0,0,0.55);
+}
+.stealInner {
+  position:relative; z-index:1;
+  max-width: 500px; margin: 0 auto;
+  padding: 20px;
+}
+.stealPaper {
+  background: linear-gradient(145deg, #e8d89a, #d4c070);
+  border: 2px solid #b8a040;
+  border-radius: 4px;
+  padding: 18px 22px;
+  box-shadow: 3px 4px 12px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.3);
+  position: relative;
+}
+.stealPaper::before, .stealPaper::after {
+  content: '';
+  position: absolute;
+  width: 20px; height: 20px;
+  background: #cc4400;
+  top: -6px; left: -6px;
+  transform: rotate(45deg);
+}
+.stealPaper::after { left:auto; right:-6px; }
+.commitBtn {
+  background: linear-gradient(180deg, #ee3333, #aa0000);
+  border: 2px solid #880000;
+  color: #fff;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 10px 30px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 14px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  transition: transform 0.05s, box-shadow 0.05s;
+}
+.commitBtn:active { transform: scale(0.97); box-shadow: 0 1px 4px rgba(0,0,0,0.5); }
+.commitBtn:disabled { background: #555; border-color: #333; cursor: not-allowed; }
+.nrvBadge {
+  background: #00aa00; color:#fff;
+  font-size:13px; font-weight:bold;
+  padding: 1px 6px; border-radius:2px; display:inline-block;
+}
+#stealResult {
+  margin-top: 10px; padding: 8px 12px;
+  border-radius: 3px; font-size: 12px;
+  display: none;
+}
+.inmate-art {
+  float: left; margin-right: 16px;
+  width: 90px; height: 120px;
+  background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+  border: 2px solid #888;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 48px;
+}
+</style>
+
+<div style="font-family:'Oswald',sans-serif;font-size:13px;color:#999;letter-spacing:1px;margin-bottom:8px;border-bottom:1px solid #333;padding-bottom:6px;">
+  BROKER'S OFFICE &nbsp;›&nbsp; <span style="color:#cc4400;">Steal Weapon</span>
+  &nbsp;&nbsp;<a href="/broker" style="color:#666;font-size:10px;float:right;">← return to broker's office</a>
+</div>
+
+<div class="stealCard" style="border:2px solid #555;min-height:300px;">
+  <div class="stealInner">
+
+    <div style="text-align:center;margin-bottom:16px;">
+      <div style="font-family:'Oswald',Arial;font-size:22px;color:#fff;letter-spacing:3px;text-shadow:0 2px 6px #000;text-transform:uppercase;">Commit Crime</div>
+    </div>
+
+    <div class="stealPaper">
+      <div style="overflow:hidden;">
+        <div class="inmate-art">🔫</div>
+        <div>
+          <div style="font-family:'Oswald',Arial;font-size:20px;color:#1a1a1a;margin-bottom:6px;">Steal Weapon</div>
+          <div style="font-size:12px;color:#4a4a2a;line-height:1.5;margin-bottom:10px;">
+            The Broker's gun case is so damn tempting...<br>Dare to steal a gun and sell it?
+          </div>
+          <div style="font-size:12px;color:#2a2a2a;margin-bottom:6px;">
+            <strong style="color:#333;">CRIME:</strong> &nbsp;
+            You need <span class="nrvBadge">20</span> nerve to attempt this crime
+          </div>
+          <div style="font-size:11px;color:#666;">
+            Catch chance: <%= Math.max(10, 55 - Math.floor(user.speed/50)*5) %>% &nbsp;|&nbsp; 
+            Your nerve: <strong style="color:<%= user.nerve >= 20 ? '#00aa00' : '#cc0000' %>"><%= user.nerve %></strong>
+          </div>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+
+      <div id="stealResult"></div>
+
+      <button class="commitBtn" id="commitBtn" onclick="commitCrime()"
+        <%= user.nerve < 20 ? 'disabled' : '' %>>
+        COMMIT CRIME
+      </button>
+    </div>
+
+    <div style="text-align:center;margin-top:12px;">
+      <a href="/broker" style="color:#888;font-size:11px;text-decoration:underline;">return to broker's office</a>
+    </div>
+
+  </div>
+</div>
+
+<script>
+let cooldown = false;
+function commitCrime() {
+  if (cooldown) return;
+  cooldown = true;
+  const btn = document.getElementById('commitBtn');
+  const res = document.getElementById('stealResult');
+  btn.disabled = true;
+  btn.textContent = 'COMMITTING...';
+
+  fetch('/broker/steal', {
+    method:'POST', headers:{'Content-Type':'application/json'}, body:'{}'
+  }).then(r=>r.json()).then(d => {
+    res.style.display = 'block';
+    if (d.error) {
+      res.style.background='rgba(100,0,0,0.3)'; res.style.color='#ff8888'; res.style.border='1px solid #cc0000';
+      res.textContent = '⚠ ' + d.error;
+      btn.textContent = 'COMMIT CRIME';
+      btn.disabled = false;
+    } else if (d.caught) {
+      res.style.background='rgba(100,0,0,0.3)'; res.style.color='#ff8888'; res.style.border='1px solid #cc0000';
+      res.textContent = '🚨 ' + d.msg;
+      btn.textContent = 'JAILED';
+      setTimeout(()=>window.location.href='/jail',2000);
+      return;
+    } else {
+      res.style.background='rgba(0,80,0,0.3)'; res.style.color='#88ff88'; res.style.border='1px solid #00cc00';
+      res.textContent = '✓ ' + d.msg;
+      if (d.user) updateStats(d.user);
+    }
+    // Allow re-commit after 0.8s (spammable)
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.textContent = 'COMMIT CRIME';
+      cooldown = false;
+    }, 800);
+  });
+}
+// Allow enter key to spam commit
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter') commitCrime();
+});
+</script>

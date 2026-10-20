@@ -1,0 +1,37 @@
+LOCKDOWN — UPDATED GAME
+=======================
+Extract Lockdown-turn-based-update.zip into a fresh folder. It contains the entire lockdown folder.
+Large artwork is optimized for this single download; gameplay and saved accounts are unchanged.
+
+Requires Node.js 22 or later (verified on Node.js 24).
+Open a terminal in the extracted lockdown folder:
+  npm ci
+  npm start
+Then open http://localhost:3000
+
+The included db/lockdown.db contains your saved accounts.
+Account 1234 received an additional $500,000,000,000 test cash.
+Its packaged cash balance is $500,000,000,500. Its password is unchanged.
+Do not replace this database with an older save if you want that credit.
+The browser preview uses a separate test database.
+
+Included: all current source, assets, categorized market, neon theme/logo,
+bank redesign, clickable city map, property/stock/company systems,
+and retired-item cleanup. Weapon update: individual damage/accuracy rolls, exact-unit trading,
+ammo, attachments, fists/kick, temporary weapons and timed needle effects.
+See docs/WEAPONS.md for implemented rules and system boundaries.
+Known economy adaptations are described in docs/CITY-ECONOMY.md.
+
+For internet hosting set a private SESSION_SECRET and follow README.md.
+Keep your saved-game database private; it contains account data.
+
+ITEM USES UPDATE: Real item purposes are shown throughout the market.
+New consumable, pack, book, passive and special actions are included.
+Read docs/ITEM-USES.md for supported uses and remaining systems.
+This version does not implement every Torn feature.
+
+TURN-BY-TURN UPDATE: Profiles start the fight immediately. Choose a weapon
+then Attack, Use a temporary item, or Reload for one turn. The battle has a
+five-minute real timer and survives refreshes. Profiles have Attack only. Win first, then choose Leave, Mug
+or Hospitalize. Leave awards the most XP and personal respect.
+See docs/ATTACKING.md for rules and remaining combat features.

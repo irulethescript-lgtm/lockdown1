@@ -1,0 +1,21 @@
+<%- include('partials/weapon-arsenal') %>
+<section class="economy-card">
+ <div class="page-heading"><h2>Armor &amp; gear</h2><a href="/inventory">View all items →</a></div>
+ <p>Armor and gear add their listed defensive and stat bonuses. You may equip one of each.</p>
+ <div class="economy-grid">
+ <% for(const [slot,catalog,owned] of [['armor',ARMOR,invArmor],['gear',GEAR,invGear]]){ const active=owned.find(row=>row.item_key===equipped[slot]&&row.quantity>0); %>
+ <div>
+  <h3><%= slot==='armor'?'Armor':'Gear' %></h3>
+  <p><%= active ? catalog[active.item_key].name : 'Nothing equipped' %></p>
+  <form class="economy-form arsenal-form" data-path="/equipment/equip">
+   <input type="hidden" name="slot" value="<%= slot %>"><input type="hidden" name="action" value="equip">
+   <label>Owned <%= slot %><select name="key" required>
+    <option value="">Choose an item</option>
+    <% owned.filter(row=>row.quantity>0).forEach(row=>{ %><option value="<%= row.item_key %>"><%= catalog[row.item_key].name %> ×<%= row.quantity %> · <%= catalog[row.item_key].desc %></option><% }); %>
+   </select></label><button class="action-button" type="submit">Equip</button>
+  </form>
+  <% if(active){ %><form class="arsenal-form" data-path="/equipment/equip"><input type="hidden" name="action" value="unequip"><input type="hidden" name="slot" value="<%= slot %>"><button class="action-button" type="submit">Unequip</button></form><% } %>
+ </div>
+ <% } %>
+ </div>
+</section>

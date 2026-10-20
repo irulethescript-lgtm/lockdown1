@@ -1,0 +1,201 @@
+<h1>The Plastic Surgeon</h1>
+<p>Build your look. All avatar parts are free and unlocked.</p>
+<div id="surgeonMsg" role="status" style="display:none" class="result-box show"></div>
+<div id="surgeonWrap">
+  <div id="catButtons" aria-label="Avatar categories">
+  <% AVATAR_CATEGORIES.forEach(cat => { %>
+    <button class="catBtn <%= cat.id === 'head' ? 'active' : '' %>" title="<%= cat.label %>" aria-label="<%= cat.label %>" onclick="selectCat('<%= cat.id %>')" id="catBtn_<%= cat.id %>"><%= cat.icon %></button>
+  <% }); %>
+  </div>
+  <div class="surgeon-preview-column">
+    <div id="avatarPreview">
+      <% AVATAR_CATEGORIES.forEach(cat => { %>
+      <div class="avatarLayer" id="layer_<%= cat.id %>" style="z-index:<%= cat.zIndex %>"></div>
+      <% }); %>
+    </div>
+    <div class="surgeon-actions">
+      <button class="surgeonBtn" title="Reset to saved" aria-label="Reset to saved" onclick="resetAvatar()">↶</button>
+      <button class="surgeonBtn" title="Randomize" aria-label="Randomize" onclick="randomizeAvatar()">⤨</button>
+      <button class="surgeonBtn" title="Save changes" aria-label="Save changes" onclick="saveAvatar()">▣</button>
+    </div>
+  </div>
+  <div id="partsPanel">
+    <span id="catLabel" class="sr-only">HEADS</span>
+    <div id="partsGrid" aria-label="Available avatar parts"></div>
+  </div>
+  <section class="surgeon-presets">
+    <h2>Presets</h2>
+    <div class="preset-grid">
+      <% for(let i=1;i<=10;i++){ const preset=presets.find(p=>p.slot===i); %>
+      <button class="presetSlot <%= preset ? '' : 'empty' %>" id="preset_<%= i %>" onclick="<%= preset ? 'loadPreset('+i+')' : 'savePreset('+i+')' %>" title="<%= preset ? 'Load preset '+i : 'Save to slot '+i %>">
+        <% if(preset){ avatarImages(preset.layers).forEach(src=>{ %><img src="<%= src %>" alt=""><% }); }else{ %>+<% } %>
+      </button>
+      <% } %>
+    </div>
+  </section>
+</div>
+<div class="surgeon-footer"><span>Choose your parts, then save your new look.</span><a href="/hospital">Back to hospital</a><strong>All parts free</strong></div>
+<style>
+#surgeonWrap{display:grid;grid-template-columns:210px minmax(0,1fr);gap:14px;max-width:570px;padding:18px;background:#202020;border:4px solid #101010;box-sizing:border-box}
+#catButtons{grid-column:1/-1;display:flex;justify-content:center;gap:6px;flex-wrap:wrap}
+.catBtn{width:32px;height:32px;padding:0;border-radius:50%;background:#666;border:2px solid #080808;cursor:pointer;font-size:17px;color:#111}
+.catBtn.active,.catBtn:hover{background:#ffebcb}
+#avatarPreview{position:relative;width:210px;height:254px;background:radial-gradient(#777,#242424);border:4px solid #080808;box-sizing:border-box;overflow:hidden}
+.avatarLayer{position:absolute;inset:0;background-size:contain;background-repeat:no-repeat;background-position:center}
+.surgeon-actions{display:flex;justify-content:center;gap:12px;margin-top:16px}
+.surgeonBtn{width:40px;height:40px;border-radius:50%;background:#ffebcb;color:#111;border:3px solid #080808;font-size:24px;cursor:pointer}
+#partsPanel{min-width:0}
+#partsGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-height:300px;overflow-y:auto;padding-right:8px;scrollbar-color:#ffebcb #555;align-content:start}
+.partCard{padding:0;background:#fff0b4;border:2px solid transparent;cursor:pointer}
+.partCard.active,.partCard:hover{border-color:#c79e26}
+.partThumb{aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.partThumb img{width:100%;height:100%;object-fit:contain}
+.surgeon-presets{grid-column:1/-1;margin-top:30px}
+.surgeon-presets h2{font-size:17px;color:white;margin:0 0 12px}
+.preset-grid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px}
+.presetSlot{position:relative;height:46px;min-width:0;padding:0;background:#252525;border:1px solid #888;border-radius:6px;color:#999;font-size:24px;cursor:pointer;overflow:hidden}
+.presetSlot img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.presetSlot.empty{border-style:dashed}
+.presetSlot:hover{border-color:#e5b827}
+.surgeon-footer{max-width:570px;box-sizing:border-box;padding:10px;background:#444;border:1px solid #777;font-size:12px;display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.surgeon-footer span{flex-basis:100%}
+.surgeon-footer strong{color:#ffe7ad}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media(max-width:650px){#surgeonWrap{grid-template-columns:minmax(0,1fr);padding:12px}.surgeon-preview-column{justify-self:center}#partsPanel{grid-column:1/-1}#partsGrid{max-height:300px}.preset-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.surgeon-presets{margin-top:12px}}
+</style>
+<script>
+// ── Data from server ──
+const PARTS    = <%- JSON.stringify(AVATAR_PARTS) %>;
+const CATS     = <%- JSON.stringify(AVATAR_CATEGORIES) %>;
+const UNLOCKED = <%- JSON.stringify(unlocked) %>;
+const PRESETS_DATA = <%- JSON.stringify(presetsData) %>;
+
+// Current avatar state
+let currentAvatar = <%- JSON.stringify(currentAvatar) %>;
+let savedAvatar   = <%- JSON.stringify(currentAvatar) %>;
+let activeCategory = 'head';
+
+// ── Init ──
+document.addEventListener('DOMContentLoaded', () => {
+  renderLayers();
+  renderParts('head');
+});
+
+// ── Render avatar layers ──
+function renderLayers() {
+  CATS.forEach(cat => {
+    const layerEl = document.getElementById('layer_' + cat.id);
+    if (!layerEl) return;
+    const selectedKey = currentAvatar[cat.id] || 'none';
+    const part = (PARTS[cat.id] || []).find(p => p.key === selectedKey);
+    if (part && part.img) {
+      layerEl.style.backgroundImage = `url('${part.img}')`;
+    } else {
+      layerEl.style.backgroundImage = 'none';
+    }
+  });
+}
+
+// ── Render parts grid ──
+function renderParts(catId) {
+  activeCategory = catId;
+  const parts = PARTS[catId] || [];
+  const grid = document.getElementById('partsGrid');
+  const cat = CATS.find(c => c.id === catId);
+  document.getElementById('catLabel').textContent = cat ? cat.label.toUpperCase() : catId.toUpperCase();
+
+  grid.innerHTML = '';
+  parts.forEach(part => {
+    const isSelected = (currentAvatar[catId] === part.key) ||
+                       (part.key === 'none' && !currentAvatar[catId]);
+    const div = document.createElement('button');
+    div.type = 'button';
+    div.className = 'partCard' + (isSelected ? ' active' : '');
+    div.title = part.name;
+    div.setAttribute('aria-label', part.name);
+    div.innerHTML = `<span class="partThumb">${part.img ? `<img src="${part.thumb || part.img}" alt="">` : '<span style="font-size:1.5rem;color:#333;">∅</span>'}</span>`;
+    div.onclick = () => selectPart(catId, part.key);
+    grid.appendChild(div);
+  });
+}
+
+// ── Select a part ──
+function selectPart(catId, key) {
+  currentAvatar[catId] = key;
+  renderLayers();
+  renderParts(catId);
+}
+
+// ── Select category ──
+function selectCat(catId) {
+  document.querySelectorAll('.catBtn').forEach(b => b.classList.remove('active'));
+  document.getElementById('catBtn_' + catId).classList.add('active');
+  renderParts(catId);
+}
+
+// ── Reset ──
+function resetAvatar() {
+  currentAvatar = JSON.parse(JSON.stringify(savedAvatar));
+  renderLayers();
+  renderParts(activeCategory);
+  showMsg('Reset to saved look.', false);
+}
+
+// ── Randomize ──
+function randomizeAvatar() {
+  const availableParts = {};
+  Object.entries(PARTS).forEach(([cat, parts]) => {
+    const available = parts.filter(p => p.free || UNLOCKED.includes(p.key));
+    if (available.length) availableParts[cat] = available[Math.floor(Math.random() * available.length)].key;
+  });
+  currentAvatar = { ...currentAvatar, ...availableParts };
+  renderLayers();
+  renderParts(activeCategory);
+}
+
+// ── Save ──
+function saveAvatar() {
+  fetch('/surgeon/save', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ layers: currentAvatar })
+  }).then(r => r.json()).then(d => {
+    if (d.error) showMsg(d.error, true);
+    else { savedAvatar = JSON.parse(JSON.stringify(currentAvatar)); showMsg('Look saved!', false); }
+  });
+}
+
+// ── Presets ──
+function loadPreset(slot) {
+  const data = PRESETS_DATA.find(p => p.slot === slot);
+  if (!data) return;
+  try {
+    const layers = typeof data.layers === 'string' ? JSON.parse(data.layers) : data.layers;
+    currentAvatar = { ...currentAvatar, ...layers };
+    renderLayers();
+    renderParts(activeCategory);
+    showMsg(`Loaded preset ${slot}.`, false);
+  } catch(e) { showMsg('Could not load preset.', true); }
+}
+
+function savePreset(slot) {
+  fetch('/surgeon/preset/save', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ slot, layers: currentAvatar })
+  }).then(r => r.json()).then(d => {
+    if (d.error) showMsg(d.error, true);
+    else { showMsg(`Saved to preset slot ${slot}!`, false); location.reload(); }
+  });
+}
+
+// ── Status msg ──
+function showMsg(msg, isError) {
+  const el = document.getElementById('surgeonMsg');
+  el.style.display = 'block';
+  el.style.color = isError ? '#ff6666' : '#00cc00';
+  el.style.borderColor = isError ? '#cc0000' : '#00cc00';
+  el.textContent = msg;
+  setTimeout(() => { el.style.display = 'none'; }, 3000);
+}
+</script>

@@ -1,0 +1,94 @@
+<style>
+.wardItem {
+  background: rgba(0,0,0,0.5);
+  border: 1px solid #333;
+  border-top: 2px solid #555;
+  padding: 10px;
+  text-align: center;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  position: relative;
+}
+.wardItem:hover { border-color: #cc8800; box-shadow: 0 0 8px rgba(200,130,0,0.3); }
+.wardItem.protected-item {
+  border: 2px solid #cc9900 !important;
+  box-shadow: 0 0 10px rgba(200,150,0,0.4), inset 0 0 8px rgba(200,150,0,0.08) !important;
+}
+.wardIcon { width:64px; height:76px; margin: 0 auto 6px; display:flex; align-items:center; justify-content:center; background:#111; border:1px solid #222; border-radius:3px; overflow:hidden; }
+.wardName { font-family:'Oswald',sans-serif; font-size:12px; color:#fff; margin-bottom:2px; }
+.wardDesc { font-size:10px; color:#00cc00; margin-bottom:4px; }
+.wardRep  { font-size:12px; color:#ccaa00; font-weight:bold; }
+.protBadge {
+  position:absolute; top:4px; right:4px;
+  background: linear-gradient(135deg,#cc9900,#aa7700);
+  color:#fff; font-size:8px; padding:2px 5px;
+  font-family:'Oswald',sans-serif; letter-spacing:0.5px;
+  border-radius:2px;
+}
+</style>
+
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+  <div>
+    <div style="font-family:'Oswald',sans-serif;font-size:16px;color:#fff;letter-spacing:1px;">Broker's Amenities Shop</div>
+    <div style="font-size:11px;color:#888;margin-top:2px;"><%= prison.name %> — Items here cost <strong style="color:#ccaa00;">Reputation</strong>, not cash, and come <strong style="color:#cc9900;">🔒 Protected</strong></div>
+  </div>
+  <a href="/broker" style="font-size:10px;color:#666;text-decoration:underline;">← The Broker</a>
+</div>
+
+<div style="background:#0a0800;border:1px solid #332200;padding:8px 12px;margin-bottom:12px;font-size:11px;color:#aa8800;">
+  🔒 Items bought here are <strong>Protected</strong> — they remain yours when you move home. They show with a gold border.
+  &nbsp;|&nbsp; Your Rep: <strong style="color:#ccaa00;" id="rep_display"><%= user.rep %></strong>
+</div>
+
+<div id="wardMsg" style="display:none;margin-bottom:10px;padding:8px 12px;font-size:11px;border:1px solid;"></div>
+
+<% if (shopItems.length === 0) { %>
+  <div style="color:#555;text-align:center;padding:30px;font-size:12px;">No amenities available in <%= prison.name %> yet.</div>
+<% } else { %>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+  <% shopItems.forEach(item => {
+    const qty = ownedMap[item.key] || 0;
+    const canAfford = user.rep >= item.rep_cost;
+  %>
+  <div class="wardItem" id="ward_<%= item.key %>">
+    <div class="protBadge">🔒 PROTECTED</div>
+    <div class="wardIcon">
+      <img src="<%= item.img || '/amenities/default.png' %>" style="width:48px;height:58px;object-fit:contain;" onerror="this.src='/amenities/default.png'">
+    </div>
+    <div class="wardName"><%= item.name %></div>
+    <div class="wardDesc"><%= item.desc %></div>
+    <div class="wardRep"><%= item.rep_cost %> Rep</div>
+    <% if (qty > 0) { %>
+      <div style="font-size:9px;color:#aa8800;margin-top:2px;">Owned: <%= qty %></div>
+    <% } %>
+    <button style="width:100%;margin-top:6px;background:<%= canAfford ? '#cc4400' : '#333' %>;border:1px solid <%= canAfford ? '#aa3300' : '#222' %>;color:<%= canAfford ? '#fff' : '#666' %>;font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:1px;padding:5px;cursor:<%= canAfford ? 'pointer' : 'not-allowed' %>;"
+      onclick="buyAmenity('<%= item.key %>', this)"
+      <%= canAfford ? '' : 'disabled' %>>BUY</button>
+  </div>
+  <% }); %>
+</div>
+<% } %>
+
+<div style="margin-top:14px;"><a href="/property" style="font-size:10px;color:#666;text-decoration:underline;">← Back to My Property</a></div>
+
+<script>
+function buyAmenity(key, btn) {
+  btn.disabled = true; btn.textContent = '...';
+  fetch('/broker-supplies/buy', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ item_key: key })
+  }).then(r=>r.json()).then(d => {
+    const el = document.getElementById('wardMsg');
+    el.style.display = 'block';
+    if (d.error) {
+      el.style.color='#ff6666'; el.style.borderColor='#cc0000'; el.style.background='rgba(80,0,0,0.2)';
+      el.textContent = d.error;
+      btn.disabled = false; btn.textContent = 'BUY';
+    } else {
+      el.style.color='#ccaa00'; el.style.borderColor='#886600'; el.style.background='rgba(60,40,0,0.3)';
+      el.textContent = '🔒 ' + d.msg;
+      if (d.user) { updateStats(d.user); document.getElementById('rep_display').textContent = d.user.rep; }
+      btn.textContent = 'BOUGHT ✓'; btn.style.background='#336600'; btn.style.borderColor='#224400';
+    }
+  });
+}
+</script>

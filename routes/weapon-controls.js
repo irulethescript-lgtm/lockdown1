@@ -1,0 +1,72 @@
+const {requireAuth}=require('../middleware/auth');
+const {progressionAction}=require('../middleware/progression');
+const {getUser}=require('../middleware/db');
+const weapons=require('../middleware/weapons');
+const integer=value=>(typeof value==='string'||typeof value==='number')&&value!==''&&Number.isSafeInteger(Number(value))?Number(value):NaN;
+module.exports=(router,statBlock)=>{
+ const action=(path,fn)=>router.post(path,requireAuth,progressionAction(async(req,tx)=>{
+  const user=await getUser(req.session.userId,tx);
+  if(user.in_hospital||user.in_jail)return {error:'Recover before changing your combat supplies.'};
+  const result=await fn(req.body,tx,user);
+  return result.error?result:{...result,user:statBlock(await getUser(user.id,tx))};
+ }));
+ action('/equipment/weapon',async(body,tx,user)=>weapons.choose(tx,user.id,integer(body.instance_id)));
+ action('/equipment/loadout',async(body,tx,user)=>{
+  const unarmed=body.unarmed,temporary=body.temporary_key;
+  const s=await weapons.state(tx,user.id);
+  if(!['fists','kick'].includes(unarmed))return {error:'Choose Fists or Kick.'};
+  if(unarmed==='kick'&&!s.courses.has('martial_kick'))return {error:'Complete Kick Training first.'};
+  if(typeof temporary!=='string')return {error:'Choose an opening item.'};
+  const t=s.temporary.find(t=>t.item_key===temporary);
+  if(temporary&&!t)return {error:'You do not own that temporary item.'};
+  const p=t?.item.weaponProfile;
+  if(p?.kind==='boss')return {error:'There is no interdimensional target in citizen battles. Item kept.'};
+  if(p?.kind==='needle'&&!s.courses.has('BIO3420'))return {error:'Complete BIO3420 before preparing needles.'};
+  await tx.run('INSERT INTO combat_loadouts(user_id,unarmed,temporary_key) VALUES (?,?,?) ON CONFLICT(user_id) DO UPDATE SET unarmed=excluded.unarmed,temporary_key=excluded.temporary_key',[user.id,unarmed,temporary||null]);
+  return {msg:'Fight plan saved. One opening item is used per battle when available.'};
+ });
+ action('/equipment/attachment',async(body,tx,user)=>{
+  const id=integer(body.instance_id),key=body.attachment;
+  if(!Object.hasOwn(weapons.ATTACHMENTS,key))return {error:'Unknown attachment.'};
+  const unit=(await weapons.sync(tx,user.id)).find(w=>w.id===id);
+  if(!unit)return {error:'You do not own that weapon.'};
+  const p=require('../middleware/weapon-profiles').profileFor(weapons.itemFor(unit.item_key));
+  if(!['primary','secondary'].includes(p.category))return {error:'Attachments require a primary or secondary weapon.'};
+  if(unit.attachment===key)return {error:'That attachment is already installed.'};
+  const price=weapons.ATTACHMENTS[key].price;
+  if(user.cash<price)return {error:'Not enough cash.'};
+  await tx.run('UPDATE users SET cash=cash-? WHERE id=?',[price,user.id]);
+  await tx.run('UPDATE weapon_instances SET attachment=? WHERE id=?',[key,id]);
+  return {msg:'Attachment changed.'};
+ });
+ action('/equipment/ammo',async(body,tx,user)=>{
+  const id=integer(body.instance_id),quantity=integer(body.quantity),kind=body.kind;
+  const unit=(await weapons.sync(tx,user.id)).find(w=>w.id===id);
+  if(!unit)return {error:'You do not own that weapon.'};
+  const p=weapons.itemFor(unit.item_key).weaponProfile;
+  if(!p?.caliber || !['standard',...p.specialAmmo].includes(kind))return {error:'This ammunition is incompatible.'};
+  if(quantity<1||quantity>100000||!Number.isSafeInteger(quantity))return {error:'Choose 1 to 100,000 whole rounds.'};
+  const cost=quantity*weapons.AMMO[kind].price;
+  if(user.cash<cost)return {error:'Not enough cash.'};
+  await tx.run('UPDATE users SET cash=cash-? WHERE id=?',[cost,user.id]);
+  await tx.run('INSERT INTO weapon_ammo(user_id,caliber,kind,quantity) VALUES (?,?,?,?) ON CONFLICT(user_id,caliber,kind) DO UPDATE SET quantity=quantity+excluded.quantity',[user.id,p.caliber,kind,quantity]);
+  return {msg:'Purchased '+quantity+' rounds of '+p.caliber+' ('+kind+').'};
+ });
+ action('/equipment/reload',async(body,tx,user)=>{
+  const id=integer(body.instance_id),kind=body.kind;
+  const unit=(await weapons.sync(tx,user.id)).find(w=>w.id===id);
+  if(!unit)return {error:'You do not own that weapon.'};
+  const p=weapons.itemFor(unit.item_key).weaponProfile;
+  if(!p?.caliber||!['standard',...p.specialAmmo].includes(kind))return {error:'This ammunition is incompatible.'};
+  const stock=await tx.get('SELECT quantity FROM weapon_ammo WHERE user_id=? AND caliber=? AND kind=?',[user.id,p.caliber,kind]);
+  const returning=unit.ammo_type===kind?unit.loaded:0;
+  const total=(stock?.quantity||0)+returning;
+  if(!total)return {error:'Buy compatible ammunition first.'};
+  if(unit.ammo_type===kind&&unit.loaded===p.clip)return {error:'Magazine already full.'};
+  if(unit.loaded)await tx.run('INSERT INTO weapon_ammo(user_id,caliber,kind,quantity) VALUES (?,?,?,?) ON CONFLICT(user_id,caliber,kind) DO UPDATE SET quantity=quantity+excluded.quantity',[user.id,p.caliber,unit.ammo_type,unit.loaded]);
+  const loaded=Math.min(p.clip,total);
+  await tx.run('UPDATE weapon_ammo SET quantity=quantity-? WHERE user_id=? AND caliber=? AND kind=?',[loaded,user.id,p.caliber,kind]);
+  await tx.run('UPDATE weapon_instances SET loaded=?,ammo_type=? WHERE id=?',[loaded,kind,id]);
+  return {msg:'Loaded '+loaded+' rounds. Unused rounds returned to your reserve.'};
+ });
+};

@@ -1,0 +1,31 @@
+<div class="contentBlock">
+  <div class="blockTitle">All Citizens — Block D</div>
+  <div class="blockBody" style="padding:0;">
+    <table class="data-table">
+      <thead><tr><th>#</th><th>Username</th><th>Level</th><th>Rep</th><th>Wins</th><th>Status</th><th></th></tr></thead>
+      <tbody>
+        <% inmates.forEach((inmate, i) => { %>
+        <tr>
+          <td style="color:#666;"><%= i+1 %></td>
+          <td><a href="/profile/<%= inmate.username %>"><%= inmate.username %></a></td>
+          <td><%= inmate.level %></td>
+          <td style="color:#ccaa00;"><%= inmate.rep %></td>
+          <td style="color:#00cc00;"><%= inmate.wins %></td>
+          <td>
+            <% if (inmate.in_hospital) { %>
+              <span style="color:#cc0000;">Hospital</span>
+            <% } else { %>
+              <span style="color:#666;">Free</span>
+            <% } %>
+          </td>
+          <td>
+            <% if (inmate.id !== user.id) { %>
+            <a href="/battles" class="btn" style="padding:2px 8px; font-size:10px;">ATTACK</a>
+            <% } %>
+          </td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</div>

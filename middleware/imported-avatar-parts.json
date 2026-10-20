@@ -1,0 +1,3097 @@
+{
+  "nose": [
+    {
+      "key": "imported-nose-809-000000",
+      "name": "1 (000000)",
+      "img": "/avatars/imported/imported-nose-809-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-809-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-810-000000",
+      "name": "2 (000000)",
+      "img": "/avatars/imported/imported-nose-810-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-810-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-811-000000",
+      "name": "3 (000000)",
+      "img": "/avatars/imported/imported-nose-811-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-811-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-812-000000",
+      "name": "4 (000000)",
+      "img": "/avatars/imported/imported-nose-812-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-812-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-813-000000",
+      "name": "5 (000000)",
+      "img": "/avatars/imported/imported-nose-813-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-813-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1323-000000",
+      "name": "Bad Elf Nose (000000)",
+      "img": "/avatars/imported/imported-nose-1323-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1323-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-160-black",
+      "name": "Blob (Black)",
+      "img": "/avatars/imported/imported-nose-160-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-160-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-681-000000",
+      "name": "Bunny Nose (000000)",
+      "img": "/avatars/imported/imported-nose-681-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-681-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-290-black",
+      "name": "Complicated Ninjastar (Black)",
+      "img": "/avatars/imported/imported-nose-290-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-290-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-324-black",
+      "name": "Conan Nose (Black)",
+      "img": "/avatars/imported/imported-nose-324-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-324-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-308-black",
+      "name": "Flared Nostril (Black)",
+      "img": "/avatars/imported/imported-nose-308-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-308-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-1370-000000",
+      "name": "Gamora (000000)",
+      "img": "/avatars/imported/imported-nose-1370-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1370-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-229-black",
+      "name": "Gay Nose (Black)",
+      "img": "/avatars/imported/imported-nose-229-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-229-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-363-black",
+      "name": "Leah 1 (Black)",
+      "img": "/avatars/imported/imported-nose-363-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-363-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-335-black",
+      "name": "Long Pointed (Black)",
+      "img": "/avatars/imported/imported-nose-335-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-335-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-331-black",
+      "name": "Long boring (Black)",
+      "img": "/avatars/imported/imported-nose-331-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-331-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-1386-ffff00",
+      "name": "Mantis (ffff00)",
+      "img": "/avatars/imported/imported-nose-1386-ffff00.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1386-ffff00-thumb.png"
+    },
+    {
+      "key": "imported-nose-341-black",
+      "name": "Nectar Bulb (Black)",
+      "img": "/avatars/imported/imported-nose-341-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-341-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-587-000000",
+      "name": "Nose (000000)",
+      "img": "/avatars/imported/imported-nose-587-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-587-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1471-000000",
+      "name": "Nose 01 (000000)",
+      "img": "/avatars/imported/imported-nose-1471-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1471-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1472-000000",
+      "name": "Nose 02 (000000)",
+      "img": "/avatars/imported/imported-nose-1472-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1472-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1473-000000",
+      "name": "Nose 03 (000000)",
+      "img": "/avatars/imported/imported-nose-1473-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1473-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1474-000000",
+      "name": "Nose 04 (000000)",
+      "img": "/avatars/imported/imported-nose-1474-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1474-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1475-000000",
+      "name": "Nose 05 (000000)",
+      "img": "/avatars/imported/imported-nose-1475-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1475-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1476-000000",
+      "name": "Nose 06 (000000)",
+      "img": "/avatars/imported/imported-nose-1476-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1476-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-224-black",
+      "name": "Odd (Black)",
+      "img": "/avatars/imported/imported-nose-224-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-224-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-67-black",
+      "name": "Outline Long (Black)",
+      "img": "/avatars/imported/imported-nose-67-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-67-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-665-000000",
+      "name": "Red Nose (000000)",
+      "img": "/avatars/imported/imported-nose-665-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-665-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-314-black",
+      "name": "Regular (Black)",
+      "img": "/avatars/imported/imported-nose-314-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-314-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-1297-000000",
+      "name": "Ruddy Nose (000000)",
+      "img": "/avatars/imported/imported-nose-1297-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1297-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1316-000000",
+      "name": "Santa Nose (000000)",
+      "img": "/avatars/imported/imported-nose-1316-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1316-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-296-black",
+      "name": "Seagull bottom (Black)",
+      "img": "/avatars/imported/imported-nose-296-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-296-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-302-black",
+      "name": "Tall amateur (Black)",
+      "img": "/avatars/imported/imported-nose-302-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-302-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-277-black",
+      "name": "Tall medium (Black)",
+      "img": "/avatars/imported/imported-nose-277-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-277-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-284-black",
+      "name": "Tall thin pointed (Black)",
+      "img": "/avatars/imported/imported-nose-284-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-284-black-thumb.png"
+    },
+    {
+      "key": "imported-nose-1287-000000",
+      "name": "Will Nose (000000)",
+      "img": "/avatars/imported/imported-nose-1287-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1287-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1170-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-nose-1170-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1170-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1171-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-nose-1171-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1171-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1172-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-nose-1172-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1172-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1173-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-nose-1173-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1173-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-1174-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-nose-1174-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-1174-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-889-000000",
+      "name": "mustach (000000)",
+      "img": "/avatars/imported/imported-nose-889-000000.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-889-000000-thumb.png"
+    },
+    {
+      "key": "imported-nose-23-black",
+      "name": "Slim (Black)",
+      "img": "/avatars/imported/imported-nose-23-black.png",
+      "rep_cost": 0,
+      "free": true,
+      "thumb": "/avatars/imported/imported-nose-23-black-thumb.png"
+    }
+  ],
+  "accessories": [
+    {
+      "key": "imported-accessories-20-black",
+      "name": "Bandaid (Black)",
+      "img": "/avatars/imported/imported-accessories-20-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-accessories-20-black-thumb.png"
+    },
+    {
+      "key": "imported-accessories-17-black",
+      "name": "Eyepatch (Black)",
+      "img": "/avatars/imported/imported-accessories-17-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-accessories-17-black-thumb.png"
+    },
+    {
+      "key": "imported-head-862-000000",
+      "name": "Arrow (000000)",
+      "img": "/avatars/imported/imported-head-862-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-862-000000-thumb.png"
+    }
+  ],
+  "appendages": [
+    {
+      "key": "imported-appendages-680-000000",
+      "name": "Bunny Ears (000000)",
+      "img": "/avatars/imported/imported-appendages-680-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-appendages-680-000000-thumb.png"
+    }
+  ],
+  "extras": [
+    {
+      "key": "imported-extras-1318-c000ff",
+      "name": "Bad Elf Beard (c000ff)",
+      "img": "/avatars/imported/imported-extras-1318-c000ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1318-c000ff-thumb.png"
+    },
+    {
+      "key": "imported-extras-1320-0048ff",
+      "name": "Bad Elf Chin Ruff (0048ff)",
+      "img": "/avatars/imported/imported-extras-1320-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1320-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-extras-1319-000000",
+      "name": "Bad Elf Scarf (000000)",
+      "img": "/avatars/imported/imported-extras-1319-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1319-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-90-black",
+      "name": "Bandages (Black)",
+      "img": "/avatars/imported/imported-extras-90-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-90-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-298-black",
+      "name": "Barbed Wire Tat (Black)",
+      "img": "/avatars/imported/imported-extras-298-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-298-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-676-ff0000",
+      "name": "Beard (ff0000)",
+      "img": "/avatars/imported/imported-extras-676-ff0000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-676-ff0000-thumb.png"
+    },
+    {
+      "key": "imported-extras-1446-bababa",
+      "name": "Beard 01 (bababa)",
+      "img": "/avatars/imported/imported-extras-1446-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1446-bababa-thumb.png"
+    },
+    {
+      "key": "imported-extras-1447-d57540",
+      "name": "Beard 02 (d57540)",
+      "img": "/avatars/imported/imported-extras-1447-d57540.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1447-d57540-thumb.png"
+    },
+    {
+      "key": "imported-extras-1450-000000",
+      "name": "Beard 05 (000000)",
+      "img": "/avatars/imported/imported-extras-1450-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1450-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-1451-6f584c",
+      "name": "Beard 06 (6f584c)",
+      "img": "/avatars/imported/imported-extras-1451-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1451-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-extras-149-red",
+      "name": "Blindfold (Red)",
+      "img": "/avatars/imported/imported-extras-149-red.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-149-red-thumb.png"
+    },
+    {
+      "key": "imported-extras-864-ff00a2",
+      "name": "Bow (ff00a2)",
+      "img": "/avatars/imported/imported-extras-864-ff00a2.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-864-ff00a2-thumb.png"
+    },
+    {
+      "key": "imported-extras-143-black",
+      "name": "Bowtie (Black)",
+      "img": "/avatars/imported/imported-extras-143-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-143-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-327-black",
+      "name": "Cheek Scar (Black)",
+      "img": "/avatars/imported/imported-extras-327-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-327-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-286-black",
+      "name": "Chin Piercing (Black)",
+      "img": "/avatars/imported/imported-extras-286-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-286-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-321-black",
+      "name": "Conan Band (Black)",
+      "img": "/avatars/imported/imported-extras-321-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-321-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-1573-000000",
+      "name": "Cupid Wings (000000)",
+      "img": "/avatars/imported/imported-extras-1573-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1573-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-304-black",
+      "name": "Diamond Stud (Black)",
+      "img": "/avatars/imported/imported-extras-304-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-304-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-1362-c000ff",
+      "name": "Drax (c000ff)",
+      "img": "/avatars/imported/imported-extras-1362-c000ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1362-c000ff-thumb.png"
+    },
+    {
+      "key": "imported-extras-1458-ffff00",
+      "name": "Earrings (ffff00)",
+      "img": "/avatars/imported/imported-extras-1458-ffff00.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1458-ffff00-thumb.png"
+    },
+    {
+      "key": "imported-extras-1454-ffff00",
+      "name": "Extras 01 (ffff00)",
+      "img": "/avatars/imported/imported-extras-1454-ffff00.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1454-ffff00-thumb.png"
+    },
+    {
+      "key": "imported-extras-1455-000000",
+      "name": "Extras 02 (000000)",
+      "img": "/avatars/imported/imported-extras-1455-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1455-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-563-000000",
+      "name": "Face Bandana (000000)",
+      "img": "/avatars/imported/imported-extras-563-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-563-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-1367-8fb7ff",
+      "name": "Gamora (8fb7ff)",
+      "img": "/avatars/imported/imported-extras-1367-8fb7ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1367-8fb7ff-thumb.png"
+    },
+    {
+      "key": "imported-extras-1366-ffff00",
+      "name": "Gamora (ffff00)",
+      "img": "/avatars/imported/imported-extras-1366-ffff00.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1366-ffff00-thumb.png"
+    },
+    {
+      "key": "imported-extras-1448-6f584c",
+      "name": "Goatee 01 (6f584c)",
+      "img": "/avatars/imported/imported-extras-1448-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1448-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-extras-221-black",
+      "name": "Gold Chains (Black)",
+      "img": "/avatars/imported/imported-extras-221-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-221-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-1561-000000",
+      "name": "Hearts (000000)",
+      "img": "/avatars/imported/imported-extras-1561-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1561-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-337-gray",
+      "name": "Jesus Piece (Gray)",
+      "img": "/avatars/imported/imported-extras-337-gray.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-337-gray-thumb.png"
+    },
+    {
+      "key": "imported-extras-60-black",
+      "name": "Knife in Neck (Black)",
+      "img": "/avatars/imported/imported-extras-60-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-60-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-343-black",
+      "name": "Koi Tattoo (Black)",
+      "img": "/avatars/imported/imported-extras-343-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-343-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-194-black",
+      "name": "Large Earring (Black)",
+      "img": "/avatars/imported/imported-extras-194-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-194-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-1299-000000",
+      "name": "Neck Fur (000000)",
+      "img": "/avatars/imported/imported-extras-1299-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1299-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-1313-000000",
+      "name": "Neck Scarf (000000)",
+      "img": "/avatars/imported/imported-extras-1313-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1313-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-101-black",
+      "name": "Neck Tatoo (Black)",
+      "img": "/avatars/imported/imported-extras-101-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-101-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-95-black",
+      "name": "Neck Zipper (Black)",
+      "img": "/avatars/imported/imported-extras-95-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-95-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-316-black",
+      "name": "Necklace (Black)",
+      "img": "/avatars/imported/imported-extras-316-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-316-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-76-black",
+      "name": "Piercings (Black)",
+      "img": "/avatars/imported/imported-extras-76-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-76-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-899-ffff00",
+      "name": "PlaidScarf (ffff00)",
+      "img": "/avatars/imported/imported-extras-899-ffff00.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-899-ffff00-thumb.png"
+    },
+    {
+      "key": "imported-extras-1354-000000",
+      "name": "Rocket (000000)",
+      "img": "/avatars/imported/imported-extras-1354-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1354-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-1395-bababa",
+      "name": "Ronan (bababa)",
+      "img": "/avatars/imported/imported-extras-1395-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1395-bababa-thumb.png"
+    },
+    {
+      "key": "imported-extras-1399-ff0000",
+      "name": "Ronan (ff0000)",
+      "img": "/avatars/imported/imported-extras-1399-ff0000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1399-ff0000-thumb.png"
+    },
+    {
+      "key": "imported-extras-1456-6f584c",
+      "name": "Ruff (6f584c)",
+      "img": "/avatars/imported/imported-extras-1456-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1456-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-extras-1312-bababa",
+      "name": "Santa Beard (bababa)",
+      "img": "/avatars/imported/imported-extras-1312-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1312-bababa-thumb.png"
+    },
+    {
+      "key": "imported-extras-167-red",
+      "name": "Scarf (Red)",
+      "img": "/avatars/imported/imported-extras-167-red.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-167-red-thumb.png"
+    },
+    {
+      "key": "imported-extras-1453-000000",
+      "name": "Scars (000000)",
+      "img": "/avatars/imported/imported-extras-1453-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1453-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-365-black",
+      "name": "Shades (Black)",
+      "img": "/avatars/imported/imported-extras-365-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-365-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-166-black",
+      "name": "Shaggy Beard (Black)",
+      "img": "/avatars/imported/imported-extras-166-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-166-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-1457-c000ff",
+      "name": "Shirt Top (c000ff)",
+      "img": "/avatars/imported/imported-extras-1457-c000ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1457-c000ff-thumb.png"
+    },
+    {
+      "key": "imported-extras-1449-000000",
+      "name": "Sideburns 01 (000000)",
+      "img": "/avatars/imported/imported-extras-1449-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1449-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-292-black",
+      "name": "Skull Earring (Black)",
+      "img": "/avatars/imported/imported-extras-292-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-292-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-159-black",
+      "name": "Skull Tattoos (Black)",
+      "img": "/avatars/imported/imported-extras-159-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-159-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-215-black",
+      "name": "Small Beard (Black)",
+      "img": "/avatars/imported/imported-extras-215-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-215-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-59-black",
+      "name": "Snake Tat (Black)",
+      "img": "/avatars/imported/imported-extras-59-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-59-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-168-black",
+      "name": "Spectacles (Black)",
+      "img": "/avatars/imported/imported-extras-168-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-168-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-310-black",
+      "name": "Stubble (Black)",
+      "img": "/avatars/imported/imported-extras-310-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-310-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-1629-000000",
+      "name": "Surgical Mask (000000)",
+      "img": "/avatars/imported/imported-extras-1629-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1629-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-56-black",
+      "name": "Tattoo (Black)",
+      "img": "/avatars/imported/imported-extras-56-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-56-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-57-black",
+      "name": "Tattoo 2 (Black)",
+      "img": "/avatars/imported/imported-extras-57-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-57-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-279-black",
+      "name": "Teardrop Tats (Black)",
+      "img": "/avatars/imported/imported-extras-279-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-279-black-thumb.png"
+    },
+    {
+      "key": "imported-extras-872-000000",
+      "name": "Tie (000000)",
+      "img": "/avatars/imported/imported-extras-872-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-872-000000-thumb.png"
+    },
+    {
+      "key": "imported-extras-967-bababa",
+      "name": "Uncle Sam Beard (bababa)",
+      "img": "/avatars/imported/imported-extras-967-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-967-bababa-thumb.png"
+    },
+    {
+      "key": "imported-extras-1286-bababa",
+      "name": "Will Ruff (bababa)",
+      "img": "/avatars/imported/imported-extras-1286-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-1286-bababa-thumb.png"
+    },
+    {
+      "key": "imported-extras-824-0048ff",
+      "name": "extra (0048ff)",
+      "img": "/avatars/imported/imported-extras-824-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-824-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-extras-822-31d51c",
+      "name": "extra (31d51c)",
+      "img": "/avatars/imported/imported-extras-822-31d51c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-822-31d51c-thumb.png"
+    },
+    {
+      "key": "imported-extras-823-31d51c",
+      "name": "extra (31d51c)",
+      "img": "/avatars/imported/imported-extras-823-31d51c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-extras-823-31d51c-thumb.png"
+    },
+    {
+      "key": "imported-head-863-ff00a2",
+      "name": "Bandanna (ff00a2)",
+      "img": "/avatars/imported/imported-head-863-ff00a2.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-863-ff00a2-thumb.png"
+    }
+  ],
+  "eyebrows": [
+    {
+      "key": "imported-eyebrows-11-black",
+      "name": "Angled (Black)",
+      "img": "/avatars/imported/imported-eyebrows-11-black.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyebrows-61-black",
+      "name": "Furrowed (Black)",
+      "img": "/avatars/imported/imported-eyebrows-61-black.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyebrows-13-black",
+      "name": "Incredulous (Black)",
+      "img": "/avatars/imported/imported-eyebrows-13-black.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyebrows-66-black",
+      "name": "Slight Arch (Black)",
+      "img": "/avatars/imported/imported-eyebrows-66-black.png",
+      "free": true,
+      "rep_cost": 0
+    }
+  ],
+  "eyes": [
+    {
+      "key": "imported-eyes-814-000000",
+      "name": "1 (000000)",
+      "img": "/avatars/imported/imported-eyes-814-000000.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-815-000000",
+      "name": "2 (000000)",
+      "img": "/avatars/imported/imported-eyes-815-000000.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-818-000000",
+      "name": "5 (000000)",
+      "img": "/avatars/imported/imported-eyes-818-000000.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-342-brown",
+      "name": "Almond (Brown)",
+      "img": "/avatars/imported/imported-eyes-342-brown.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-291-green",
+      "name": "Angry (Green)",
+      "img": "/avatars/imported/imported-eyes-291-green.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-325-black",
+      "name": "Angry Conan (Black)",
+      "img": "/avatars/imported/imported-eyes-325-black.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-315-brown",
+      "name": "Another normal (Brown)",
+      "img": "/avatars/imported/imported-eyes-315-brown.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1324-c000ff",
+      "name": "Bad Elf Eyes (c000ff)",
+      "img": "/avatars/imported/imported-eyes-1324-c000ff.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-176-green",
+      "name": "Bugged Inverse (Green)",
+      "img": "/avatars/imported/imported-eyes-176-green.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1363-ff0000",
+      "name": "Drax (ff0000)",
+      "img": "/avatars/imported/imported-eyes-1363-ff0000.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-220-blue",
+      "name": "Dull (Blue)",
+      "img": "/avatars/imported/imported-eyes-220-blue.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1300-bababa",
+      "name": "Elf Eyes (bababa)",
+      "img": "/avatars/imported/imported-eyes-1300-bababa.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-583-0048ff",
+      "name": "Eyes (0048ff)",
+      "img": "/avatars/imported/imported-eyes-583-0048ff.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1368-8fb7ff",
+      "name": "Gamora (8fb7ff)",
+      "img": "/avatars/imported/imported-eyes-1368-8fb7ff.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-58-green",
+      "name": "Glowing (Green)",
+      "img": "/avatars/imported/imported-eyes-58-green.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-364-green",
+      "name": "Leah 1 (Green)",
+      "img": "/avatars/imported/imported-eyes-364-green.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-285-blue",
+      "name": "Looking Left (Blue)",
+      "img": "/avatars/imported/imported-eyes-285-blue.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1387-31d51c",
+      "name": "Mantis (31d51c)",
+      "img": "/avatars/imported/imported-eyes-1387-31d51c.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-225-brown",
+      "name": "More Dull (Brown)",
+      "img": "/avatars/imported/imported-eyes-225-brown.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-309-blue",
+      "name": "Normal (Blue)",
+      "img": "/avatars/imported/imported-eyes-309-blue.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-278-green",
+      "name": "Normal (Green)",
+      "img": "/avatars/imported/imported-eyes-278-green.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-336-blue",
+      "name": "Puffy (Blue)",
+      "img": "/avatars/imported/imported-eyes-336-blue.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1397-31d51c",
+      "name": "Ronan (31d51c)",
+      "img": "/avatars/imported/imported-eyes-1397-31d51c.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-268-green",
+      "name": "Round Gay (Green)",
+      "img": "/avatars/imported/imported-eyes-268-green.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-157-black",
+      "name": "Scarred 2 (Black)",
+      "img": "/avatars/imported/imported-eyes-157-black.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1445-c000ff",
+      "name": "Set 01 (c000ff)",
+      "img": "/avatars/imported/imported-eyes-1445-c000ff.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1444-c000ff",
+      "name": "Set 02 (c000ff)",
+      "img": "/avatars/imported/imported-eyes-1444-c000ff.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1443-6f584c",
+      "name": "Set 03 (6f584c)",
+      "img": "/avatars/imported/imported-eyes-1443-6f584c.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1442-6f584c",
+      "name": "Set 04 (6f584c)",
+      "img": "/avatars/imported/imported-eyes-1442-6f584c.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1441-6f584c",
+      "name": "Set 05 (6f584c)",
+      "img": "/avatars/imported/imported-eyes-1441-6f584c.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1440-6f584c",
+      "name": "Set 06 (6f584c)",
+      "img": "/avatars/imported/imported-eyes-1440-6f584c.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-297-blue",
+      "name": "Shrewd (Blue)",
+      "img": "/avatars/imported/imported-eyes-297-blue.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-197-gray",
+      "name": "Sleepy Puffy (Gray)",
+      "img": "/avatars/imported/imported-eyes-197-gray.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-303-blue",
+      "name": "Slightly downturned (Blue)",
+      "img": "/avatars/imported/imported-eyes-303-blue.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-328-blue",
+      "name": "Tired (Blue)",
+      "img": "/avatars/imported/imported-eyes-328-blue.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-2-black",
+      "name": "Wild (Black)",
+      "img": "/avatars/imported/imported-eyes-2-black.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-145-red",
+      "name": "Wild Blush (Red)",
+      "img": "/avatars/imported/imported-eyes-145-red.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1285-c000ff",
+      "name": "Will Eyes (c000ff)",
+      "img": "/avatars/imported/imported-eyes-1285-c000ff.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1175-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-eyes-1175-000000.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1176-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-eyes-1176-000000.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1177-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-eyes-1177-000000.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1178-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-eyes-1178-000000.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-1179-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-eyes-1179-000000.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-816-0048ff",
+      "name": "extra (0048ff)",
+      "img": "/avatars/imported/imported-eyes-816-0048ff.png",
+      "free": true,
+      "rep_cost": 0
+    },
+    {
+      "key": "imported-eyes-817-000000",
+      "name": "eyes1 (000000)",
+      "img": "/avatars/imported/imported-eyes-817-000000.png",
+      "free": true,
+      "rep_cost": 0
+    }
+  ],
+  "eyewear": [
+    {
+      "key": "imported-eyewear-480-000000",
+      "name": "Aviator Glasses (000000)",
+      "img": "/avatars/imported/imported-eyewear-480-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-480-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-947-c000ff",
+      "name": "EggGlassesMale (c000ff)",
+      "img": "/avatars/imported/imported-eyewear-947-c000ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-947-c000ff-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-567-000000",
+      "name": "Goggles (000000)",
+      "img": "/avatars/imported/imported-eyewear-567-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-567-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-1569-000000",
+      "name": "Heart Glasses (000000)",
+      "img": "/avatars/imported/imported-eyewear-1569-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-1569-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-1570-000000",
+      "name": "Heart Sunglasses (000000)",
+      "img": "/avatars/imported/imported-eyewear-1570-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-1570-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-1352-000000",
+      "name": "Nebula (000000)",
+      "img": "/avatars/imported/imported-eyewear-1352-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-1352-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-969-bababa",
+      "name": "Patriotic Glasses (bababa)",
+      "img": "/avatars/imported/imported-eyewear-969-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-969-bababa-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-675-000000",
+      "name": "Shamrock Glasses (000000)",
+      "img": "/avatars/imported/imported-eyewear-675-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-675-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-481-bababa",
+      "name": "Shutter Shades (bababa)",
+      "img": "/avatars/imported/imported-eyewear-481-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-481-bababa-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-1610-000000",
+      "name": "Smallfoot (000000)",
+      "img": "/avatars/imported/imported-eyewear-1610-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-1610-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-1402-000000",
+      "name": "Starlord (000000)",
+      "img": "/avatars/imported/imported-eyewear-1402-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-1402-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-1609-000000",
+      "name": "The Grinch (000000)",
+      "img": "/avatars/imported/imported-eyewear-1609-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-1609-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-1180-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-eyewear-1180-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-1180-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-1181-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-eyewear-1181-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-1181-000000-thumb.png"
+    },
+    {
+      "key": "imported-eyewear-867-eed2c3",
+      "name": "glasses (eed2c3)",
+      "img": "/avatars/imported/imported-eyewear-867-eed2c3.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-eyewear-867-eed2c3-thumb.png"
+    },
+    {
+      "key": "imported-head-81-black",
+      "name": "Dork Glasses (Black)",
+      "img": "/avatars/imported/imported-head-81-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-81-black-thumb.png"
+    }
+  ],
+  "features": [
+    {
+      "key": "imported-features-556-000000",
+      "name": "Beard 1 (000000)",
+      "img": "/avatars/imported/imported-features-556-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-556-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-558-000000",
+      "name": "Beard 3 (000000)",
+      "img": "/avatars/imported/imported-features-558-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-558-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-581-000000",
+      "name": "Blood (000000)",
+      "img": "/avatars/imported/imported-features-581-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-581-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-885-0048ff",
+      "name": "Face Paint (0048ff)",
+      "img": "/avatars/imported/imported-features-885-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-885-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-features-671-ff821f",
+      "name": "Face Paint (ff821f)",
+      "img": "/avatars/imported/imported-features-671-ff821f.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-671-ff821f-thumb.png"
+    },
+    {
+      "key": "imported-features-1342-000000",
+      "name": "Felons Color (000000)",
+      "img": "/avatars/imported/imported-features-1342-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-1342-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-557-000000",
+      "name": "Goatee (000000)",
+      "img": "/avatars/imported/imported-features-557-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-557-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-1301-000000",
+      "name": "Mustache (000000)",
+      "img": "/avatars/imported/imported-features-1301-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-1301-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-559-000000",
+      "name": "Shaggy (000000)",
+      "img": "/avatars/imported/imported-features-559-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-559-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-1401-000000",
+      "name": "Starlord (000000)",
+      "img": "/avatars/imported/imported-features-1401-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-1401-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-560-6f584c",
+      "name": "TommyTee (6f584c)",
+      "img": "/avatars/imported/imported-features-560-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-560-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-features-561-d57540",
+      "name": "Tribeard (d57540)",
+      "img": "/avatars/imported/imported-features-561-d57540.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-561-d57540-thumb.png"
+    },
+    {
+      "key": "imported-features-1182-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-features-1182-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-1182-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-1183-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-features-1183-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-1183-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-1184-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-features-1184-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-1184-000000-thumb.png"
+    },
+    {
+      "key": "imported-features-1185-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-features-1185-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-features-1185-000000-thumb.png"
+    },
+    {
+      "key": "imported-head-1595-000000",
+      "name": "Colossus (000000)",
+      "img": "/avatars/imported/imported-head-1595-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-1595-000000-thumb.png"
+    },
+    {
+      "key": "imported-head-1407-000000",
+      "name": "Yondu (000000)",
+      "img": "/avatars/imported/imported-head-1407-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-1407-000000-thumb.png"
+    }
+  ],
+  "hair": [
+    {
+      "key": "imported-hair-893-000000",
+      "name": " (000000)",
+      "img": "/avatars/imported/imported-hair-893-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-893-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-319-black",
+      "name": " (Black)",
+      "img": "/avatars/imported/imported-hair-319-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-319-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-794-000000",
+      "name": "001 (000000)",
+      "img": "/avatars/imported/imported-hair-794-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-794-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-795-0048ff",
+      "name": "002 (0048ff)",
+      "img": "/avatars/imported/imported-hair-795-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-795-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-hair-796-0048ff",
+      "name": "003 (0048ff)",
+      "img": "/avatars/imported/imported-hair-796-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-796-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-hair-798-000000",
+      "name": "0897 (000000)",
+      "img": "/avatars/imported/imported-hair-798-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-798-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-797-0048ff",
+      "name": "908765 (0048ff)",
+      "img": "/avatars/imported/imported-hair-797-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-797-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-hair-1321-c000ff",
+      "name": "Bad Elf Hair (c000ff)",
+      "img": "/avatars/imported/imported-hair-1321-c000ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1321-c000ff-thumb.png"
+    },
+    {
+      "key": "imported-hair-1634-000000",
+      "name": "Capt Planet (000000)",
+      "img": "/avatars/imported/imported-hair-1634-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1634-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-15-black",
+      "name": "Chucklike (Black)",
+      "img": "/avatars/imported/imported-hair-15-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-15-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-326-black",
+      "name": "Conan Hair (Black)",
+      "img": "/avatars/imported/imported-hair-326-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-326-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-226-black",
+      "name": "Cornrows (Black)",
+      "img": "/avatars/imported/imported-hair-226-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-226-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-156-black",
+      "name": "Curly Fro (Black)",
+      "img": "/avatars/imported/imported-hair-156-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-156-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-1298-000000",
+      "name": "Elf Hair (000000)",
+      "img": "/avatars/imported/imported-hair-1298-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1298-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-171-black",
+      "name": "Fag mop (Black)",
+      "img": "/avatars/imported/imported-hair-171-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-171-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-1371-ff0000",
+      "name": "Gamora (ff0000)",
+      "img": "/avatars/imported/imported-hair-1371-ff0000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1371-ff0000-thumb.png"
+    },
+    {
+      "key": "imported-hair-231-brown",
+      "name": "Gay (Brown)",
+      "img": "/avatars/imported/imported-hair-231-brown.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-231-brown-thumb.png"
+    },
+    {
+      "key": "imported-hair-584-ffff00",
+      "name": "Hair (ffff00)",
+      "img": "/avatars/imported/imported-hair-584-ffff00.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-584-ffff00-thumb.png"
+    },
+    {
+      "key": "imported-hair-1465-d57540",
+      "name": "Hair 01 (d57540)",
+      "img": "/avatars/imported/imported-hair-1465-d57540.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1465-d57540-thumb.png"
+    },
+    {
+      "key": "imported-hair-1466-d57540",
+      "name": "Hair 02 (d57540)",
+      "img": "/avatars/imported/imported-hair-1466-d57540.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1466-d57540-thumb.png"
+    },
+    {
+      "key": "imported-hair-1467-000000",
+      "name": "Hair 03 (000000)",
+      "img": "/avatars/imported/imported-hair-1467-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1467-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-1468-000000",
+      "name": "Hair 04 (000000)",
+      "img": "/avatars/imported/imported-hair-1468-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1468-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-1469-6f584c",
+      "name": "Hair 05 (6f584c)",
+      "img": "/avatars/imported/imported-hair-1469-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1469-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-hair-1470-6f584c",
+      "name": "Hair 06 (6f584c)",
+      "img": "/avatars/imported/imported-hair-1470-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1470-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-hair-196-yellow",
+      "name": "Happy Days (Yellow)",
+      "img": "/avatars/imported/imported-hair-196-yellow.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-196-yellow-thumb.png"
+    },
+    {
+      "key": "imported-hair-299-black",
+      "name": "High Top (Black)",
+      "img": "/avatars/imported/imported-hair-299-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-299-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-897-31d51c",
+      "name": "Irish (31d51c)",
+      "img": "/avatars/imported/imported-hair-897-31d51c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-897-31d51c-thumb.png"
+    },
+    {
+      "key": "imported-hair-332-black",
+      "name": "Jesus Curls (Black)",
+      "img": "/avatars/imported/imported-hair-332-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-332-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-98-black",
+      "name": "Kielmo (Black)",
+      "img": "/avatars/imported/imported-hair-98-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-98-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-360-yellow",
+      "name": "Leah 1 (Yellow)",
+      "img": "/avatars/imported/imported-hair-360-yellow.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-360-yellow-thumb.png"
+    },
+    {
+      "key": "imported-hair-104-black",
+      "name": "Long Goatee (Black)",
+      "img": "/avatars/imported/imported-hair-104-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-104-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-14-black",
+      "name": "Lowcut (Black)",
+      "img": "/avatars/imported/imported-hair-14-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-14-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-146-black",
+      "name": "Male Pigtails (Black)",
+      "img": "/avatars/imported/imported-hair-146-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-146-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-1384-ff821f",
+      "name": "Mantis (ff821f)",
+      "img": "/avatars/imported/imported-hair-1384-ff821f.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1384-ff821f-thumb.png"
+    },
+    {
+      "key": "imported-hair-281-black",
+      "name": "Medium African American (Black)",
+      "img": "/avatars/imported/imported-hair-281-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-281-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-69-black",
+      "name": "Messed Goatee (Black)",
+      "img": "/avatars/imported/imported-hair-69-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-69-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-71-black",
+      "name": "Mohawk (Black)",
+      "img": "/avatars/imported/imported-hair-71-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-71-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-70-black",
+      "name": "Moicano (Black)",
+      "img": "/avatars/imported/imported-hair-70-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-70-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-1477-6f584c",
+      "name": "Mouth 01 (6f584c)",
+      "img": "/avatars/imported/imported-hair-1477-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1477-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-hair-275-black",
+      "name": "Mussed (Black)",
+      "img": "/avatars/imported/imported-hair-275-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-275-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-311-black",
+      "name": "Old Style (Black)",
+      "img": "/avatars/imported/imported-hair-311-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-311-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-92-black",
+      "name": "Pointed (Black)",
+      "img": "/avatars/imported/imported-hair-92-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-92-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-287-black",
+      "name": "Samurai Tied up (Black)",
+      "img": "/avatars/imported/imported-hair-287-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-287-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-1315-bababa",
+      "name": "Santa Hair (bababa)",
+      "img": "/avatars/imported/imported-hair-1315-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1315-bababa-thumb.png"
+    },
+    {
+      "key": "imported-hair-219-black",
+      "name": "Short Curly (Black)",
+      "img": "/avatars/imported/imported-hair-219-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-219-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-305-black",
+      "name": "Short Spanish (Black)",
+      "img": "/avatars/imported/imported-hair-305-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-305-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-338-brown",
+      "name": "Simple Dunce (Brown)",
+      "img": "/avatars/imported/imported-hair-338-brown.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-338-brown-thumb.png"
+    },
+    {
+      "key": "imported-hair-293-black",
+      "name": "Simple Oldschool (Black)",
+      "img": "/avatars/imported/imported-hair-293-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-293-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-77-black",
+      "name": "Skunk Tail (Black)",
+      "img": "/avatars/imported/imported-hair-77-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-77-black-thumb.png"
+    },
+    {
+      "key": "imported-hair-62-gray",
+      "name": "Spiked (Gray)",
+      "img": "/avatars/imported/imported-hair-62-gray.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-62-gray-thumb.png"
+    },
+    {
+      "key": "imported-hair-1400-d57540",
+      "name": "Starlord (d57540)",
+      "img": "/avatars/imported/imported-hair-1400-d57540.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1400-d57540-thumb.png"
+    },
+    {
+      "key": "imported-hair-1280-6f584c",
+      "name": "Will Hair (6f584c)",
+      "img": "/avatars/imported/imported-hair-1280-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1280-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-hair-1408-0048ff",
+      "name": "Yondu (0048ff)",
+      "img": "/avatars/imported/imported-hair-1408-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1408-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-hair-1155-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-hair-1155-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1155-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-1156-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-hair-1156-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1156-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-1157-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-hair-1157-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1157-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-1158-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-hair-1158-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1158-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-1159-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-hair-1159-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-1159-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-890-000000",
+      "name": "hair (000000)",
+      "img": "/avatars/imported/imported-hair-890-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-890-000000-thumb.png"
+    },
+    {
+      "key": "imported-hair-895-000000",
+      "name": "hair (000000)",
+      "img": "/avatars/imported/imported-hair-895-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hair-895-000000-thumb.png"
+    },
+    {
+      "key": "imported-head-152-black",
+      "name": "Locks (Black)",
+      "img": "/avatars/imported/imported-head-152-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-152-black-thumb.png"
+    },
+    {
+      "key": "imported-head-162-black",
+      "name": "Locks (Black)",
+      "img": "/avatars/imported/imported-head-162-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-162-black-thumb.png"
+    },
+    {
+      "key": "imported-head-177-black",
+      "name": "Long Locks (Black)",
+      "img": "/avatars/imported/imported-head-177-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-177-black-thumb.png"
+    }
+  ],
+  "hats": [
+    {
+      "key": "imported-hats-1258-000000",
+      "name": " (000000)",
+      "img": "/avatars/imported/imported-hats-1258-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1258-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-663-000000",
+      "name": "Antlers (000000)",
+      "img": "/avatars/imported/imported-hats-663-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-663-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1575-000000",
+      "name": "Antman (000000)",
+      "img": "/avatars/imported/imported-hats-1575-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1575-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1557-000000",
+      "name": "Baggers Helmet (000000)",
+      "img": "/avatars/imported/imported-hats-1557-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1557-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1613-000000",
+      "name": "Baggers Helmet (000000)",
+      "img": "/avatars/imported/imported-hats-1613-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1613-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-366-black",
+      "name": "Bandana (Black)",
+      "img": "/avatars/imported/imported-hats-366-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-366-black-thumb.png"
+    },
+    {
+      "key": "imported-hats-869-ff00a2",
+      "name": "Bandanna (ff00a2)",
+      "img": "/avatars/imported/imported-hats-869-ff00a2.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-869-ff00a2-thumb.png"
+    },
+    {
+      "key": "imported-hats-1296-31d51c",
+      "name": "Bell Hat (31d51c)",
+      "img": "/avatars/imported/imported-hats-1296-31d51c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1296-31d51c-thumb.png"
+    },
+    {
+      "key": "imported-hats-1576-000000",
+      "name": "Black Panther (000000)",
+      "img": "/avatars/imported/imported-hats-1576-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1576-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1599-000000",
+      "name": "British Soldier (000000)",
+      "img": "/avatars/imported/imported-hats-1599-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1599-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1577-000000",
+      "name": "Captain America (000000)",
+      "img": "/avatars/imported/imported-hats-1577-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1577-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1602-000000",
+      "name": "Colonial Soldier (000000)",
+      "img": "/avatars/imported/imported-hats-1602-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1602-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1483-000000",
+      "name": "Crown (000000)",
+      "img": "/avatars/imported/imported-hats-1483-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1483-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1591-000000",
+      "name": "Deadpool (000000)",
+      "img": "/avatars/imported/imported-hats-1591-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1591-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-946-0048ff",
+      "name": "EarHatMale (0048ff)",
+      "img": "/avatars/imported/imported-hats-946-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-946-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-hats-1452-000000",
+      "name": "Executioners Hood (000000)",
+      "img": "/avatars/imported/imported-hats-1452-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1452-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1345-000000",
+      "name": "Felons Helmet (000000)",
+      "img": "/avatars/imported/imported-hats-1345-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1345-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-490-bababa",
+      "name": "Fitted Hat (bababa)",
+      "img": "/avatars/imported/imported-hats-490-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-490-bababa-thumb.png"
+    },
+    {
+      "key": "imported-hats-868-ff821f",
+      "name": "Halo (ff821f)",
+      "img": "/avatars/imported/imported-hats-868-ff821f.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-868-ff821f-thumb.png"
+    },
+    {
+      "key": "imported-hats-568-ffff00",
+      "name": "Hard Hat (ffff00)",
+      "img": "/avatars/imported/imported-hats-568-ffff00.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-568-ffff00-thumb.png"
+    },
+    {
+      "key": "imported-hats-1578-000000",
+      "name": "Hawkeye (000000)",
+      "img": "/avatars/imported/imported-hats-1578-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1578-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-571-ff0000",
+      "name": "Hayabusa (ff0000)",
+      "img": "/avatars/imported/imported-hats-571-ff0000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-571-ff0000-thumb.png"
+    },
+    {
+      "key": "imported-hats-165-black",
+      "name": "Headphones (Black)",
+      "img": "/avatars/imported/imported-hats-165-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-165-black-thumb.png"
+    },
+    {
+      "key": "imported-hats-1568-000000",
+      "name": "Heart Arrow (000000)",
+      "img": "/avatars/imported/imported-hats-1568-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1568-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-670-ff821f",
+      "name": "Helmet (ff821f)",
+      "img": "/avatars/imported/imported-hats-670-ff821f.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-670-ff821f-thumb.png"
+    },
+    {
+      "key": "imported-hats-884-bababa",
+      "name": "Helmets (bababa)",
+      "img": "/avatars/imported/imported-hats-884-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-884-bababa-thumb.png"
+    },
+    {
+      "key": "imported-hats-1579-000000",
+      "name": "Hulk (000000)",
+      "img": "/avatars/imported/imported-hats-1579-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1579-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1597-000000",
+      "name": "Incredibles (000000)",
+      "img": "/avatars/imported/imported-hats-1597-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1597-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1582-000000",
+      "name": "Iron Man (000000)",
+      "img": "/avatars/imported/imported-hats-1582-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1582-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1605-000000",
+      "name": "Jason (000000)",
+      "img": "/avatars/imported/imported-hats-1605-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1605-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1581-000000",
+      "name": "Killmonger (000000)",
+      "img": "/avatars/imported/imported-hats-1581-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1581-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-585-0048ff",
+      "name": "Lego Head (0048ff)",
+      "img": "/avatars/imported/imported-hats-585-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-585-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-hats-1385-ffff00",
+      "name": "Mantis (ffff00)",
+      "img": "/avatars/imported/imported-hats-1385-ffff00.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1385-ffff00-thumb.png"
+    },
+    {
+      "key": "imported-hats-572-31d51c",
+      "name": "Master Chief (31d51c)",
+      "img": "/avatars/imported/imported-hats-572-31d51c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-572-31d51c-thumb.png"
+    },
+    {
+      "key": "imported-hats-1353-000000",
+      "name": "Nebula (000000)",
+      "img": "/avatars/imported/imported-hats-1353-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1353-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-476-000000",
+      "name": "Patriotic Bandana (000000)",
+      "img": "/avatars/imported/imported-hats-476-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-476-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-566-c000ff",
+      "name": "Pimp Hat (c000ff)",
+      "img": "/avatars/imported/imported-hats-566-c000ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-566-c000ff-thumb.png"
+    },
+    {
+      "key": "imported-hats-1603-000000",
+      "name": "Predator (000000)",
+      "img": "/avatars/imported/imported-hats-1603-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1603-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1594-000000",
+      "name": "Raptor (000000)",
+      "img": "/avatars/imported/imported-hats-1594-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1594-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-320-black",
+      "name": "Rasta Hat (Black)",
+      "img": "/avatars/imported/imported-hats-320-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-320-black-thumb.png"
+    },
+    {
+      "key": "imported-hats-489-000000",
+      "name": "Robot Fitted (000000)",
+      "img": "/avatars/imported/imported-hats-489-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-489-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1355-000000",
+      "name": "Rocket (000000)",
+      "img": "/avatars/imported/imported-hats-1355-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1355-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1396-bababa",
+      "name": "Ronan (bababa)",
+      "img": "/avatars/imported/imported-hats-1396-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1396-bababa-thumb.png"
+    },
+    {
+      "key": "imported-hats-174-red",
+      "name": "Santa Hat (Red)",
+      "img": "/avatars/imported/imported-hats-174-red.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-174-red-thumb.png"
+    },
+    {
+      "key": "imported-hats-1522-000000",
+      "name": "Seagulls Helmet (000000)",
+      "img": "/avatars/imported/imported-hats-1522-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1522-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-574-31d51c",
+      "name": "Set 2 (31d51c)",
+      "img": "/avatars/imported/imported-hats-574-31d51c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-574-31d51c-thumb.png"
+    },
+    {
+      "key": "imported-hats-575-31d51c",
+      "name": "Set 3 (31d51c)",
+      "img": "/avatars/imported/imported-hats-575-31d51c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-575-31d51c-thumb.png"
+    },
+    {
+      "key": "imported-hats-674-31d51c",
+      "name": "Shamrock Hat (31d51c)",
+      "img": "/avatars/imported/imported-hats-674-31d51c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-674-31d51c-thumb.png"
+    },
+    {
+      "key": "imported-hats-488-bababa",
+      "name": "Skulls Fitted (bababa)",
+      "img": "/avatars/imported/imported-hats-488-bababa.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-488-bababa-thumb.png"
+    },
+    {
+      "key": "imported-hats-379-black",
+      "name": "Sombrero (Black)",
+      "img": "/avatars/imported/imported-hats-379-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-379-black-thumb.png"
+    },
+    {
+      "key": "imported-hats-1580-000000",
+      "name": "Spiderman (000000)",
+      "img": "/avatars/imported/imported-hats-1580-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1580-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-487-ff0000",
+      "name": "Superman Fitted (ff0000)",
+      "img": "/avatars/imported/imported-hats-487-ff0000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-487-ff0000-thumb.png"
+    },
+    {
+      "key": "imported-hats-482-ff0000",
+      "name": "Tupac Bandana (ff0000)",
+      "img": "/avatars/imported/imported-hats-482-ff0000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-482-ff0000-thumb.png"
+    },
+    {
+      "key": "imported-hats-968-0048ff",
+      "name": "Uncle Sam Hat (0048ff)",
+      "img": "/avatars/imported/imported-hats-968-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-968-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-hats-1604-000000",
+      "name": "Venom (000000)",
+      "img": "/avatars/imported/imported-hats-1604-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1604-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1272-000000",
+      "name": "Werewolf Fur (000000)",
+      "img": "/avatars/imported/imported-hats-1272-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1272-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1284-000000",
+      "name": "Will Hat (000000)",
+      "img": "/avatars/imported/imported-hats-1284-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1284-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-491-0048ff",
+      "name": "Yankee Fitted (0048ff)",
+      "img": "/avatars/imported/imported-hats-491-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-491-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-hats-1257-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-hats-1257-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1257-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1259-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-hats-1259-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1259-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-1260-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-hats-1260-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-1260-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-865-000000",
+      "name": "ears (000000)",
+      "img": "/avatars/imported/imported-hats-865-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-865-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-866-000000",
+      "name": "ears2 (000000)",
+      "img": "/avatars/imported/imported-hats-866-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-866-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-819-000000",
+      "name": "hat (000000)",
+      "img": "/avatars/imported/imported-hats-819-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-819-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-821-000000",
+      "name": "hat (000000)",
+      "img": "/avatars/imported/imported-hats-821-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-821-000000-thumb.png"
+    },
+    {
+      "key": "imported-hats-820-0048ff",
+      "name": "hat (0048ff)",
+      "img": "/avatars/imported/imported-hats-820-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-hats-820-0048ff-thumb.png"
+    },
+    {
+      "key": "imported-head-898-0048ff",
+      "name": "FlatCap (0048ff)",
+      "img": "/avatars/imported/imported-head-898-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-898-0048ff-thumb.png"
+    }
+  ],
+  "mouth": [
+    {
+      "key": "imported-mouth-804-000000",
+      "name": "1 (000000)",
+      "img": "/avatars/imported/imported-mouth-804-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-804-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-805-000000",
+      "name": "2 (000000)",
+      "img": "/avatars/imported/imported-mouth-805-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-805-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-806-000000",
+      "name": "3 (000000)",
+      "img": "/avatars/imported/imported-mouth-806-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-806-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-807-000000",
+      "name": "4 (000000)",
+      "img": "/avatars/imported/imported-mouth-807-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-807-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-808-000000",
+      "name": "5 (000000)",
+      "img": "/avatars/imported/imported-mouth-808-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-808-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1322-000000",
+      "name": "Bad Elf Mouth (000000)",
+      "img": "/avatars/imported/imported-mouth-1322-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1322-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-93-black",
+      "name": "Buckteeth (Black)",
+      "img": "/avatars/imported/imported-mouth-93-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-93-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-289-black",
+      "name": "Bulldog (Black)",
+      "img": "/avatars/imported/imported-mouth-289-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-289-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-88-black",
+      "name": "Cigarette (Black)",
+      "img": "/avatars/imported/imported-mouth-88-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-88-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-322-black",
+      "name": "Conan Jaw (Black)",
+      "img": "/avatars/imported/imported-mouth-322-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-322-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-105-black",
+      "name": "Downturned (Black)",
+      "img": "/avatars/imported/imported-mouth-105-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-105-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1364-000000",
+      "name": "Drax (000000)",
+      "img": "/avatars/imported/imported-mouth-1364-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1364-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1303-000000",
+      "name": "Elf Mouth (000000)",
+      "img": "/avatars/imported/imported-mouth-1303-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1303-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-223-black",
+      "name": "Errr (Black)",
+      "img": "/avatars/imported/imported-mouth-223-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-223-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-218-black",
+      "name": "Flat (Black)",
+      "img": "/avatars/imported/imported-mouth-218-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-218-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1369-000000",
+      "name": "Gamora (000000)",
+      "img": "/avatars/imported/imported-mouth-1369-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1369-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-99-black",
+      "name": "Gaptooth (Black)",
+      "img": "/avatars/imported/imported-mouth-99-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-99-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-228-black",
+      "name": "Gay Mouth (Black)",
+      "img": "/avatars/imported/imported-mouth-228-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-228-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-147-black",
+      "name": "Gold Bucktooth (Black)",
+      "img": "/avatars/imported/imported-mouth-147-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-147-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-301-gray",
+      "name": "Grille (Gray)",
+      "img": "/avatars/imported/imported-mouth-301-gray.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-301-gray-thumb.png"
+    },
+    {
+      "key": "imported-mouth-313-black",
+      "name": "Grin (Black)",
+      "img": "/avatars/imported/imported-mouth-313-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-313-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-362-black",
+      "name": "Leah 1 (Black)",
+      "img": "/avatars/imported/imported-mouth-362-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-362-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-283-black",
+      "name": "Liprings (Black)",
+      "img": "/avatars/imported/imported-mouth-283-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-283-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-280-black",
+      "name": "Little Marc (Black)",
+      "img": "/avatars/imported/imported-mouth-280-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-280-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1389-000000",
+      "name": "Mantis (000000)",
+      "img": "/avatars/imported/imported-mouth-1389-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1389-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-586-000000",
+      "name": "Mouth (000000)",
+      "img": "/avatars/imported/imported-mouth-586-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-586-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-871-000000",
+      "name": "Mouth (000000)",
+      "img": "/avatars/imported/imported-mouth-871-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-871-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1478-6f584c",
+      "name": "Mouth 02 (6f584c)",
+      "img": "/avatars/imported/imported-mouth-1478-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1478-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1479-000000",
+      "name": "Mouth 03 (000000)",
+      "img": "/avatars/imported/imported-mouth-1479-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1479-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1480-000000",
+      "name": "Mouth 04 (000000)",
+      "img": "/avatars/imported/imported-mouth-1480-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1480-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1481-6f584c",
+      "name": "Mouth 05 (6f584c)",
+      "img": "/avatars/imported/imported-mouth-1481-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1481-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1482-000000",
+      "name": "Mouth 06 (000000)",
+      "img": "/avatars/imported/imported-mouth-1482-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1482-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-334-black",
+      "name": "Mouth With Cigarette (Black)",
+      "img": "/avatars/imported/imported-mouth-334-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-334-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-307-black",
+      "name": "Mutty (Black)",
+      "img": "/avatars/imported/imported-mouth-307-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-307-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-73-black",
+      "name": "Pierced Snarl (Black)",
+      "img": "/avatars/imported/imported-mouth-73-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-73-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-900-6f584c",
+      "name": "Pipe (6f584c)",
+      "img": "/avatars/imported/imported-mouth-900-6f584c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-900-6f584c-thumb.png"
+    },
+    {
+      "key": "imported-mouth-64-black",
+      "name": "Pouty (Black)",
+      "img": "/avatars/imported/imported-mouth-64-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-64-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-340-black",
+      "name": "Seni 13 (Black)",
+      "img": "/avatars/imported/imported-mouth-340-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-340-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-68-black",
+      "name": "Slim (Black)",
+      "img": "/avatars/imported/imported-mouth-68-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-68-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-193-black",
+      "name": "Smirk (Black)",
+      "img": "/avatars/imported/imported-mouth-193-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-193-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-330-black",
+      "name": "Stretched (Black)",
+      "img": "/avatars/imported/imported-mouth-330-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-330-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-153-black",
+      "name": "Tatted Goatee (Black)",
+      "img": "/avatars/imported/imported-mouth-153-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-153-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-161-black",
+      "name": "Thin (Black)",
+      "img": "/avatars/imported/imported-mouth-161-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-161-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-295-black",
+      "name": "Wide Flat (Black)",
+      "img": "/avatars/imported/imported-mouth-295-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-295-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1283-000000",
+      "name": "Will Mouth (000000)",
+      "img": "/avatars/imported/imported-mouth-1283-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1283-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1165-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-mouth-1165-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1165-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1166-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-mouth-1166-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1166-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1167-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-mouth-1167-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1167-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1168-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-mouth-1168-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1168-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-1169-000000",
+      "name": "asdasd (000000)",
+      "img": "/avatars/imported/imported-mouth-1169-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-1169-000000-thumb.png"
+    },
+    {
+      "key": "imported-mouth-172-black",
+      "name": "thin blush (Black)",
+      "img": "/avatars/imported/imported-mouth-172-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-172-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-5-black",
+      "name": "Chubby (Black)",
+      "img": "/avatars/imported/imported-mouth-5-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-5-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-6-black",
+      "name": "Grim (Black)",
+      "img": "/avatars/imported/imported-mouth-6-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-6-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-7-black",
+      "name": "Thick (Black)",
+      "img": "/avatars/imported/imported-mouth-7-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-7-black-thumb.png"
+    },
+    {
+      "key": "imported-mouth-4-black",
+      "name": "Thin (Black)",
+      "img": "/avatars/imported/imported-mouth-4-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-mouth-4-black-thumb.png"
+    },
+    {
+      "key": "imported-head-178-black",
+      "name": "Doofus Buck (Black)",
+      "img": "/avatars/imported/imported-head-178-black.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-178-black-thumb.png"
+    }
+  ],
+  "tattoos": [
+    {
+      "key": "imported-tattoos-1572-000000",
+      "name": "Broken Heart (000000)",
+      "img": "/avatars/imported/imported-tattoos-1572-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-tattoos-1572-000000-thumb.png"
+    },
+    {
+      "key": "imported-tattoos-1571-000000",
+      "name": "Heart Group (000000)",
+      "img": "/avatars/imported/imported-tattoos-1571-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-tattoos-1571-000000-thumb.png"
+    },
+    {
+      "key": "imported-tattoos-870-000000",
+      "name": "Kisses (000000)",
+      "img": "/avatars/imported/imported-tattoos-870-000000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-tattoos-870-000000-thumb.png"
+    },
+    {
+      "key": "imported-tattoos-970-ff0000",
+      "name": "Republican Tattoo (ff0000)",
+      "img": "/avatars/imported/imported-tattoos-970-ff0000.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-tattoos-970-ff0000-thumb.png"
+    },
+    {
+      "key": "imported-tattoos-896-31d51c",
+      "name": "Shamrock (31d51c)",
+      "img": "/avatars/imported/imported-tattoos-896-31d51c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-tattoos-896-31d51c-thumb.png"
+    },
+    {
+      "key": "imported-tattoos-1282-31d51c",
+      "name": "Will Tattoo (31d51c)",
+      "img": "/avatars/imported/imported-tattoos-1282-31d51c.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-tattoos-1282-31d51c-thumb.png"
+    },
+    {
+      "key": "imported-head-971-0048ff",
+      "name": "Democrat Tattoo (0048ff)",
+      "img": "/avatars/imported/imported-head-971-0048ff.png",
+      "free": true,
+      "rep_cost": 0,
+      "thumb": "/avatars/imported/imported-head-971-0048ff-thumb.png"
+    }
+  ]
+}

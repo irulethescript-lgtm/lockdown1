@@ -1,0 +1,66 @@
+<div class="page-box">
+  <h2 style="font-family:'Oswald',Arial;letter-spacing:1px;color:#ccc;margin:0 0 4px;">💸 Send Money</h2>
+  <p style="color:#555;font-size:12px;margin:0 0 20px;">
+    Same city: <b style="color:#aaa;">10% fee</b> &nbsp;·&nbsp; Other city: <b style="color:#aaa;">20% fee</b> &nbsp;·&nbsp;
+    Your cash: <b style="color:#ffcc44;">$<%= user.cash.toLocaleString() %></b>
+  </p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
+    <div>
+      <label style="font-size:11px;color:#666;display:block;margin-bottom:5px;text-transform:uppercase;letter-spacing:1px;">Recipient</label>
+      <select id="targetSel" style="width:100%;background:#111;border:1px solid #333;color:#ddd;padding:8px;font-size:13px;" onchange="updateFee()">
+        <option value="">— Select Citizen —</option>
+        <% inmates.forEach(function(p){ %>
+        <% const prison = PRISONS.find(pr=>pr.id===p.prison_id); %>
+        <option value="<%= p.id %>" data-prison="<%= p.prison_id %>">
+          <%= p.username %> (Lvl <%= p.level %> · <%= prison?.short||prison?.name||'?' %>)
+        </option>
+        <% }); %>
+      </select>
+    </div>
+    <div>
+      <label style="font-size:11px;color:#666;display:block;margin-bottom:5px;text-transform:uppercase;letter-spacing:1px;">Amount ($)</label>
+      <input id="amtInput" type="number" min="1" placeholder="Amount"
+        style="width:100%;background:#111;border:1px solid #333;color:#ddd;padding:8px;font-size:13px;box-sizing:border-box;"
+        oninput="updateFee()">
+    </div>
+  </div>
+
+  <div id="feeBox" style="display:none;background:#0d0d1a;border:1px solid #2a2a4a;padding:10px 14px;margin-bottom:14px;font-size:12px;color:#aaa;">
+    Fee: <span id="feeAmt" style="color:#ffaa44;"></span> &nbsp;·&nbsp; Total deducted: <span id="totalAmt" style="color:#ff8888;"></span>
+  </div>
+
+  <button onclick="sendMoney()" class="btn-action">Send Money</button>
+  <div id="sendMsg" style="display:none;margin-top:12px;padding:10px 14px;font-size:13px;border-radius:2px;"></div>
+</div>
+
+<script>
+function updateFee() {
+  const sel = document.getElementById('targetSel');
+  const amt = parseInt(document.getElementById('amtInput').value)||0;
+  if (!sel.value || !amt) { document.getElementById('feeBox').style.display='none'; return; }
+  const samePrison = parseInt(sel.selectedOptions[0]?.dataset.prison) === <%= user.prison_id %>;
+  const fee   = samePrison ? Math.ceil(amt*0.10) : Math.ceil(amt*0.20);
+  const total = amt + fee;
+  document.getElementById('feeAmt').textContent  = '$' + fee.toLocaleString() + ' (' + (samePrison?'10%':'20%') + ')';
+  document.getElementById('totalAmt').textContent = '$' + total.toLocaleString();
+  document.getElementById('feeBox').style.display = 'block';
+}
+function sendMoney() {
+  const target_id = document.getElementById('targetSel').value;
+  const amount    = document.getElementById('amtInput').value;
+  if (!target_id || !amount) return alert('Fill in both fields.');
+  fetch('/send-money', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ target_id, amount })
+  }).then(r=>r.json()).then(d => {
+    const el = document.getElementById('sendMsg');
+    el.style.display = 'block';
+    el.style.background = d.error ? '#2a0000' : '#002a00';
+    el.style.color      = d.error ? '#ff8888' : '#88ff88';
+    el.style.border     = '1px solid ' + (d.error ? '#660000' : '#006600');
+    el.textContent = d.msg || d.error;
+    if (d.user) updateStats(d.user);
+  });
+}
+</script>

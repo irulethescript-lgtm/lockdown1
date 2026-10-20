@@ -1,0 +1,57 @@
+<div class="map">
+  <div class="mapTitle">Missions</div>
+  <div class="mapDescription">Run jobs for cash, rep and XP. Each mission has a cooldown timer.</div>
+</div>
+
+<div id="missionResult" class="result-box"></div>
+
+<% missions.forEach(m => { %>
+<div class="contentBlock" style="margin-bottom:8px;">
+  <div class="blockTitle"><%= m.icon || '📋' %> <%= m.name %> <span style="color:#aaa;font-size:10px;font-weight:normal;font-family:Arial;">· Req Level <%= m.level %></span></div>
+  <div class="blockBody" style="display:flex; gap:12px; align-items:center;">
+    <div style="flex:1;">
+      <div style="color:#bbb; margin-bottom:5px;"><%= m.desc %></div>
+      <div style="font-size:10px; color:#ccaa00;">
+        Reward: $<%= m.reward.cash || 0 %>
+        <%= m.reward.xp ? ` · XP +${m.reward.xp}` : '' %>
+        <%= m.reward.rep ? ` · Rep +${m.reward.rep}` : '' %>
+        <%= m.reward.hp  ? ` · HP +${m.reward.hp}` : '' %>
+        · NRV <%= m.nerve %>
+      </div>
+    </div>
+    <div style="text-align:right; min-width:120px;">
+      <% if (user.level < m.level) { %>
+        <span class="btn gray disabled">Req Lv <%= m.level %></span>
+      <% } else if (!m.available) { %>
+        <div style="color:#888; font-size:10px; margin-bottom:3px;">Cooldown: <span class="cdTimer" data-left="<%= m.cooldownLeft %>"><%= Math.ceil(m.cooldownLeft/60) %>m</span></div>
+        <button class="btn gray" disabled>ON COOLDOWN</button>
+      <% } else { %>
+        <button class="btn" onclick="doMission('<%= m.key %>')">RUN IT</button>
+      <% } %>
+    </div>
+  </div>
+</div>
+<% }); %>
+
+<script>
+function doMission(key) {
+  doAction('/missions/do', { key }, (d) => {
+    const box = document.getElementById('missionResult');
+    box.className = 'result-box show';
+    box.innerHTML = `<span style="color:#ccaa00;">✓ ${esc(d.msg)}</span>`;
+    setTimeout(() => location.reload(), 1500);
+  });
+}
+
+// Countdown timers
+document.querySelectorAll('.cdTimer').forEach(el => {
+  let left = parseInt(el.dataset.left);
+  setInterval(() => {
+    left--;
+    if (left <= 0) { el.textContent = 'Ready!'; el.style.color = '#00cc00'; return; }
+    el.textContent = left >= 3600
+      ? Math.floor(left/3600) + 'h ' + Math.floor((left%3600)/60) + 'm'
+      : Math.ceil(left/60) + 'm';
+  }, 1000);
+});
+</script>

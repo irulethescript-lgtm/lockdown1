@@ -1,0 +1,2 @@
+// We use a simple layout approach by including header/footer partials
+// Add this to server.js after views setup

@@ -1,0 +1,29 @@
+<div class="contentBlock">
+  <div class="blockTitle">City Jail — Currently Jailed</div>
+  <div class="blockBody" style="padding:0;">
+    <table class="data-table">
+      <thead><tr><th>Citizen</th><th>Level</th><th>Release In</th></tr></thead>
+      <tbody>
+        <% jailed.forEach(j => { %>
+        <tr>
+          <td><a href="/profile/<%= j.username %>"><%= j.username %></a></td>
+          <td><%= j.level %></td>
+          <td style="color:#cc0000;"><span class="jailTimer" data-until="<%= j.jail_until %>"><%= Math.max(0, j.jail_until - now) %>s</span></td>
+        </tr>
+        <% }); %>
+        <% if (!jailed.length) { %>
+        <tr><td colspan="3" style="color:#666; text-align:center; padding:16px;">Nobody in jail right now.</td></tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.jailTimer').forEach(el => {
+  let until = parseInt(el.dataset.until) * 1000;
+  setInterval(() => {
+    const s = Math.max(0, Math.floor((until - Date.now()) / 1000));
+    el.textContent = s + 's';
+  }, 1000);
+});
+</script>

@@ -1,0 +1,44 @@
+<%# MAIL VIEW %>
+<div class="contentBlock">
+  <div class="blockTitle">Inbox (<%= inbox.length %>)</div>
+  <div class="blockBody" style="padding:0;">
+    <table class="data-table">
+      <thead><tr><th>From</th><th>Subject</th><th>When</th></tr></thead>
+      <tbody>
+        <% inbox.forEach(m => { %>
+        <tr style="<%= m.read ? '' : 'background:rgba(200,0,0,0.08);' %>">
+          <td><a href="/profile/<%= m.from_name %>"><%= m.from_name %></a></td>
+          <td><%= m.subject %><br><span style="color:#777; font-size:10px;"><%= m.body.slice(0,80) %><%= m.body.length>80?'...':'' %></span></td>
+          <td style="color:#666;"><%= timeAgo(m.created_at) %></td>
+        </tr>
+        <% }); %>
+        <% if (!inbox.length) { %>
+        <tr><td colspan="3" style="color:#666; text-align:center; padding:16px;">No mail.</td></tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="contentBlock">
+  <div class="blockTitle">Send Mail</div>
+  <div class="blockBody">
+    <div id="mailMsg"></div>
+    <div class="form-row"><label>To (username)</label><input type="text" id="mailTo" placeholder="Citizen username"></div>
+    <div class="form-row"><label>Subject</label><input type="text" id="mailSubj" placeholder="Subject"></div>
+    <div class="form-row"><label>Message</label><textarea id="mailBody" rows="4" placeholder="Write your message..."></textarea></div>
+    <button class="btn" onclick="sendMail()">SEND MAIL</button>
+  </div>
+</div>
+<script>
+function sendMail() {
+  doAction('/mail/send', {
+    to: document.getElementById('mailTo').value,
+    subject: document.getElementById('mailSubj').value,
+    body: document.getElementById('mailBody').value,
+  }, (d) => {
+    document.getElementById('mailMsg').innerHTML = `<div class="success-msg">${esc(d.msg)}</div>`;
+    document.getElementById('mailBody').value = '';
+  });
+}
+</script>

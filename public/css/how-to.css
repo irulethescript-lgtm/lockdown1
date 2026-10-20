@@ -1,0 +1,23 @@
+.player-guide { max-width:1100px; line-height:1.7; font-size:14px; color:#c5cbd4; }
+.player-guide h2 { font:500 22px 'Oswald',sans-serif; color:#e6e8ec; margin:0 0 14px; }
+.player-guide h3 { font:500 18px 'Oswald',sans-serif; color:#e6e8ec; margin:22px 0 8px; }
+.player-guide p { margin:12px 0; }
+.player-guide ol, .player-guide ul { padding-left:24px; margin:12px 0; }
+.player-guide li { margin:8px 0; }
+.player-guide a { color:#e4b37c; text-decoration:underline; text-underline-offset:3px; }
+.guide-contents { display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:18px; }
+.guide-contents a { padding:3px 0; }
+.player-guide .guide-chapter summary { cursor:pointer; color:#e4b37c; }
+.player-guide .guide-chapter summary h2 { display:inline; font-size:21px; }
+.guide-chapter summary span { display:block; color:#a5aebc; margin:4px 0 0 20px; }
+.player-guide summary:focus-visible, .player-guide a:focus-visible { outline:2px solid #e4b37c; outline-offset:4px; }
+.player-guide [id] { scroll-margin-top:65px; }
+.guide-tip { border-left:3px solid #cc985d; padding:10px 14px; background:#22272e; }
+.guide-resources { display:grid; grid-template-columns:minmax(110px,auto) 1fr; gap:12px 20px; margin:16px 0; }
+.guide-resources dt { font-weight:bold; color:#e6e8ec; }
+.guide-resources dd { margin:0; }
+@media(max-width:600px) {
+  .guide-resources { grid-template-columns:1fr; gap:4px; }
+  .guide-resources dd { margin-bottom:12px; }
+  .player-guide .guide-chapter summary h2 { font-size:19px; }
+}

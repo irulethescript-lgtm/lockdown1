@@ -1,0 +1,19 @@
+<div class="contentBlock">
+  <div class="blockTitle">Most Wanted List</div>
+  <div class="blockBody" style="padding:0;">
+    <table class="data-table">
+      <thead><tr><th>#</th><th>Citizen</th><th>Level</th><th>Rep</th><th>W/L</th></tr></thead>
+      <tbody>
+        <% wanted.forEach((w, i) => { %>
+        <tr>
+          <td style="color:#ccaa00; font-weight:bold;"><%= i+1 %></td>
+          <td><a href="/profile/<%= w.username %>"><%= w.username %></a></td>
+          <td><%= w.level %></td>
+          <td style="color:#ccaa00;"><%= w.rep %></td>
+          <td><span style="color:#00cc00;"><%= w.wins %></span>/<span style="color:#cc0000;"><%= w.losses %></span></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</div>

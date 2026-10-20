@@ -1,0 +1,3164 @@
+{
+  "source": "Player-supplied weapon tables, 2026-10-20. Sources are reference acquisition locations, not new availability restrictions.",
+  "weapons": [
+    {
+      "name": "9mm Uzi",
+      "category": "primary",
+      "damage": [
+        65.0,
+        70.0
+      ],
+      "accuracy": [
+        43.0,
+        48.0
+      ],
+      "stealth": 3.4,
+      "type": "SMG",
+      "source": "Mexico",
+      "caliber": "9mm",
+      "clip": 30,
+      "rate": [
+        15.0,
+        25.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "AK-47",
+      "category": "primary",
+      "damage": [
+        56.0,
+        61.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 2.7,
+      "type": "Rifle",
+      "source": "Mexico",
+      "caliber": "7.62mm",
+      "clip": 30,
+      "rate": [
+        4.0,
+        8.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "AK74U",
+      "category": "primary",
+      "damage": [
+        46.0,
+        51.0
+      ],
+      "accuracy": [
+        41.0,
+        46.0
+      ],
+      "stealth": 3.5,
+      "type": "SMG",
+      "source": "City Find",
+      "caliber": "5.45mm",
+      "clip": 30,
+      "rate": [
+        4.0,
+        6.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "ArmaLite M-15A4",
+      "category": "primary",
+      "damage": [
+        68.0,
+        73.0
+      ],
+      "accuracy": [
+        57.0,
+        62.0
+      ],
+      "stealth": 3.0,
+      "type": "Rifle",
+      "source": "Mexico",
+      "caliber": "5.56mm",
+      "clip": 15,
+      "rate": [
+        3.0,
+        5.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Benelli M1 Tactical",
+      "category": "primary",
+      "damage": [
+        39.0,
+        44.0
+      ],
+      "accuracy": [
+        65.0,
+        70.0
+      ],
+      "stealth": 2.8,
+      "type": "Shotgun",
+      "source": "Gun Shop",
+      "caliber": "12 Gauge",
+      "clip": 7,
+      "rate": [
+        2.0,
+        3.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Benelli M4 Super",
+      "category": "primary",
+      "damage": [
+        59.0,
+        64.0
+      ],
+      "accuracy": [
+        55.0,
+        60.0
+      ],
+      "stealth": 2.8,
+      "type": "Shotgun",
+      "source": "Gun Shop",
+      "caliber": "12 Gauge",
+      "clip": 7,
+      "rate": [
+        2.0,
+        3.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Bushmaster Carbon 15",
+      "category": "primary",
+      "damage": [
+        50.0,
+        55.0
+      ],
+      "accuracy": [
+        57.0,
+        62.0
+      ],
+      "stealth": 2.8,
+      "type": "SMG",
+      "source": "Hawaii",
+      "caliber": "5.56mm",
+      "clip": 30,
+      "rate": [
+        2.0,
+        28.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Dual Bushmasters",
+      "category": "primary",
+      "damage": [
+        76.0,
+        81.0
+      ],
+      "accuracy": [
+        47.0,
+        52.0
+      ],
+      "stealth": 1.6,
+      "type": "SMG",
+      "source": "Auction House",
+      "caliber": "5.56mm",
+      "clip": 60,
+      "rate": [
+        4.0,
+        30.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Dual MP5s",
+      "category": "primary",
+      "damage": [
+        78.0,
+        83.0
+      ],
+      "accuracy": [
+        46.0,
+        51.0
+      ],
+      "stealth": 1.7,
+      "type": "SMG",
+      "source": "Auction House",
+      "caliber": "9mm",
+      "clip": 60,
+      "rate": [
+        10.0,
+        16.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Dual P90s",
+      "category": "primary",
+      "damage": [
+        77.0,
+        82.0
+      ],
+      "accuracy": [
+        45.0,
+        50.0
+      ],
+      "stealth": 2.1,
+      "type": "SMG",
+      "source": "Auction House",
+      "caliber": "5.7mm",
+      "clip": 100,
+      "rate": [
+        10.0,
+        20.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Dual TMPs",
+      "category": "primary",
+      "damage": [
+        79.0,
+        84.0
+      ],
+      "accuracy": [
+        40.0,
+        45.0
+      ],
+      "stealth": 1.9,
+      "type": "SMG",
+      "source": "Auction House",
+      "caliber": "9mm",
+      "clip": 30,
+      "rate": [
+        15.0,
+        25.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Dual Uzis",
+      "category": "primary",
+      "damage": [
+        80.0,
+        85.0
+      ],
+      "accuracy": [
+        36.0,
+        41.0
+      ],
+      "stealth": 2.2,
+      "type": "SMG",
+      "source": "Auction House",
+      "caliber": "9mm",
+      "clip": 60,
+      "rate": [
+        15.0,
+        25.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Egg Propelled Launcher",
+      "category": "primary",
+      "damage": [
+        64.0,
+        69.0
+      ],
+      "accuracy": [
+        24.0,
+        29.0
+      ],
+      "stealth": 3.8,
+      "type": "Heavy Artillery",
+      "source": "Easter Bunny",
+      "caliber": "Egg",
+      "clip": 1000,
+      "rate": [
+        255.0,
+        555.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "Enfield SA-80",
+      "category": "primary",
+      "damage": [
+        63.0,
+        68.0
+      ],
+      "accuracy": [
+        55.0,
+        60.0
+      ],
+      "stealth": 3.0,
+      "type": "Rifle",
+      "source": "United Kingdom",
+      "caliber": "5.56mm",
+      "clip": 30,
+      "rate": [
+        2.0,
+        5.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Gold Plated AK-47",
+      "category": "primary",
+      "damage": [
+        75.0,
+        80.0
+      ],
+      "accuracy": [
+        62.0,
+        67.0
+      ],
+      "stealth": 2.7,
+      "type": "Rifle",
+      "source": "United Arab Emirates",
+      "caliber": "7.62mm",
+      "clip": 45,
+      "rate": [
+        4.0,
+        6.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Heckler & Koch SL8",
+      "category": "primary",
+      "damage": [
+        60.0,
+        65.0
+      ],
+      "accuracy": [
+        46.0,
+        51.0
+      ],
+      "stealth": 2.5,
+      "type": "Rifle",
+      "source": "Mexico",
+      "caliber": "5.56mm",
+      "clip": 10,
+      "rate": [
+        2.0,
+        9.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Ithaca 37",
+      "category": "primary",
+      "damage": [
+        49.0,
+        54.0
+      ],
+      "accuracy": [
+        62.0,
+        67.0
+      ],
+      "stealth": 2.4,
+      "type": "Shotgun",
+      "source": "Canada",
+      "caliber": "12 Gauge",
+      "clip": 4,
+      "rate": [
+        1.0,
+        4.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Jackhammer",
+      "category": "primary",
+      "damage": [
+        69.0,
+        74.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 2.1,
+      "type": "Shotgun",
+      "source": "Switzerland",
+      "caliber": "12 Gauge",
+      "clip": 10,
+      "rate": [
+        5.0,
+        10.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "M16 A2 Rifle",
+      "category": "primary",
+      "damage": [
+        61.0,
+        66.0
+      ],
+      "accuracy": [
+        47.0,
+        52.0
+      ],
+      "stealth": 2.9,
+      "type": "Rifle",
+      "source": "Gun Shop",
+      "caliber": "5.56mm",
+      "clip": 30,
+      "rate": [
+        5.0,
+        9.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "M249 SAW",
+      "category": "primary",
+      "damage": [
+        67.0,
+        72.0
+      ],
+      "accuracy": [
+        41.0,
+        46.0
+      ],
+      "stealth": 2.0,
+      "type": "Machine Gun",
+      "source": "Mexico",
+      "caliber": "5.56mm",
+      "clip": 100,
+      "rate": [
+        15.0,
+        25.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "M4A1 Colt Carbine",
+      "category": "primary",
+      "damage": [
+        55.0,
+        60.0
+      ],
+      "accuracy": [
+        47.0,
+        52.0
+      ],
+      "stealth": 2.8,
+      "type": "Rifle",
+      "source": "Gun Shop",
+      "caliber": "5.56mm",
+      "clip": 30,
+      "rate": [
+        4.0,
+        9.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Mag 7",
+      "category": "primary",
+      "damage": [
+        56.0,
+        61.0
+      ],
+      "accuracy": [
+        62.0,
+        67.0
+      ],
+      "stealth": 2.7,
+      "type": "Shotgun",
+      "source": "South Africa",
+      "caliber": "12 Gauge",
+      "clip": 5,
+      "rate": [
+        2.0,
+        4.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Minigun",
+      "category": "primary",
+      "damage": [
+        72.0,
+        77.0
+      ],
+      "accuracy": [
+        28.0,
+        33.0
+      ],
+      "stealth": 1.3,
+      "type": "Machine Gun",
+      "source": "Mexico",
+      "caliber": "5.56mm",
+      "clip": 200,
+      "rate": [
+        20.0,
+        30.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "MP 40",
+      "category": "primary",
+      "damage": [
+        37.0,
+        42.0
+      ],
+      "accuracy": [
+        41.0,
+        46.0
+      ],
+      "stealth": 2.8,
+      "type": "SMG",
+      "source": "City Find",
+      "caliber": "9mm",
+      "clip": 32,
+      "rate": [
+        3.0,
+        5.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "MP5 Navy",
+      "category": "primary",
+      "damage": [
+        45.0,
+        50.0
+      ],
+      "accuracy": [
+        51.0,
+        56.0
+      ],
+      "stealth": 3.1,
+      "type": "SMG",
+      "source": "Gun Shop",
+      "caliber": "9mm",
+      "clip": 30,
+      "rate": [
+        5.0,
+        8.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Negev NG-5",
+      "category": "primary",
+      "damage": [
+        69.0,
+        74.0
+      ],
+      "accuracy": [
+        35.0,
+        40.0
+      ],
+      "stealth": 1.5,
+      "type": "Machine Gun",
+      "source": "Heavy Arms Cache",
+      "caliber": "5.56mm",
+      "clip": 200,
+      "rate": [
+        18.0,
+        27.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Neutrilux 2000",
+      "category": "primary",
+      "damage": [
+        59.0,
+        64.0
+      ],
+      "accuracy": [
+        25.0,
+        30.0
+      ],
+      "stealth": 2.1,
+      "type": "Machine Gun",
+      "source": "St Patrick event",
+      "caliber": "5.56mm",
+      "clip": 1000,
+      "rate": [
+        233.0,
+        533.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Nock Gun",
+      "category": "primary",
+      "damage": [
+        95.0,
+        100.0
+      ],
+      "accuracy": [
+        45.0,
+        50.0
+      ],
+      "stealth": 1.9,
+      "type": "Shotgun",
+      "source": "Leslie",
+      "caliber": "12 Gauge",
+      "clip": 7,
+      "rate": [
+        7.0,
+        7.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "P90",
+      "category": "primary",
+      "damage": [
+        48.0,
+        53.0
+      ],
+      "accuracy": [
+        51.0,
+        56.0
+      ],
+      "stealth": 3.4,
+      "type": "SMG",
+      "source": "Gun Shop",
+      "caliber": "5.7mm",
+      "clip": 50,
+      "rate": [
+        10.0,
+        30.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "PKM",
+      "category": "primary",
+      "damage": [
+        76.0,
+        79.0
+      ],
+      "accuracy": [
+        49.0,
+        51.0
+      ],
+      "stealth": 1.7,
+      "type": "Machine Gun",
+      "source": "Heavy Arms Cache",
+      "caliber": "7.62mm",
+      "clip": 50,
+      "rate": [
+        9.0,
+        17.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Prototype",
+      "category": "primary",
+      "damage": [
+        68.0,
+        73.0
+      ],
+      "accuracy": [
+        36.0,
+        41.0
+      ],
+      "stealth": 2.0,
+      "type": "Machine Gun",
+      "source": "Committee Test Weapon",
+      "caliber": "5.56mm",
+      "clip": 100,
+      "rate": [
+        20.0,
+        30.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Rheinmetall MG 3",
+      "category": "primary",
+      "damage": [
+        66.0,
+        71.0
+      ],
+      "accuracy": [
+        36.0,
+        41.0
+      ],
+      "stealth": 2.0,
+      "type": "Machine Gun",
+      "source": "Duke",
+      "caliber": "7.62mm",
+      "clip": 100,
+      "rate": [
+        20.0,
+        30.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Sawed-Off Shotgun",
+      "category": "primary",
+      "damage": [
+        41.0,
+        46.0
+      ],
+      "accuracy": [
+        63.0,
+        68.0
+      ],
+      "stealth": 2.4,
+      "type": "Shotgun",
+      "source": "Gun Shop",
+      "caliber": "12 Gauge",
+      "clip": 2,
+      "rate": [
+        1.0,
+        2.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "SIG 550",
+      "category": "primary",
+      "damage": [
+        62.0,
+        67.0
+      ],
+      "accuracy": [
+        50.0,
+        55.0
+      ],
+      "stealth": 2.9,
+      "type": "Rifle",
+      "source": "Mexico",
+      "caliber": "5.56mm",
+      "clip": 20,
+      "rate": [
+        4.0,
+        7.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "SIG 552",
+      "category": "primary",
+      "damage": [
+        69.0,
+        74.0
+      ],
+      "accuracy": [
+        50.0,
+        55.0
+      ],
+      "stealth": 2.9,
+      "type": "Rifle",
+      "source": "Switzerland",
+      "caliber": "5.56mm",
+      "clip": 30,
+      "rate": [
+        4.0,
+        7.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "SKS Carbine",
+      "category": "primary",
+      "damage": [
+        46.0,
+        51.0
+      ],
+      "accuracy": [
+        47.0,
+        52.0
+      ],
+      "stealth": 2.6,
+      "type": "Rifle",
+      "source": "China",
+      "caliber": "7.62mm",
+      "clip": 10,
+      "rate": [
+        1.0,
+        8.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Snow Cannon",
+      "category": "primary",
+      "damage": [
+        52.0,
+        57.0
+      ],
+      "accuracy": [
+        24.0,
+        29.0
+      ],
+      "stealth": 3.6,
+      "type": "Heavy Artillery",
+      "source": "Scrooge",
+      "caliber": "Snowball",
+      "clip": 950,
+      "rate": [
+        3.0,
+        10.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "Steyr AUG",
+      "category": "primary",
+      "damage": [
+        64.0,
+        69.0
+      ],
+      "accuracy": [
+        45.0,
+        50.0
+      ],
+      "stealth": 2.7,
+      "type": "Rifle",
+      "source": "Gun Shop",
+      "caliber": "5.56mm",
+      "clip": 30,
+      "rate": [
+        5.0,
+        8.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Stoner 96",
+      "category": "primary",
+      "damage": [
+        69.0,
+        74.0
+      ],
+      "accuracy": [
+        49.0,
+        54.0
+      ],
+      "stealth": 2.2,
+      "type": "Machine Gun",
+      "source": "Heavy Arms Cache",
+      "caliber": "5.56mm",
+      "clip": 100,
+      "rate": [
+        9.0,
+        14.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Tavor TAR-21",
+      "category": "primary",
+      "damage": [
+        65.0,
+        70.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 3.2,
+      "type": "Rifle",
+      "source": "Cayman Islands",
+      "caliber": "5.56mm",
+      "clip": 30,
+      "rate": [
+        4.0,
+        8.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Thompson",
+      "category": "primary",
+      "damage": [
+        39.0,
+        44.0
+      ],
+      "accuracy": [
+        43.0,
+        48.0
+      ],
+      "stealth": 2.9,
+      "type": "SMG",
+      "source": "City Find",
+      "caliber": ".45",
+      "clip": 20,
+      "rate": [
+        3.0,
+        5.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Vektor CR-21",
+      "category": "primary",
+      "damage": [
+        50.0,
+        55.0
+      ],
+      "accuracy": [
+        48.0,
+        53.0
+      ],
+      "stealth": 3.0,
+      "type": "Rifle",
+      "source": "South Africa",
+      "caliber": "5.56mm",
+      "clip": 20,
+      "rate": [
+        7.0,
+        8.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "XM8 Rifle",
+      "category": "primary",
+      "damage": [
+        50.0,
+        55.0
+      ],
+      "accuracy": [
+        56.0,
+        61.0
+      ],
+      "stealth": 2.6,
+      "type": "Rifle",
+      "source": "Gun Shop",
+      "caliber": "5.56mm",
+      "clip": 30,
+      "rate": [
+        5.0,
+        20.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Type 98 Anti Tank",
+      "category": "secondary",
+      "damage": [
+        78.0,
+        83.0
+      ],
+      "accuracy": [
+        25.0,
+        30.0
+      ],
+      "stealth": 1.3,
+      "type": "Heavy Artillery",
+      "source": "Hawaii",
+      "caliber": "Warhead",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": [
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Beretta 92FS",
+      "category": "secondary",
+      "damage": [
+        48.0,
+        53.0
+      ],
+      "accuracy": [
+        51.0,
+        56.0
+      ],
+      "stealth": 4.5,
+      "type": "Pistol",
+      "source": "Small Arms Cache",
+      "caliber": "9mm",
+      "clip": 20,
+      "rate": [
+        3.0,
+        6.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Beretta M9",
+      "category": "secondary",
+      "damage": [
+        36.0,
+        41.0
+      ],
+      "accuracy": [
+        54.0,
+        59.0
+      ],
+      "stealth": 4.5,
+      "type": "Pistol",
+      "source": "Gun Shop",
+      "caliber": "9mm",
+      "clip": 17,
+      "rate": [
+        4.0,
+        5.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Beretta Pico",
+      "category": "secondary",
+      "damage": [
+        54.0,
+        59.0
+      ],
+      "accuracy": [
+        53.0,
+        58.0
+      ],
+      "stealth": 4.9,
+      "type": "Pistol",
+      "source": "Leslie",
+      "caliber": ".380",
+      "clip": 6,
+      "rate": [
+        1.0,
+        2.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Blowgun",
+      "category": "secondary",
+      "damage": [
+        15.0,
+        20.0
+      ],
+      "accuracy": [
+        39.0,
+        44.0
+      ],
+      "stealth": 6.6,
+      "type": "Piercing",
+      "source": "China",
+      "caliber": "Dart",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "Blunderbuss",
+      "category": "secondary",
+      "damage": [
+        46.0,
+        51.0
+      ],
+      "accuracy": [
+        24.0,
+        29.0
+      ],
+      "stealth": 3.2,
+      "type": "Shotgun",
+      "source": "City Find",
+      "caliber": "12 Gauge",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "BT MP9",
+      "category": "secondary",
+      "damage": [
+        61.0,
+        66.0
+      ],
+      "accuracy": [
+        55.0,
+        60.0
+      ],
+      "stealth": 3.4,
+      "type": "SMG",
+      "source": "Japan",
+      "caliber": "9mm",
+      "clip": 30,
+      "rate": [
+        2.0,
+        25.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "China Lake",
+      "category": "secondary",
+      "damage": null,
+      "accuracy": null,
+      "stealth": 1.5,
+      "type": "Heavy Artillery",
+      "source": "Heavy Arms Cache",
+      "caliber": "40mm Grenade",
+      "clip": 3,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "Cobra Derringer",
+      "category": "secondary",
+      "damage": [
+        61.0,
+        66.0
+      ],
+      "accuracy": [
+        53.0,
+        58.0
+      ],
+      "stealth": 4.5,
+      "type": "Pistol",
+      "source": "Mexico",
+      "caliber": ".45",
+      "clip": 2,
+      "rate": [
+        1.0,
+        2.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Crossbow",
+      "category": "secondary",
+      "damage": [
+        35.0,
+        40.0
+      ],
+      "accuracy": [
+        63.0,
+        68.0
+      ],
+      "stealth": 4.6,
+      "type": "Piercing",
+      "source": "United Kingdom",
+      "caliber": "Bolt",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "Desert Eagle",
+      "category": "secondary",
+      "damage": [
+        59.0,
+        64.0
+      ],
+      "accuracy": [
+        36.0,
+        41.0
+      ],
+      "stealth": 4.3,
+      "type": "Pistol",
+      "source": "Mexico",
+      "caliber": ".44",
+      "clip": 8,
+      "rate": [
+        2.0,
+        3.0
+      ],
+      "specialAmmo": [
+        "HP"
+      ]
+    },
+    {
+      "name": "Dual 92G Berettas",
+      "category": "secondary",
+      "damage": [
+        64.0,
+        69.0
+      ],
+      "accuracy": [
+        30.0,
+        35.0
+      ],
+      "stealth": 3.2,
+      "type": "Pistol",
+      "source": "City Find",
+      "caliber": "9mm",
+      "clip": 46,
+      "rate": [
+        5.0,
+        15.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Fiveseven",
+      "category": "secondary",
+      "damage": [
+        52.0,
+        57.0
+      ],
+      "accuracy": [
+        49.0,
+        54.0
+      ],
+      "stealth": 4.9,
+      "type": "Pistol",
+      "source": "Gun Shop",
+      "caliber": "5.7mm",
+      "clip": 20,
+      "rate": [
+        6.0,
+        7.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Flamethrower",
+      "category": "secondary",
+      "damage": [
+        67.0,
+        72.0
+      ],
+      "accuracy": [
+        39.0,
+        44.0
+      ],
+      "stealth": 1.1,
+      "type": "Heavy Artillery",
+      "source": "Argentina",
+      "caliber": "Litre of Fuel",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "Flare Gun",
+      "category": "secondary",
+      "damage": [
+        18.0,
+        23.0
+      ],
+      "accuracy": [
+        22.0,
+        27.0
+      ],
+      "stealth": 4.8,
+      "type": "Pistol",
+      "source": "Mexico",
+      "caliber": "Flare",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "Glock 17",
+      "category": "secondary",
+      "damage": [
+        28.0,
+        33.0
+      ],
+      "accuracy": [
+        53.0,
+        58.0
+      ],
+      "stealth": 4.5,
+      "type": "Pistol",
+      "source": "Gun Shop",
+      "caliber": "9mm",
+      "clip": 20,
+      "rate": [
+        3.0,
+        6.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Harpoon",
+      "category": "secondary",
+      "damage": [
+        47.0,
+        52.0
+      ],
+      "accuracy": [
+        63.0,
+        68.0
+      ],
+      "stealth": 5.0,
+      "type": "Piercing",
+      "source": "Cayman Islands",
+      "caliber": "Bolt",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "Homemade Pocket Shotgun",
+      "category": "secondary",
+      "damage": [
+        63.0,
+        68.0
+      ],
+      "accuracy": [
+        60.0,
+        65.0
+      ],
+      "stealth": 2.4,
+      "type": "Shotgun",
+      "source": "Duke",
+      "caliber": "12 Gauge",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Lorcin 380",
+      "category": "secondary",
+      "damage": [
+        27.0,
+        32.0
+      ],
+      "accuracy": [
+        41.0,
+        46.0
+      ],
+      "stealth": 4.8,
+      "type": "Pistol",
+      "source": "Canada",
+      "caliber": ".380",
+      "clip": 6,
+      "rate": [
+        1.0,
+        5.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Luger",
+      "category": "secondary",
+      "damage": [
+        35.0,
+        40.0
+      ],
+      "accuracy": [
+        48.0,
+        53.0
+      ],
+      "stealth": 4.7,
+      "type": "Pistol",
+      "source": "City Find",
+      "caliber": "9mm",
+      "clip": 8,
+      "rate": [
+        1.0,
+        3.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Magnum",
+      "category": "secondary",
+      "damage": [
+        55.0,
+        60.0
+      ],
+      "accuracy": [
+        38.0,
+        43.0
+      ],
+      "stealth": 3.8,
+      "type": "Pistol",
+      "source": "Gun Shop",
+      "caliber": ".44",
+      "clip": 6,
+      "rate": [
+        1.0,
+        2.0
+      ],
+      "specialAmmo": [
+        "HP"
+      ]
+    },
+    {
+      "name": "Milkor MGL",
+      "category": "secondary",
+      "damage": [
+        74.0,
+        79.0
+      ],
+      "accuracy": [
+        39.0,
+        44.0
+      ],
+      "stealth": 1.4,
+      "type": "Heavy Artillery",
+      "source": "Heavy Arms Cache",
+      "caliber": "40mm Grenade",
+      "clip": 6,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "MP5k",
+      "category": "secondary",
+      "damage": [
+        42.0,
+        47.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 3.1,
+      "type": "SMG",
+      "source": "City Find",
+      "caliber": "9mm",
+      "clip": 15,
+      "rate": [
+        5.0,
+        7.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Pink Mac-10",
+      "category": "secondary",
+      "damage": [
+        74.0,
+        79.0
+      ],
+      "accuracy": [
+        45.0,
+        50.0
+      ],
+      "stealth": 3.1,
+      "type": "SMG",
+      "source": "United Arab Emirates",
+      "caliber": "9mm",
+      "clip": 120,
+      "rate": [
+        10.0,
+        15.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Qsz-92",
+      "category": "secondary",
+      "damage": [
+        62.0,
+        67.0
+      ],
+      "accuracy": [
+        53.0,
+        58.0
+      ],
+      "stealth": 4.6,
+      "type": "Pistol",
+      "source": "China",
+      "caliber": "9mm",
+      "clip": 15,
+      "rate": [
+        2.0,
+        12.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Raven MP25",
+      "category": "secondary",
+      "damage": [
+        29.0,
+        34.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 4.9,
+      "type": "Pistol",
+      "source": "Gun Shop",
+      "caliber": ".25",
+      "clip": 6,
+      "rate": [
+        3.0,
+        5.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "RPG Launcher",
+      "category": "secondary",
+      "damage": [
+        77.0,
+        82.0
+      ],
+      "accuracy": [
+        39.0,
+        44.0
+      ],
+      "stealth": 0.8,
+      "type": "Heavy Artillery",
+      "source": "City Find",
+      "caliber": "RPG",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": [
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Ruger 57",
+      "category": "secondary",
+      "damage": [
+        32.0,
+        37.0
+      ],
+      "accuracy": [
+        56.0,
+        61.0
+      ],
+      "stealth": 4.9,
+      "type": "Pistol",
+      "source": "Gun Shop",
+      "caliber": "5.7mm",
+      "clip": 20,
+      "rate": [
+        3.0,
+        4.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "S&W M29",
+      "category": "secondary",
+      "damage": [
+        47.0,
+        52.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 4.0,
+      "type": "Pistol",
+      "source": "Mission Shop",
+      "caliber": ".44",
+      "clip": 6,
+      "rate": [
+        2.0,
+        5.0
+      ],
+      "specialAmmo": [
+        "HP"
+      ]
+    },
+    {
+      "name": "S&W Revolver",
+      "category": "secondary",
+      "damage": [
+        42.0,
+        47.0
+      ],
+      "accuracy": [
+        54.0,
+        59.0
+      ],
+      "stealth": 3.9,
+      "type": "Pistol",
+      "source": "City Find",
+      "caliber": ".44",
+      "clip": 6,
+      "rate": [
+        1.0,
+        2.0
+      ],
+      "specialAmmo": [
+        "HP"
+      ]
+    },
+    {
+      "name": "Skorpion",
+      "category": "secondary",
+      "damage": [
+        40.0,
+        45.0
+      ],
+      "accuracy": [
+        54.0,
+        59.0
+      ],
+      "stealth": 3.1,
+      "type": "SMG",
+      "source": "City Find",
+      "caliber": "9mm",
+      "clip": 20,
+      "rate": [
+        3.0,
+        5.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Slingshot",
+      "category": "secondary",
+      "damage": [
+        14.0,
+        18.0
+      ],
+      "accuracy": [
+        54.0,
+        59.0
+      ],
+      "stealth": 7.1,
+      "type": "Clubbing",
+      "source": "City Find",
+      "caliber": "Stone",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "SMAW Launcher",
+      "category": "secondary",
+      "damage": null,
+      "accuracy": null,
+      "stealth": 1.1,
+      "type": "Heavy Artillery",
+      "source": "Heavy Arms Cache",
+      "caliber": "Warhead",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": [
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Springfield 1911",
+      "category": "secondary",
+      "damage": [
+        33.0,
+        38.0
+      ],
+      "accuracy": [
+        57.0,
+        62.0
+      ],
+      "stealth": 4.6,
+      "type": "Pistol",
+      "source": "Mexico",
+      "caliber": ".45",
+      "clip": 8,
+      "rate": [
+        2.0,
+        3.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Taser",
+      "category": "secondary",
+      "damage": [
+        1.0,
+        5.0
+      ],
+      "accuracy": [
+        54.0,
+        59.0
+      ],
+      "stealth": 6.1,
+      "type": "Mechanical",
+      "source": "Mexico",
+      "caliber": "Taser Cartridge",
+      "clip": 2,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "Taurus",
+      "category": "secondary",
+      "damage": [
+        30.0,
+        35.0
+      ],
+      "accuracy": [
+        57.0,
+        62.0
+      ],
+      "stealth": 4.5,
+      "type": "Pistol",
+      "source": "Hawaii",
+      "caliber": "9mm",
+      "clip": 13,
+      "rate": [
+        1.0,
+        12.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "TMP",
+      "category": "secondary",
+      "damage": [
+        38.0,
+        43.0
+      ],
+      "accuracy": [
+        45.0,
+        50.0
+      ],
+      "stealth": 3.3,
+      "type": "SMG",
+      "source": "City Find",
+      "caliber": "9mm",
+      "clip": 15,
+      "rate": [
+        3.0,
+        6.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Tranquilizer Gun",
+      "category": "secondary",
+      "damage": [
+        15.0,
+        20.0
+      ],
+      "accuracy": [
+        45.0,
+        50.0
+      ],
+      "stealth": 7.2,
+      "type": "Piercing",
+      "source": "Coming Soon",
+      "caliber": "Dart",
+      "clip": 1,
+      "rate": [
+        1.0,
+        1.0
+      ],
+      "specialAmmo": []
+    },
+    {
+      "name": "USP",
+      "category": "secondary",
+      "damage": [
+        44.0,
+        49.0
+      ],
+      "accuracy": [
+        58.0,
+        63.0
+      ],
+      "stealth": 4.5,
+      "type": "Pistol",
+      "source": "Gun Shop",
+      "caliber": "9mm",
+      "clip": 15,
+      "rate": [
+        4.0,
+        5.0
+      ],
+      "specialAmmo": [
+        "HP",
+        "TR",
+        "PI",
+        "IN"
+      ]
+    },
+    {
+      "name": "Axe",
+      "category": "melee",
+      "damage": [
+        34.0,
+        39.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 5.9,
+      "type": "Clubbing",
+      "source": "Mexico"
+    },
+    {
+      "name": "Baseball Bat",
+      "category": "melee",
+      "damage": [
+        16.0,
+        21.0
+      ],
+      "accuracy": [
+        57.0,
+        62.0
+      ],
+      "stealth": 6.6,
+      "type": "Clubbing",
+      "source": "Gun Shop"
+    },
+    {
+      "name": "Blood Spattered Sickle",
+      "category": "melee",
+      "damage": [
+        36.0,
+        41.0
+      ],
+      "accuracy": [
+        55.0,
+        60.0
+      ],
+      "stealth": 6.1,
+      "type": "Slashing",
+      "source": "Halloween 2010"
+    },
+    {
+      "name": "Bone Saw",
+      "category": "melee",
+      "damage": [
+        54.0,
+        58.0
+      ],
+      "accuracy": [
+        52.0,
+        56.0
+      ],
+      "stealth": 6.3,
+      "type": "Slashing",
+      "source": "Crime result"
+    },
+    {
+      "name": "Bo Staff",
+      "category": "melee",
+      "damage": [
+        13.0,
+        18.0
+      ],
+      "accuracy": [
+        55.0,
+        60.0
+      ],
+      "stealth": 5.6,
+      "type": "Clubbing",
+      "source": "China"
+    },
+    {
+      "name": "Bread Knife",
+      "category": "melee",
+      "damage": [
+        41.0,
+        43.0
+      ],
+      "accuracy": [
+        65.0,
+        70.0
+      ],
+      "stealth": 7.6,
+      "type": "Slashing",
+      "source": "Jimmy"
+    },
+    {
+      "name": "Bug Swatter",
+      "category": "melee",
+      "damage": [
+        5.0,
+        10.0
+      ],
+      "accuracy": [
+        59.0,
+        64.0
+      ],
+      "stealth": 7.8,
+      "type": "Slashing",
+      "source": "Bug Bounty"
+    },
+    {
+      "name": "Butterfly Knife",
+      "category": "melee",
+      "damage": [
+        24.0,
+        29.0
+      ],
+      "accuracy": [
+        55.0,
+        60.0
+      ],
+      "stealth": 8.3,
+      "type": "Piercing",
+      "source": "Gun Shop"
+    },
+    {
+      "name": "Cattle Prod",
+      "category": "melee",
+      "damage": [
+        1.0,
+        6.0
+      ],
+      "accuracy": [
+        59.0,
+        64.0
+      ],
+      "stealth": 6.6,
+      "type": "Mechanical",
+      "source": "Crime result"
+    },
+    {
+      "name": "Chain Whip",
+      "category": "melee",
+      "damage": [
+        31.0,
+        36.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 4.9,
+      "type": "Slashing",
+      "source": "Japan"
+    },
+    {
+      "name": "Chainsaw",
+      "category": "melee",
+      "damage": [
+        61.0,
+        66.0
+      ],
+      "accuracy": [
+        23.0,
+        28.0
+      ],
+      "stealth": 3.0,
+      "type": "Mechanical",
+      "source": "Gun Shop"
+    },
+    {
+      "name": "Claymore Sword",
+      "category": "melee",
+      "damage": [
+        57.0,
+        62.0
+      ],
+      "accuracy": [
+        49.0,
+        54.0
+      ],
+      "stealth": 4.3,
+      "type": "Slashing",
+      "source": "United Kingdom"
+    },
+    {
+      "name": "Cleaver",
+      "category": "melee",
+      "damage": [
+        51.0,
+        56.0
+      ],
+      "accuracy": [
+        56.0,
+        61.0
+      ],
+      "stealth": 6.6,
+      "type": "Slashing",
+      "source": "City Find"
+    },
+    {
+      "name": "Cricket Bat",
+      "category": "melee",
+      "damage": [
+        18.0,
+        23.0
+      ],
+      "accuracy": [
+        42.0,
+        47.0
+      ],
+      "stealth": 6.9,
+      "type": "Clubbing",
+      "source": "United Kingdom"
+    },
+    {
+      "name": "Crowbar",
+      "category": "melee",
+      "damage": [
+        20.0,
+        25.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 6.6,
+      "type": "Clubbing",
+      "source": "Gun Shop"
+    },
+    {
+      "name": "Dagger",
+      "category": "melee",
+      "damage": [
+        28.0,
+        33.0
+      ],
+      "accuracy": [
+        60.0,
+        65.0
+      ],
+      "stealth": 7.8,
+      "type": "Piercing",
+      "source": "Gun Shop"
+    },
+    {
+      "name": "Devil's Pitchfork",
+      "category": "melee",
+      "damage": [
+        61.0,
+        66.0
+      ],
+      "accuracy": [
+        41.0,
+        46.0
+      ],
+      "stealth": 5.0,
+      "type": "Piercing",
+      "source": "Halloween 2011"
+    },
+    {
+      "name": "Diamond Bladed Knife",
+      "category": "melee",
+      "damage": [
+        60.0,
+        65.0
+      ],
+      "accuracy": [
+        62.0,
+        67.0
+      ],
+      "stealth": 7.1,
+      "type": "Piercing",
+      "source": "Cayman Islands"
+    },
+    {
+      "name": "Diamond Icicle",
+      "category": "melee",
+      "damage": [
+        45.0,
+        50.0
+      ],
+      "accuracy": [
+        48.0,
+        53.0
+      ],
+      "stealth": 7.6,
+      "type": "Piercing",
+      "source": "Xmas 2011"
+    },
+    {
+      "name": "Dual Axes",
+      "category": "melee",
+      "damage": [
+        70.0,
+        75.0
+      ],
+      "accuracy": [
+        54.0,
+        59.0
+      ],
+      "stealth": 4.1,
+      "type": "Clubbing",
+      "source": "Old Mission System"
+    },
+    {
+      "name": "Dual Hammers",
+      "category": "melee",
+      "damage": [
+        70.0,
+        75.0
+      ],
+      "accuracy": [
+        54.0,
+        59.0
+      ],
+      "stealth": 4.5,
+      "type": "Clubbing",
+      "source": "Old Mission System"
+    },
+    {
+      "name": "Dual Samurai Swords",
+      "category": "melee",
+      "damage": [
+        70.0,
+        75.0
+      ],
+      "accuracy": [
+        54.0,
+        59.0
+      ],
+      "stealth": 3.6,
+      "type": "Slashing",
+      "source": "Old Mission System"
+    },
+    {
+      "name": "Dual Scimitars",
+      "category": "melee",
+      "damage": [
+        70.0,
+        75.0
+      ],
+      "accuracy": [
+        54.0,
+        59.0
+      ],
+      "stealth": 4.3,
+      "type": "Slashing",
+      "source": "Old Mission System"
+    },
+    {
+      "name": "Duke's Hammer",
+      "category": "melee",
+      "damage": [
+        18.0,
+        18.0
+      ],
+      "accuracy": [
+        55.0,
+        55.0
+      ],
+      "stealth": 7.6,
+      "type": "Clubbing",
+      "source": "Duke mission"
+    },
+    {
+      "name": "Fine Chisel",
+      "category": "melee",
+      "damage": [
+        16.0,
+        21.0
+      ],
+      "accuracy": [
+        50.0,
+        55.0
+      ],
+      "stealth": 8.0,
+      "type": "Piercing",
+      "source": "Old Mission System"
+    },
+    {
+      "name": "Flail",
+      "category": "melee",
+      "damage": [
+        71.0,
+        76.0
+      ],
+      "accuracy": [
+        28.0,
+        33.0
+      ],
+      "stealth": 5.8,
+      "type": "Clubbing",
+      "source": "United Kingdom"
+    },
+    {
+      "name": "Frying Pan",
+      "category": "melee",
+      "damage": [
+        19.0,
+        24.0
+      ],
+      "accuracy": [
+        43.0,
+        48.0
+      ],
+      "stealth": 6.0,
+      "type": "Clubbing",
+      "source": "United Kingdom"
+    },
+    {
+      "name": "Golden Broomstick",
+      "category": "melee",
+      "damage": [
+        60.0,
+        65.0
+      ],
+      "accuracy": [
+        48.0,
+        53.0
+      ],
+      "stealth": 5.8,
+      "type": "Clubbing",
+      "source": "Halloween 2011"
+    },
+    {
+      "name": "Golf Club",
+      "category": "melee",
+      "damage": [
+        29.0,
+        32.0
+      ],
+      "accuracy": [
+        59.0,
+        63.0
+      ],
+      "stealth": 6.2,
+      "type": "Clubbing",
+      "source": "Crime result"
+    },
+    {
+      "name": "Guandao",
+      "category": "melee",
+      "damage": [
+        63.0,
+        68.0
+      ],
+      "accuracy": [
+        35.0,
+        40.0
+      ],
+      "stealth": 5.0,
+      "type": "Slashing",
+      "source": "China"
+    },
+    {
+      "name": "Hammer",
+      "category": "melee",
+      "damage": [
+        17.0,
+        22.0
+      ],
+      "accuracy": [
+        55.0,
+        60.0
+      ],
+      "stealth": 7.6,
+      "type": "Clubbing",
+      "source": "Gun Shop"
+    },
+    {
+      "name": "Handbag",
+      "category": "melee",
+      "damage": [
+        67.0,
+        72.0
+      ],
+      "accuracy": [
+        63.0,
+        68.0
+      ],
+      "stealth": 7.6,
+      "type": "Clubbing",
+      "source": "United Arab Emirates"
+    },
+    {
+      "name": "Ice Pick",
+      "category": "melee",
+      "damage": [
+        51.0,
+        56.0
+      ],
+      "accuracy": [
+        60.0,
+        65.0
+      ],
+      "stealth": 7.0,
+      "type": "Piercing",
+      "source": "Canada"
+    },
+    {
+      "name": "Ivory Walking Cane",
+      "category": "melee",
+      "damage": [
+        53.0,
+        58.0
+      ],
+      "accuracy": [
+        57.0,
+        62.0
+      ],
+      "stealth": 6.8,
+      "type": "Clubbing",
+      "source": "Old Mission System"
+    },
+    {
+      "name": "Kama",
+      "category": "melee",
+      "damage": [
+        35.0,
+        40.0
+      ],
+      "accuracy": [
+        55.0,
+        60.0
+      ],
+      "stealth": 6.4,
+      "type": "Slashing",
+      "source": "Japan"
+    },
+    {
+      "name": "Katana",
+      "category": "melee",
+      "damage": [
+        52.0,
+        57.0
+      ],
+      "accuracy": [
+        55.0,
+        60.0
+      ],
+      "stealth": 4.9,
+      "type": "Slashing",
+      "source": "China"
+    },
+    {
+      "name": "Kitchen Knife",
+      "category": "melee",
+      "damage": [
+        25.0,
+        30.0
+      ],
+      "accuracy": [
+        55.0,
+        60.0
+      ],
+      "stealth": 7.6,
+      "type": "Piercing",
+      "source": "Gun Shop"
+    },
+    {
+      "name": "Knuckle Dusters",
+      "category": "melee",
+      "damage": [
+        11.0,
+        16.0
+      ],
+      "accuracy": [
+        62.0,
+        67.0
+      ],
+      "stealth": 7.9,
+      "type": "Clubbing",
+      "source": "South Africa"
+    },
+    {
+      "name": "Kodachi",
+      "category": "melee",
+      "damage": [
+        62.0,
+        67.0
+      ],
+      "accuracy": [
+        56.0,
+        61.0
+      ],
+      "stealth": 4.1,
+      "type": "Slashing",
+      "source": "Japan"
+    },
+    {
+      "name": "Lead Pipe",
+      "category": "melee",
+      "damage": [
+        26.0,
+        31.0
+      ],
+      "accuracy": [
+        33.0,
+        38.0
+      ],
+      "stealth": 6.4,
+      "type": "Clubbing",
+      "source": "General Store"
+    },
+    {
+      "name": "Leather Bullwhip",
+      "category": "melee",
+      "damage": [
+        27.0,
+        32.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 5.4,
+      "type": "Slashing",
+      "source": "Mexico"
+    },
+    {
+      "name": "Macana",
+      "category": "melee",
+      "damage": [
+        57.0,
+        62.0
+      ],
+      "accuracy": [
+        65.0,
+        70.0
+      ],
+      "stealth": 7.4,
+      "type": "Piercing",
+      "source": "Argentina"
+    },
+    {
+      "name": "Madball",
+      "category": "melee",
+      "damage": [
+        60.0,
+        65.0
+      ],
+      "accuracy": [
+        45.0,
+        50.0
+      ],
+      "stealth": 6.8,
+      "type": "Clubbing",
+      "source": "Duke"
+    },
+    {
+      "name": "Meat Hook",
+      "category": "melee",
+      "damage": [
+        62.0,
+        67.0
+      ],
+      "accuracy": [
+        39.0,
+        44.0
+      ],
+      "stealth": 7.2,
+      "type": "Piercing",
+      "source": "City Find"
+    },
+    {
+      "name": "Metal Nunchakus",
+      "category": "melee",
+      "damage": [
+        61.0,
+        66.0
+      ],
+      "accuracy": [
+        60.0,
+        65.0
+      ],
+      "stealth": 6.5,
+      "type": "Clubbing",
+      "source": "Japan"
+    },
+    {
+      "name": "Naval Cutlass",
+      "category": "melee",
+      "damage": [
+        64.0,
+        69.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 5.1,
+      "type": "Slashing",
+      "source": "Cayman Islands"
+    },
+    {
+      "name": "Ninja Claws",
+      "category": "melee",
+      "damage": [
+        39.0,
+        44.0
+      ],
+      "accuracy": [
+        51.0,
+        56.0
+      ],
+      "stealth": 7.4,
+      "type": "Piercing",
+      "source": "Mexico"
+    },
+    {
+      "name": "Pair of High Heels",
+      "category": "melee",
+      "damage": [
+        40.0,
+        45.0
+      ],
+      "accuracy": [
+        63.0,
+        68.0
+      ],
+      "stealth": 7.1,
+      "type": "Piercing",
+      "source": "Crime result"
+    },
+    {
+      "name": "Pair of Ice Skates",
+      "category": "melee",
+      "damage": [
+        43.0,
+        48.0
+      ],
+      "accuracy": [
+        45.0,
+        50.0
+      ],
+      "stealth": 7.0,
+      "type": "Slashing",
+      "source": "Xmas 2011"
+    },
+    {
+      "name": "Pen Knife",
+      "category": "melee",
+      "damage": [
+        21.0,
+        26.0
+      ],
+      "accuracy": [
+        45.0,
+        50.0
+      ],
+      "stealth": 8.5,
+      "type": "Piercing",
+      "source": "Gun Shop"
+    },
+    {
+      "name": "Penelope",
+      "category": "melee",
+      "damage": [
+        17.0,
+        17.0
+      ],
+      "accuracy": [
+        57.0,
+        57.0
+      ],
+      "stealth": 6.6,
+      "type": "Clubbing",
+      "source": "Duke mission"
+    },
+    {
+      "name": "Petrified Humerus",
+      "category": "melee",
+      "damage": [
+        48.0,
+        53.0
+      ],
+      "accuracy": [
+        48.0,
+        53.0
+      ],
+      "stealth": 6.8,
+      "type": "Clubbing",
+      "source": "Halloween 2012"
+    },
+    {
+      "name": "Pillow",
+      "category": "melee",
+      "damage": [
+        1.0,
+        5.3
+      ],
+      "accuracy": [
+        63.0,
+        68.0
+      ],
+      "stealth": 7.0,
+      "type": "Clubbing",
+      "source": "United Arab Emirates"
+    },
+    {
+      "name": "Plastic Sword",
+      "category": "melee",
+      "damage": [
+        5.0,
+        10.0
+      ],
+      "accuracy": [
+        29.0,
+        34.0
+      ],
+      "stealth": 7.1,
+      "type": "Clubbing",
+      "source": "Wheel of Lame"
+    },
+    {
+      "name": "Poison Umbrella",
+      "category": "melee",
+      "damage": [
+        35.0,
+        40.0
+      ],
+      "accuracy": [
+        49.0,
+        54.0
+      ],
+      "stealth": 8.5,
+      "type": "Piercing",
+      "source": "Fernando"
+    },
+    {
+      "name": "Riding Crop",
+      "category": "melee",
+      "damage": [
+        21.0,
+        26.0
+      ],
+      "accuracy": [
+        54.0,
+        59.0
+      ],
+      "stealth": 5.4,
+      "type": "Slashing",
+      "source": "Leslie"
+    },
+    {
+      "name": "Rusty Sword",
+      "category": "melee",
+      "damage": [
+        22.0,
+        27.0
+      ],
+      "accuracy": [
+        15.0,
+        20.0
+      ],
+      "stealth": 5.1,
+      "type": "Slashing",
+      "source": "City Find"
+    },
+    {
+      "name": "Sai",
+      "category": "melee",
+      "damage": [
+        29.0,
+        34.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 6.8,
+      "type": "Piercing",
+      "source": "Japan"
+    },
+    {
+      "name": "Samurai Sword",
+      "category": "melee",
+      "damage": [
+        58.0,
+        63.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 4.9,
+      "type": "Slashing",
+      "source": "Mexico"
+    },
+    {
+      "name": "Scalpel",
+      "category": "melee",
+      "damage": [
+        56.0,
+        61.0
+      ],
+      "accuracy": [
+        47.0,
+        52.0
+      ],
+      "stealth": 8.7,
+      "type": "Piercing",
+      "source": "Coming Soon"
+    },
+    {
+      "name": "Scimitar",
+      "category": "melee",
+      "damage": [
+        40.0,
+        45.0
+      ],
+      "accuracy": [
+        58.0,
+        63.0
+      ],
+      "stealth": 5.4,
+      "type": "Slashing",
+      "source": "Gun Shop"
+    },
+    {
+      "name": "Sledgehammer",
+      "category": "melee",
+      "damage": [
+        58.0,
+        63.0
+      ],
+      "accuracy": [
+        50.0,
+        55.0
+      ],
+      "stealth": 4.1,
+      "type": "Clubbing",
+      "source": "Tiny"
+    },
+    {
+      "name": "Spear",
+      "category": "melee",
+      "damage": [
+        38.0,
+        43.0
+      ],
+      "accuracy": [
+        48.0,
+        53.0
+      ],
+      "stealth": 5.1,
+      "type": "Piercing",
+      "source": "South Africa"
+    },
+    {
+      "name": "Swiss Army Knife",
+      "category": "melee",
+      "damage": [
+        23.0,
+        28.0
+      ],
+      "accuracy": [
+        52.0,
+        57.0
+      ],
+      "stealth": 8.4,
+      "type": "Piercing",
+      "source": "Switzerland"
+    },
+    {
+      "name": "Twin Tiger Hooks",
+      "category": "melee",
+      "damage": [
+        50.0,
+        55.0
+      ],
+      "accuracy": [
+        53.0,
+        58.0
+      ],
+      "stealth": 4.8,
+      "type": "Piercing",
+      "source": "China"
+    },
+    {
+      "name": "Wand of Destruction",
+      "category": "melee",
+      "damage": [
+        60.0,
+        65.0
+      ],
+      "accuracy": [
+        26.0,
+        31.0
+      ],
+      "stealth": 5.4,
+      "type": "Piercing",
+      "source": "Halloween 2005"
+    },
+    {
+      "name": "Wooden Nunchaku",
+      "category": "melee",
+      "damage": [
+        22.0,
+        27.0
+      ],
+      "accuracy": [
+        59.0,
+        64.0
+      ],
+      "stealth": 6.6,
+      "type": "Clubbing",
+      "source": "Japan"
+    },
+    {
+      "name": "Wushu Double Axes",
+      "category": "melee",
+      "damage": [
+        53.0,
+        58.0
+      ],
+      "accuracy": [
+        51.0,
+        56.0
+      ],
+      "stealth": 4.4,
+      "type": "Clubbing",
+      "source": "China"
+    },
+    {
+      "name": "Yasukuni Sword",
+      "category": "melee",
+      "damage": [
+        65.0,
+        70.0
+      ],
+      "accuracy": [
+        49.0,
+        54.0
+      ],
+      "stealth": 5.0,
+      "type": "Slashing",
+      "source": "City Find"
+    }
+  ]
+}

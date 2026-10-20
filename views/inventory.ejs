@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/items.css">
+<div class="page-heading"><div><div class="eyebrow">YOUR COLLECTION</div><h1>Items</h1><p>Manage your equipment, supplies, and collectibles.</p></div><a class="action-button" href="/market">Item market ↗</a></div>
+<section class="dashboard-panel item-loadout"><div class="panel-heading"><h2>Equipped loadout</h2><a class="text-link" href="/equipment">Equipment details →</a></div>
+  <div class="item-slots">
+    <% loadout.forEach(({slot, item}) => { %>
+    <div class="item-slot"><span class="eyebrow"><%= slot.toUpperCase() %></span><div><img src="<%= item?.img || '/amenities/default.png' %>" alt="" onerror="this.onerror=null;this.src='/amenities/default.png'"><strong><%= item?.name || 'Empty slot' %></strong></div><% if (item) { %><small><%= item.desc %></small><% } else { %><small>Select equipment from your items below.</small><% } %></div>
+    <% }); %>
+  </div>
+</section>
+<section class="dashboard-panel item-use-summary"><h2>Active item effects</h2>
+  <% if(itemState.book) { %><p><%= itemState.book.ends_at > Date.now()/1000 ? 'Reading until' : 'Last book finished' %>: <strong><%= new Date(itemState.book.ends_at*1000).toUTCString() %></strong></p><% } else { %><p>No book is currently being read.</p><% } %>
+  <% if(itemState.donator?.until_at > Date.now()/1000) { %><p>Donator status until <%= new Date(itemState.donator.until_at*1000).toUTCString() %>.</p><% } %>
+  <% if(itemState.piggy?.amount) { %><p>Piggy bank savings: <strong>$<%= itemState.piggy.amount.toLocaleString() %></strong>. Break the bank to withdraw.</p><% } %>
+  <% if(user.itemBonuses?.sneakers) { %><p>Sports Sneakers: +5% speed gains in the gym.</p><% } %>
+  <% if(user.itemBonuses?.suitcase) { %><p>Suitcase: +<%= user.itemBonuses.suitcase %> travel capacity; only the largest owned suitcase counts.</p><% } %>
+  <% if(user.itemBonuses?.ticket) { %><p>Business class is ready for your next return trip.</p><% } %>
+</section>
+<div class="item-recovery-summary"><span>Cooldowns</span><% [{key:'medical',name:'Medical'},{key:'booster',name:'Booster'},{key:'drug',name:'Drug'}].forEach(group => { %><span><%= group.name %>: <b data-cooldown="<%= cooldowns.find(c=>c.category===group.key)?.ready_at || 0 %>">Ready</b></span><% }); %></div>
+<p class="panel-intro">Medical items and boosters stack time. Boosters can be used while their timer is below 24 hours. Use them while your medical timer is below <%= medicalState.cap/3600 %> hours. Blood type: <strong><%= medicalState.blood_type %></strong>. Medical effectiveness: +<%= medicalState.effectiveness %>%. Drugs share a separate timer; boosters cannot be used in hospital. <a href="/hospital">Hospital and revives →</a></p>
+<p id="item-feedback" role="status" class="item-feedback" hidden></p>
+<%- include('partials/item-browser', { mode: 'inventory', rows, categories }) %>
+<script src="/js/items.js" defer></script>

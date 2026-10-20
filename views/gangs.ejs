@@ -1,0 +1,5 @@
+<div class="page-heading"><div><div class="eyebrow">YOUR NETWORK</div><h1>Strength in numbers.</h1><p>Find a crew, build your influence, and work your way up together.</p></div><a class="action-button" href="/my-faction"><%= user.gang_id ? 'Manage your faction' : 'Create a faction · $500' %> ↗</a></div>
+<section class="dashboard-panel"><div class="panel-heading"><h2>Known gangs</h2><a class="text-link" href="/faction-invites">Your invitations →</a></div><p class="panel-intro">Membership is by invitation. Contact a faction leader to ask about joining.</p>
+<% if (!gangs.length) { %><div class="empty-state"><h3>The airport is waiting for a leader.</h3><p>No gangs have been founded yet. Start yours and recruit your first members.</p></div><% } %>
+<% gangs.forEach(g => { %><div class="specialty-row"><div><strong>[<%= g.tag %>] <%= g.name %></strong><small>Leader: <a href="/profile/<%= g.leader_name %>"><%= g.leader_name %></a> · <%= g.member_count %> members</small><p class="subtle"><%= g.description %></p></div><span class="rank-chip">$<%= formatCash(g.bank) %></span></div><% }); %>
+</section>

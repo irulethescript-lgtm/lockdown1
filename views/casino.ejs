@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/casino.css">
+<div id="casino-app" data-section="<%= section %>">
+ <header class="casino-hero"><div><span class="casino-eyebrow">LOCK DOWN · THE HOUSE</span><h1>Casino</h1><p>Play your hand. Know your limit.</p></div><span class="casino-emblem" aria-hidden="true">♠</span></header>
+ <nav class="casino-nav" aria-label="Casino navigation"><a href="/casino">Games</a><a href="/points">Points Building</a><a href="/awards">Awards</a><a href="/logs">Transactions</a></nav>
+ <div id="casino-balances" class="casino-balances"></div>
+ <p id="casino-message" class="casino-message" role="status" aria-live="polite"></p>
+ <div id="casino-last-result"></div>
+ <section id="casino-points" class="casino-panel" hidden><h2>Points &amp; token refills</h2><p>Casino Tokens reset to 75 at midnight UTC. They are separate from your regular Tokens. Point and job refills set your balance to 75. A Casino Pass adds 50; redeem it with 25 or fewer tokens. Unused daily tokens do not stack.</p><div id="casino-refills"></div></section>
+ <div id="casino-games" class="casino-game-grid"></div>
+ <section id="casino-awards" class="casino-panel" hidden><h2>Casino awards</h2><div id="casino-award-list"></div><h3>Your progress</h3><div id="casino-stat-list"></div></section>
+ <section class="casino-rules casino-panel"><h2>House rules</h2><ul>
+ <li>In-game cash only. Wagers are $10–$1,000,000 (even amounts for house games). Multiplayer stakes are $100–$1,000,000.</li>
+ <li>Casino Tokens: 75 per UTC day. A house-game round, lottery ticket, Bookie wager or Russian Roulette seat costs 1. Poker uses no tokens. High-Low guesses and blackjack decisions use the token paid when starting.</li>
+ <li>Blackjack: a single deck, dealer stands on all 17s, natural pays 3:2, wins pay 1:1, ties return the stake. Five cards without busting win, unless the dealer has a natural. Insurance costs half your original bet and pays 2:1. Double down draws one card. No splitting.</li>
+ <li>Slots: three symbols chosen independently from eight. Triple diamonds return 100×, triple stars 40×, triple bells 20×, other triples 10×; exactly one pair returns 0.5×. All quoted returns include the stake.</li>
+ <li>Craps: pass line, 7/11 wins the come-out, 2/3/12 loses; otherwise the first point repeated wins before a 7. Wins return 2×.</li>
+ <li>High-Low: ranks 2 through Ace; independent next cards, ties lose. Each correct guess increases the cash-out by 10% rounded down. Automatic cash-out at 25 wins or $100m.</li>
+ <li>Wheel: once daily, $1,000 and 1 token. Ten equally likely segments: $0, $0, $0, $0, $500, $500, $1,000, $1,000, $2,000, $5,000.</li>
+ <li>Poker is heads-up five-card draw: both players choose which cards to hold and draw once. Highest standard poker hand wins. Aces can be low in a straight. No token cost. This is not Texas Hold’em.</li>
+ <li>Russian Roulette is a cash-only fictional duel. Six chambers, alternating turns, one randomly placed live chamber. Both players have equal odds. No health or character penalties.</li>
+ <li>Multiplayer stakes are held in escrow. Winner receives 95% of both stakes; 5% leaves the economy. Ties refund both stakes. Waiting tables expire after 24 hours; poker hands after 10 minutes. If just one player has drawn, they win on timeout; otherwise both receive refunds. Russian Roulette tokens are not refunded on cancellation.</li>
+ <li>Lottery: $1,000 and 1 token per ticket, up to 10 daily. One winning ticket is selected at midnight UTC; 90% of sales is paid out. Results settle on the next casino visit or action, including after a restart.</li>
+ <li>Bookie uses only verified events imported by the game operator. Odds lock at placement. Bets close at kickoff; winning stakes return stake × decimal odds, rounded down. Voided events return stakes.</li>
+ </ul></section>
+</div>
+<script id="casino-initial" type="application/json"><%- JSON.stringify(casino).replace(/</g,'\\u003c') %></script>
+<script src="/js/casino.js" defer></script>

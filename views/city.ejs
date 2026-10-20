@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="/css/city-map.css">
+<h1>City</h1>
+<section class="city-intro"><h2>Explore Lock down</h2><p>Choose a location on the map or use Quick Links. Keep your eyes open: there is a 35% chance of an item appearing each day. Finds reset at midnight UTC.</p></section>
+<div class="city-tabs" role="tablist" aria-label="City view"><button id="map-tab" role="tab" aria-selected="true" aria-controls="city-map-panel">Map</button><button id="links-tab" role="tab" aria-selected="false" aria-controls="city-links-panel" tabindex="-1">Quick Links</button></div>
+<section id="city-map-panel" role="tabpanel" aria-labelledby="map-tab">
+ <div class="city-map-viewport" id="city-map-viewport">
+  <div class="city-map-canvas" id="city-map-canvas">
+   <img class="city-map-art" src="/img/lockdown-city-map.png" alt="Street map of Lock down with airport, city districts and waterfront" draggable="false">
+   <% locations.filter(location=>!location.label).forEach(location=>{ %>
+   <a class="city-pin <%= location.group.toLowerCase().replace(' ','-') %>" href="<%= location.href %>" style="left:<%= location.x %>%;top:<%= location.y %>%" title="<%= location.name %>" aria-label="<%= location.name %>"><span></span><b><%= location.name %></b></a>
+   <% }); %>
+   <svg class="city-destinations" viewBox="0 0 1220 750" aria-label="City destinations">
+    <% locations.filter(location=>location.label).forEach(location=>{ const box=location.label; %>
+    <a class="city-map-label <%= location.group.toLowerCase().replace(' ','-') %>" href="<%= location.href %>" aria-label="<%= location.name %>">
+     <title><%= location.name %></title>
+     <rect x="<%= box.x %>" y="<%= box.y %>" width="<%= box.w %>" height="<%= box.h %>" rx="4" />
+     <text x="<%= box.x+box.w/2 %>" y="<%= box.y+box.h/2 %>" dominant-baseline="central" text-anchor="middle"><%= location.name.toUpperCase() %></text>
+    </a>
+    <% }); %>
+   </svg>
+   <% if(foundItem){ %>
+   <button id="city-find" class="city-find" style="left:<%= find.x %>%;top:<%= find.y %>%" aria-label="Collect found item: <%= foundItem.name %>" title="Collect <%= foundItem.name %>"><img src="<%= foundItem.img || '/amenities/default.png' %>" alt="<%= foundItem.name %>" draggable="false"></button>
+   <% } %>
+  </div>
+  <div class="city-map-tools"><button id="map-zoom-in" aria-label="Zoom in">+</button><button id="map-zoom-out" aria-label="Zoom out">−</button><button id="map-reset" aria-label="Reset map">⌂</button></div>
+ </div>
+ <p class="city-map-hint">Use + / − to zoom. Drag to move around the map. Select a destination name or pin to visit.</p>
+</section>
+<section id="city-links-panel" role="tabpanel" aria-labelledby="links-tab" hidden><div class="city-quick-links">
+ <% ['Financial','Administrative','Shopping','Leisure','Real Estate','Miscellaneous'].forEach(group=>{ %><section><h2><%= group %></h2><% locations.filter(l=>l.group===group).forEach(l=>{ %><a href="<%= l.href %>"><%= l.name %> →</a><% }); %></section><% }); %>
+</div></section>
+<section class="city-legend"><h2>Key of Symbols</h2><div><% ['Financial','Administrative','Shopping','Leisure','Real Estate','Miscellaneous'].forEach(group=>{ %><span><i class="<%= group.toLowerCase().replace(' ','-') %>"></i><%= group %></span><% }); %></div></section>
+<p id="city-find-status" role="status"><%= find.claimed?'You collected today’s find. Check back tomorrow.':foundItem?'Something has been spotted in the city. Find it on the map.':'No items spotted today. Explore again tomorrow.' %></p>
+<script src="/js/city-map.js" defer></script>

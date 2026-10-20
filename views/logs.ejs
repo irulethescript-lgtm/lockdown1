@@ -1,0 +1,75 @@
+<% const typeLabels = { market_sale:'🛒 Market Sale', warden_buy:'🏛️ Broker Buy', spy:'🔍 Spy', job_pay:'💰 Job Pay', send_money:'💸 Send Money' }; %>
+
+<div class="page-box">
+  <h2 style="font-family:'Oswald',Arial;letter-spacing:1px;color:#ccc;margin:0 0 4px;">📋 Transaction Logs</h2>
+  <p style="color:#555;font-size:12px;margin:0 0 14px;">All item and cash transactions across the game. Use as dispute evidence.</p>
+
+  <!-- Filter tabs -->
+  <div style="display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;">
+    <% ['','market_sale','warden_buy','job_pay','spy'].forEach(function(t){ %>
+    <a href="/logs<%= t?'?type='+t:'' %>"
+       style="padding:5px 14px;font:11px Arial;text-decoration:none;border:1px solid #333;
+              background:<%= type===t?'#1a1a1a':'#0d0d0d' %>;
+              color:<%= type===t?'#fff':'#666' %>;">
+      <%= t ? (typeLabels[t]||t) : '🗂️ All' %>
+    </a>
+    <% }); %>
+  </div>
+
+  <table style="width:100%;border-collapse:collapse;font-size:11px;">
+    <thead>
+      <tr style="background:#111;color:#555;text-transform:uppercase;letter-spacing:1px;">
+        <th style="padding:7px 10px;text-align:left;border-bottom:1px solid #222;">Time</th>
+        <th style="padding:7px 10px;text-align:left;border-bottom:1px solid #222;">Type</th>
+        <th style="padding:7px 10px;text-align:left;border-bottom:1px solid #222;">From</th>
+        <th style="padding:7px 10px;text-align:left;border-bottom:1px solid #222;">To</th>
+        <th style="padding:7px 10px;text-align:left;border-bottom:1px solid #222;">Item</th>
+        <th style="padding:7px 10px;text-align:right;border-bottom:1px solid #222;">Cash</th>
+        <th style="padding:7px 10px;text-align:left;border-bottom:1px solid #222;">Note</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% if (!logs.length) { %>
+      <tr><td colspan="7" style="padding:20px;text-align:center;color:#444;font-style:italic;">No transactions recorded yet.</td></tr>
+    <% } %>
+    <% logs.forEach(function(log){ %>
+    <% const d = new Date(log.created_at * 1000); %>
+    <% const timeStr = d.toLocaleDateString('en-GB',{day:'2-digit',month:'short'}) + ' ' + d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}); %>
+    <tr style="border-bottom:1px solid #111;" onmouseover="this.style.background='#0d0d0d'" onmouseout="this.style.background=''">
+      <td style="padding:7px 10px;color:#555;font-family:monospace;white-space:nowrap;"><%= timeStr %></td>
+      <td style="padding:7px 10px;"><span style="background:#1a1a1a;border:1px solid #2a2a2a;padding:2px 7px;color:#aaa;"><%= typeLabels[log.type]||log.type %></span></td>
+      <td style="padding:7px 10px;color:<%= log.from_name?'#88aaff':'#333' %>;">
+        <% if (log.from_name) { %><a href="/profile/<%= log.from_name %>" style="color:#88aaff;text-decoration:none;"><%= log.from_name %></a><% } else { %><span style="color:#333;">—</span><% } %>
+      </td>
+      <td style="padding:7px 10px;color:<%= log.to_name?'#88aaff':'#333' %>;">
+        <% if (log.to_name) { %><a href="/profile/<%= log.to_name %>" style="color:#88aaff;text-decoration:none;"><%= log.to_name %></a><% } else { %><span style="color:#333;">—</span><% } %>
+      </td>
+      <td style="padding:7px 10px;color:#ccc;"><%= log.item_key ? (log.item_key.replace(/_/g,' ') + (log.quantity>1?' ×'+log.quantity:'')) : '<span style="color:#333;">—</span>' %></td>
+      <td style="padding:7px 10px;text-align:right;color:<%= log.cash_amount>0?'#ffcc44':'#555' %>;">
+        <%= log.cash_amount > 0 ? '$'+Number(log.cash_amount).toLocaleString() : '—' %>
+      </td>
+      <td style="padding:7px 10px;color:#555;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="<%= log.note %>"><%= log.note %></td>
+    </tr>
+    <% }); %>
+    </tbody>
+  </table>
+
+  <!-- Pagination -->
+  <% const totalPages = Math.ceil(total/limit); %>
+  <% if (totalPages > 1) { %>
+  <div style="margin-top:14px;display:flex;gap:6px;justify-content:center;">
+    <% for (let p = 1; p <= totalPages; p++) { %>
+    <a href="/logs?page=<%= p %><%= type?'&type='+type:'' %>"
+       style="padding:4px 10px;font:11px Arial;text-decoration:none;border:1px solid #333;
+              background:<%= page===p?'#1a1a1a':'#0d0d0d' %>;
+              color:<%= page===p?'#fff':'#666' %>;">
+      <%= p %>
+    </a>
+    <% } %>
+  </div>
+  <% } %>
+
+  <div style="margin-top:10px;font-size:10px;color:#333;border-top:1px solid #111;padding-top:8px;">
+    Showing <%= logs.length %> of <%= total %> records. Logs are permanent and cannot be deleted.
+  </div>
+</div>

@@ -1,0 +1,132 @@
+{
+  "source": "https://wiki.torn.com/wiki/Item",
+  "revision": 28542,
+  "note": "Category index from user-provided saved HTML. Does not contain individual item definitions.",
+  "categories": [
+    {
+      "name": "Primary",
+      "source": "https://wiki.torn.com/wiki/Weapon#Primary",
+      "key": "primary"
+    },
+    {
+      "name": "Secondary",
+      "source": "https://wiki.torn.com/wiki/Weapon#Secondary",
+      "key": "secondary"
+    },
+    {
+      "name": "Melee",
+      "source": "https://wiki.torn.com/wiki/Weapon#Melee",
+      "key": "melee"
+    },
+    {
+      "name": "Temporary",
+      "source": "https://wiki.torn.com/wiki/Weapon#Temporary",
+      "key": "temporary"
+    },
+    {
+      "name": "Armor",
+      "source": "https://wiki.torn.com/wiki/Armor",
+      "key": "armor"
+    },
+    {
+      "name": "Medical",
+      "source": "https://wiki.torn.com/wiki/Hospital#Items",
+      "key": "medical"
+    },
+    {
+      "name": "Drugs",
+      "source": "https://wiki.torn.com/wiki/Drugs",
+      "key": "drugs"
+    },
+    {
+      "name": "Energy Drinks",
+      "source": "https://wiki.torn.com/wiki/Category:Energy_Drink_Item",
+      "key": "energy_drinks"
+    },
+    {
+      "name": "Alcohol",
+      "source": "https://wiki.torn.com/wiki/Alcohol",
+      "key": "alcohol"
+    },
+    {
+      "name": "Candy",
+      "source": "https://wiki.torn.com/wiki/Candy",
+      "key": "candy"
+    },
+    {
+      "name": "Other Boosters",
+      "source": "https://wiki.torn.com/wiki/Category:Booster_Item",
+      "key": "other_boosters"
+    },
+    {
+      "name": "Enhancers",
+      "source": "https://wiki.torn.com/wiki/Enhancer",
+      "key": "enhancers"
+    },
+    {
+      "name": "Special",
+      "source": "https://wiki.torn.com/wiki/Special",
+      "key": "special"
+    },
+    {
+      "name": "Tools",
+      "source": "https://wiki.torn.com/wiki/Tool",
+      "key": "tools"
+    },
+    {
+      "name": "Materials",
+      "source": "https://wiki.torn.com/wiki/Material",
+      "key": "materials"
+    },
+    {
+      "name": "Supply Packs",
+      "source": "https://wiki.torn.com/wiki/Supply_Pack",
+      "key": "supply_packs"
+    },
+    {
+      "name": "Clothing",
+      "source": "https://wiki.torn.com/wiki/Clothing",
+      "key": "clothing"
+    },
+    {
+      "name": "Jewelry",
+      "source": "https://wiki.torn.com/wiki/Jewelry",
+      "key": "jewelry"
+    },
+    {
+      "name": "Flowers",
+      "source": "https://wiki.torn.com/wiki/Flower",
+      "key": "flowers"
+    },
+    {
+      "name": "Plushies",
+      "source": "https://wiki.torn.com/wiki/Plushie",
+      "key": "plushies"
+    },
+    {
+      "name": "Cars",
+      "source": "https://wiki.torn.com/wiki/Cars",
+      "key": "cars"
+    },
+    {
+      "name": "Artifacts",
+      "source": "https://wiki.torn.com/wiki/Artifact",
+      "key": "artifacts"
+    },
+    {
+      "name": "Collectibles",
+      "source": "https://wiki.torn.com/wiki/Collectibles",
+      "key": "collectibles"
+    },
+    {
+      "name": "Miscellaneous",
+      "source": "https://wiki.torn.com/wiki/Other_Items#Miscellaneous",
+      "key": "miscellaneous"
+    },
+    {
+      "name": "Books",
+      "source": "https://wiki.torn.com/wiki/Books",
+      "key": "books"
+    }
+  ]
+}

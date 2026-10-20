@@ -1,0 +1,148 @@
+<% /* Category selected via ?cat= query param */ %>
+<% const selCat = locals.selCat || null; %>
+
+<% if (!selCat) { %>
+<!-- ── CATEGORY GRID VIEW ── -->
+<div style="font-family:'Oswald',sans-serif;font-size:16px;color:#fff;letter-spacing:1px;margin-bottom:4px;">The Open Market</div>
+<p style="font-size:11px;color:#888;margin-bottom:14px;">
+  Buy from and sell items to other citizens in <%= prison.name %>. Select a category below. Collectibles from city visits can be bought and sold here.
+  <a href="/market" style="color:#cc4400;">← Back to Market</a>
+</p>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:480px;">
+  <%
+  const cats = [
+    { key:'item',    label:'ITEMS',    icon:'/amenities/med_kit.png',     fallback:'💊' },
+    { key:'drug',    label:'DRUGS',    icon:'/amenities/default.png',     fallback:'💊' },
+    { key:'amenity', label:'AMENITIES',icon:'/amenities/curved_4k_tv.png',fallback:'📺' },
+    { key:'weapon',  label:'WEAPONS',  icon:'/amenities/shiv.png',        fallback:'🔪' },
+    { key:'armor',   label:'ARMOR',    icon:'/amenities/bandana.png',     fallback:'🛡️' },
+    { key:'gear',    label:'GEAR',     icon:'/amenities/work_gloves.png', fallback:'🎽' },
+    { key:'collectible',label:'COLLECTIBLES',icon:'/amenities/default.png',fallback:'◈' },
+    { key:'watchlist',label:'WATCHLIST',icon:null,                        fallback:'👁️' },
+  ];
+  %>
+  <% cats.forEach(c => { %>
+  <a href="/openmarket?cat=<%= c.key %>" style="text-decoration:none;">
+    <div style="background:#1a1a1a;border:2px solid #333;padding:14px 8px;text-align:center;
+      transition:border-color 0.15s,box-shadow 0.15s;cursor:pointer;"
+      onmouseover="this.style.borderColor='#cc4400';this.style.boxShadow='0 0 8px rgba(200,68,0,0.4)'"
+      onmouseout="this.style.borderColor='#333';this.style.boxShadow=''">
+      <div style="width:80px;height:80px;background:#111;border:1px solid #333;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+        <% if (c.icon) { %>
+          <img src="<%= c.icon %>" style="width:65px;height:65px;object-fit:contain;" onerror="this.style.display='none';this.nextSibling.style.display='block'">
+          <span style="display:none;font-size:32px;"><%= c.fallback %></span>
+        <% } else { %>
+          <span style="font-size:32px;"><%= c.fallback %></span>
+        <% } %>
+      </div>
+      <div style="font-family:'Oswald',sans-serif;font-size:13px;color:#ccc;letter-spacing:1px;"><%= c.label %></div>
+    </div>
+  </a>
+  <% }); %>
+</div>
+
+<div style="margin-top:14px;padding:8px 12px;background:#111;border:1px solid #333;font-size:10px;color:#555;text-align:center;">
+  Click here to make deals in the forums &nbsp;|&nbsp;
+  <a href="/shoutbox" style="color:#888;">Shoutbox</a>
+</div>
+
+<% } else if (selCat === 'watchlist') { %>
+<!-- ── WATCHLIST ── -->
+<div style="font-family:'Oswald',sans-serif;font-size:16px;color:#fff;margin-bottom:8px;">👁️ Watchlist</div>
+<p style="font-size:11px;color:#888;">Track items you're hunting for. Coming soon.</p>
+<a href="/openmarket" style="font-size:11px;color:#cc4400;">← back to open market</a>
+
+<% } else { %>
+<!-- ── LISTINGS FOR CATEGORY ── -->
+<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+  <div style="font-family:'Oswald',sans-serif;font-size:16px;color:#fff;letter-spacing:1px;text-transform:uppercase;"><%= selCat %>s Market</div>
+  <a href="/openmarket" style="font-size:10px;color:#888;text-decoration:underline;">← all categories</a>
+</div>
+
+<div id="mktMsg" style="display:none;margin-bottom:8px;padding:6px 10px;font-size:11px;border:1px solid;"></div>
+
+<% const catListings = listings.filter(l => l.item_type === selCat); %>
+
+<!-- My listings / sell form -->
+<div style="background:#111;border:1px solid #333;padding:10px;margin-bottom:12px;">
+  <div style="font-size:11px;color:#888;margin-bottom:8px;font-family:'Oswald',sans-serif;letter-spacing:0.5px;">LIST AN ITEM FOR SALE</div>
+  <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;">
+    <select id="listKey" style="background:#1a1a1a;border:1px solid #444;color:#fff;padding:5px;font-size:11px;flex:1;min-width:120px;">
+      <option value="">— Select item —</option>
+      <% const myInv = inventory ? inventory.filter(i => i.item_type === selCat) : []; %>
+      <% myInv.forEach(i => { %>
+        <option value="<%= i.item_key %>"><%= i.display_name || i.item_key %> (Qty: <%= i.quantity %>)</option>
+      <% }); %>
+    </select>
+    <input type="number" id="listQty"   placeholder="Qty"    min="1" value="1"  style="width:60px;background:#1a1a1a;border:1px solid #444;color:#fff;padding:5px;font-size:11px;">
+    <input type="number" id="listPrice" placeholder="Price"  min="1"            style="width:90px;background:#1a1a1a;border:1px solid #444;color:#fff;padding:5px;font-size:11px;">
+    <button onclick="listItem()" style="background:#cc4400;border:1px solid #aa3300;color:#fff;font-family:'Oswald',sans-serif;font-size:11px;padding:5px 12px;cursor:pointer;letter-spacing:0.5px;">LIST</button>
+  </div>
+</div>
+
+<!-- Active listings grid -->
+<% if (!catListings.length) { %>
+  <div style="color:#555;text-align:center;padding:30px;font-size:12px;border:1px solid #222;">No <%= selCat %> listings yet. Be the first!</div>
+<% } else { %>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;">
+  <% catListings.forEach(l => { %>
+  <div style="background:#1a1a1a;border:1px solid #333;padding:8px;text-align:center;transition:border-color 0.1s;"
+    onmouseover="this.style.borderColor='#554400'" onmouseout="this.style.borderColor='#333'">
+    <div style="width:50px;height:60px;margin:0 auto 6px;background:#111;border:1px solid #222;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+      <img src="<%= l.img || '/amenities/default.png' %>" style="width:44px;height:54px;object-fit:contain;" onerror="this.src='/amenities/default.png'">
+    </div>
+    <div style="font-size:11px;color:#ddd;font-family:'Oswald',sans-serif;margin-bottom:2px;"><%= l.display_name %></div>
+    <div style="font-size:10px;color:#00aa00;margin-bottom:4px;"><%= l.desc || '' %></div>
+    <div style="font-size:10px;color:#888;">Seller: <a href="/profile/<%= l.seller_name %>" style="color:#ccaa00;"><%= l.seller_name %></a></div>
+    <% (l.weaponUnits||[]).forEach(w=>{ %><div style="font-size:11px;color:#9ed9ff;">#<%= w.id %> · Damage <%= w.damage==null?'Unknown':w.effectiveDamage.toFixed(2) %> · Accuracy <%= w.accuracy==null?'Unknown':w.effectiveAccuracy.toFixed(2) %> · <%= w.attachmentName %> · <%= w.loaded %> rounds loaded</div><% }); %>
+    <div style="font-size:10px;color:#888;">Qty: <%= l.quantity %></div>
+    <div style="font-size:13px;color:#ccaa00;font-weight:bold;margin:4px 0;">$<%= l.price.toLocaleString() %></div>
+    <% if (l.seller_id === user.id) { %>
+      <button onclick="cancelListing(<%= l.id %>,this)" style="width:100%;background:#333;border:1px solid #444;color:#888;font-size:10px;padding:3px;cursor:pointer;">Cancel</button>
+    <% } else { %>
+      <button onclick="buyListing(<%= l.id %>,this)" style="width:100%;background:#cc4400;border:1px solid #aa3300;color:#fff;font-size:10px;padding:3px;cursor:pointer;font-family:'Oswald',sans-serif;">BUY</button>
+    <% } %>
+  </div>
+  <% }); %>
+</div>
+<% } %>
+
+<script>
+function listItem() {
+  const key = document.getElementById('listKey').value;
+  const qty = parseInt(document.getElementById('listQty').value);
+  const price = parseInt(document.getElementById('listPrice').value);
+  if (!key || !qty || !price) return showMktMsg('Fill all fields.', true);
+  fetch('/openmarket/list', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ item_key: key, item_type: '<%= selCat %>', quantity: qty, price })
+  }).then(r=>r.json()).then(d => {
+    if (d.error) showMktMsg(d.error, true);
+    else { showMktMsg(d.msg, false); setTimeout(()=>location.reload(),1200); }
+  });
+}
+function buyListing(id, btn) {
+  btn.disabled = true;
+  fetch('/openmarket/buy', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ listing_id: id }) })
+    .then(r=>r.json()).then(d => {
+      if (d.error) { showMktMsg(d.error, true); btn.disabled=false; }
+      else { showMktMsg(d.msg, false); if(d.user) updateStats(d.user); setTimeout(()=>location.reload(),1000); }
+    });
+}
+function cancelListing(id, btn) {
+  btn.disabled = true;
+  fetch('/openmarket/cancel', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ listing_id: id }) })
+    .then(r=>r.json()).then(d => {
+      if (d.error) { showMktMsg(d.error, true); btn.disabled=false; }
+      else { showMktMsg(d.msg, false); setTimeout(()=>location.reload(),800); }
+    });
+}
+function showMktMsg(msg, err) {
+  const el = document.getElementById('mktMsg');
+  el.style.display='block'; el.textContent=msg;
+  el.style.color=err?'#ff6666':'#00cc00'; el.style.borderColor=err?'#cc0000':'#006600';
+  el.style.background=err?'rgba(80,0,0,0.2)':'rgba(0,40,0,0.2)';
+}
+</script>
+<% } %>
